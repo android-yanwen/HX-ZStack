@@ -1462,10 +1462,14 @@ void ReportData(ModBusFrame_t *pRxFrame)
 
                   SegDisplay(pRxFrame->pData[1]);
                 }*/
-                if(pRxFrame->pData[0] == 0x00){  //判断是否是电机的控制数据
+                if(pRxFrame->pData[0] == 0x00){  //判断是电机的控制数据
                     ControlStepMotor(pRxFrame->pData[1]);
-                } else if(pRxFrame->pData[0] == 0x02){//判断是否是数码管的控制数据
+                } else if(pRxFrame->pData[0] == 0x02){//判断是数码管的控制数据
                     DisplaySmg(pRxFrame->pData[1]);
+                } else if(pRxFrame->pData[0] == 0x01){//判断是蜂鸣器
+                    ControlBeep(pRxFrame->pData[1]);
+                } else if(pRxFrame->pData[0] == 0x03){//判断是继电器
+                    ControlRelay(pRxFrame->pData[1]);
                 }
               #endif
               

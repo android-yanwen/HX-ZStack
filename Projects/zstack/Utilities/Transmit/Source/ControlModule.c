@@ -32,7 +32,7 @@ void ControlStepMotor(uint8 flg){
             HC595StoreData(0x00);
             HC595StoreData(0x00);
             HC595StoreData(0x00);
-            if(flg == 0x00)
+            if(flg == 0x00) //正转
                 HC595StoreData(~motorForewardCode[u_StepNum] & 0x0f);
             else 
                 HC595StoreData(~motorReversalCode[u_StepNum] & 0x0f);
@@ -40,7 +40,42 @@ void ControlStepMotor(uint8 flg){
             HC595SendData();
         }
     }
-    
+}
+/**
+* Desc: 发送数据到595，控制蜂鸣器的开关
+* Param: flg 0x00 打开
+*            0xff 关闭
+*/
+void ControlBeep(uint8 flg){
+    uint8 u_StepNum, i;
+    HC595IOInit();
+    HC595StoreData(0x00);
+    HC595StoreData(0x00);
+    HC595StoreData(0x00);
+    HC595StoreData(0x00);
+    if(flg == 0x00)//开蜂鸣器
+        HC595StoreData(0x20);
+    else 
+        HC595StoreData(0x00);
+    HC595SendData();
+}
+/**
+* Desc: 发送数据到595，控制继电器的开关
+* Param: flg 0x00 打开
+*            0xff 关闭
+*/
+void ControlRelay(uint8 flg){
+    uint8 u_StepNum, i;
+    HC595IOInit();
+    HC595StoreData(0x00);
+    HC595StoreData(0x00);
+    HC595StoreData(0x00);
+    HC595StoreData(0x00);
+    if(flg == 0x00)//继电器开关闭合
+        HC595StoreData(0x10);
+    else 
+        HC595StoreData(0x00);
+    HC595SendData();
 }
 
 /**

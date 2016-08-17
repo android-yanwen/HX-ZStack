@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                            /
-// IAR C/C++ Compiler V8.20.2.41139 for 8051            17/Aug/2016  13:15:13 /
+// IAR C/C++ Compiler V8.20.2.41139 for 8051            17/Aug/2016  14:43:37 /
 // Copyright 2004-2013 IAR Systems AB.                                        /
 //                                                                            /
 //    Core               =  plain                                             /
@@ -10,17 +10,18 @@
 //    Constant location  =  data_rom                                          /
 //    Dptr setup         =  1,16                                              /
 //                                                                            /
-//    Source file        =  E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\Source\TransmitApp.c           /
-//    Command line       =  -f E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zsta /
-//                          ck\Utilities\Transmit\CC2530DB\..\..\..\Tools\CC2 /
-//                          530DB\f8wEndev.cfg (-DCPU32MHZ                    /
+//    Source file        =  E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\Source\TransmitApp. /
+//                          c                                                 /
+//    Command line       =  -f E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Pr /
+//                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\. /
+//                          .\Tools\CC2530DB\f8wEndev.cfg (-DCPU32MHZ         /
 //                          -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3        /
 //                          -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f         /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\Tools\CC2530 /
-//                          DB\f8wConfig.cfg (-DZIGBEEPRO -DSECURE=0          /
-//                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                 /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\T /
+//                          ools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO          /
+//                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR      /
 //                          -DDEFAULT_CHANLIST=0x00001000                     /
 //                          -DZDAPP_CONFIG_PAN_ID=0x1178                      /
 //                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_M /
@@ -42,82 +43,88 @@
 //                          __code" -DGENERIC=__generic                       /
 //                          -DRFD_RCVC_ALWAYS_ON=TRUE -DPOLL_RATE=1000        /
 //                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)  /
-//                          -DREJOIN_POLL_RATE=440 E:\ZSTACK-GTAMODBUS-v1.0£¨ /
-//                          Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\ /
-//                          TransmitApp.c -D xNWK_AUTO_POLL -D xMT_TASK -D    /
-//                          xZTOOL_P1 -D xMT_SYS_FUNC -D xMT_ZDO_FUNC -D      /
-//                          ZDNWKMGR_MIN_TRANSMISSIONS=0 -D xGTA_DEBUG -D     /
-//                          ZIGBEEPRO -D GTA_WMSCB_R1 -lC                     /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\GTA-WMSCB-R1\List\    /
-//                          -lA E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zst /
-//                          ack\Utilities\Transmit\CC2530DB\GTA-WMSCB-R1\List /
-//                          \ --diag_suppress Pe001,Pa010 -o                  /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\GTA-WMSCB-R1\Obj\ -e  /
-//                          --no_code_motion --debug --core=plain             /
-//                          --dptr=16,1 --data_model=large                    /
-//                          --code_model=banked --calling_convention=xdata_re /
-//                          entrant --place_constants=data_rom                /
-//                          --nr_virtual_regs 16 -I                           /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\ -I                   /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\Source\ -I         /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\ZMain\TI2530 /
-//                          DB\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\ /
-//                          zstack\Utilities\Transmit\CC2530DB\..\..\..\..\.. /
-//                          \Components\hal\include\ -I                       /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\hal\target\CC2530EB\ -I                      /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\mac\include\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ /
-//                          ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2530DB\ /
-//                          ..\..\..\..\..\Components\mac\high_level\ -I      /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\mac\low_level\srf04\ -I                      /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\mac\low_level\srf04\single_chip\ -I          /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\mt\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proj /
-//                          ects\zstack\Utilities\Transmit\CC2530DB\..\..\..\ /
-//                          ..\..\Components\osal\include\ -I                 /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\services\saddr\ -I                           /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\services\sdata\ -I                           /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\stack\af\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£ /
-//                          ©\Projects\zstack\Utilities\Transmit\CC2530DB\..\ /
-//                          ..\..\..\..\Components\stack\nwk\ -I              /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\stack\sapi\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³Î /
-//                          Ä£©\Projects\zstack\Utilities\Transmit\CC2530DB\. /
-//                          .\..\..\..\..\Components\stack\sec\ -I            /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\stack\sys\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ /
-//                          £©\Projects\zstack\Utilities\Transmit\CC2530DB\.. /
-//                          \..\..\..\..\Components\stack\zdo\ -I             /
-//                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\..\..\..\..\..\Compon /
-//                          ents\zmac\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Pr /
+//                          -DREJOIN_POLL_RATE=440 E:\AndroidStu\ZSTACK-GTAMO /
+//                          DBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Trans /
+//                          mit\Source\TransmitApp.c -D xNWK_AUTO_POLL -D     /
+//                          xMT_TASK -D xZTOOL_P1 -D xMT_SYS_FUNC -D          /
+//                          xMT_ZDO_FUNC -D ZDNWKMGR_MIN_TRANSMISSIONS=0 -D   /
+//                          xGTA_DEBUG -D ZIGBEEPRO -D GTA_WMSCB_R1 -lC       /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\GTA-WMSCB- /
+//                          R1\List\ -lA E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£ /
+//                          ¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2530 /
+//                          DB\GTA-WMSCB-R1\List\ --diag_suppress             /
+//                          Pe001,Pa010 -o E:\AndroidStu\ZSTACK-GTAMODBUS-v1. /
+//                          0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC25 /
+//                          30DB\GTA-WMSCB-R1\Obj\ -e --no_code_motion        /
+//                          --debug --core=plain --dptr=16,1                  /
+//                          --data_model=large --code_model=banked            /
+//                          --calling_convention=xdata_reentrant              /
+//                          --place_constants=data_rom --nr_virtual_regs 16   /
+//                          -I E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Pr /
+//                          ojects\zstack\Utilities\Transmit\CC2530DB\ -I     /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\Source\ /
+//                           -I E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\P /
+//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
+//                          ..\ZMain\TI2530DB\ -I E:\AndroidStu\ZSTACK-GTAMOD /
+//                          BUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transm /
+//                          it\CC2530DB\..\..\..\..\..\Components\hal\include /
+//                          \ -I E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\ /
+//                          Projects\zstack\Utilities\Transmit\CC2530DB\..\.. /
+//                          \..\..\..\Components\hal\target\CC2530EB\ -I      /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\mac\include\ -I                   /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\mac\high_level\ -I                /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\mac\low_level\srf04\ -I           /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\mac\low_level\srf04\single_chip\  /
+//                          -I E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Pr /
 //                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\. /
-//                          .\..\..\Components\zmac\f8w\ -Ohz                 /
+//                          .\..\..\Components\mt\ -I                         /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\osal\include\ -I                  /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\services\saddr\ -I                /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\services\sdata\ -I                /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\af\ -I                      /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\nwk\ -I                     /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\sapi\ -I                    /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\sec\ -I                     /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\sys\ -I                     /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\zdo\ -I                     /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\zmac\ -I                          /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\zmac\f8w\ -Ohz                    /
 //                          --require_prototypes                              /
-//    List file          =  E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ /
-//                          Utilities\Transmit\CC2530DB\GTA-WMSCB-R1\List\Tra /
-//                          nsmitApp.s51                                      /
+//    List file          =  E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\GTA-WMSCB- /
+//                          R1\List\TransmitApp.s51                           /
 //                                                                            /
 //                                                                            /
 ///////////////////////////////////////////////////////////////////////////////
@@ -531,6 +538,10 @@
         
 AF_DataRequest      SYMBOL "AF_DataRequest"
 ??AF_DataRequest?relay SYMBOL "?relay", AF_DataRequest
+ControlBeep         SYMBOL "ControlBeep"
+??ControlBeep?relay SYMBOL "?relay", ControlBeep
+ControlRelay        SYMBOL "ControlRelay"
+??ControlRelay?relay SYMBOL "?relay", ControlRelay
 ControlStepMotor    SYMBOL "ControlStepMotor"
 ??ControlStepMotor?relay SYMBOL "?relay", ControlStepMotor
 DisplaySmg          SYMBOL "DisplaySmg"
@@ -632,6 +643,10 @@ uartRxCB            SYMBOL "uartRxCB"
 
         EXTERN ??AF_DataRequest?relay
         FUNCTION ??AF_DataRequest?relay,00H
+        EXTERN ??ControlBeep?relay
+        FUNCTION ??ControlBeep?relay,00H
+        EXTERN ??ControlRelay?relay
+        FUNCTION ??ControlRelay?relay,00H
         EXTERN ??ControlStepMotor?relay
         FUNCTION ??ControlStepMotor?relay,00H
         EXTERN ??DisplaySmg?relay
@@ -687,6 +702,20 @@ uartRxCB            SYMBOL "uartRxCB"
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
         ARGFRAME XSTACK, 149, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        EXTERN ControlBeep
+        FUNCTION ControlBeep,0202H
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 30, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        EXTERN ControlRelay
+        FUNCTION ControlRelay,0202H
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 30, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN ControlStepMotor
@@ -866,7 +895,7 @@ uartRxCB            SYMBOL "uartRxCB"
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN zgDeviceLogicalType
 
-// E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\TransmitApp.c
+// E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\TransmitApp.c
 //    1 /**************************************************************************************************
 //    2   Filename:       TransmitApp.c
 //    3   Revised:        $Date: 2012-03-05 09:54:49 -0800 (Mon, 05 Mar 2012) $
@@ -5690,6 +5719,28 @@ ReportData:
         ARGFRAME XSTACK, 30, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL ReportData, ControlBeep
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 30, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 30, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL ReportData, ControlRelay
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 30, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 30, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL ReportData, osal_nv_item_init
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -5964,7 +6015,7 @@ ReportData:
 // 1462 
 // 1463                   SegDisplay(pRxFrame->pData[1]);
 // 1464                 }*/
-// 1465                 if(pRxFrame->pData[0] == 0x00){  //ÅÐ¶ÏÊÇ·ñÊÇµç»úµÄ¿ØÖÆÊý¾Ý
+// 1465                 if(pRxFrame->pData[0] == 0x00){  //ÅÐ¶ÏÊÇµç»úµÄ¿ØÖÆÊý¾Ý
         MOV     DPL,R6
         MOV     DPH,R7
         INC     DPTR
@@ -5984,13 +6035,47 @@ ReportData:
         MOV     R1,A
         LCALL   ??ControlStepMotor?relay
         LJMP    ??ReportData_3 & 0xFFFF
-// 1467                 } else if(pRxFrame->pData[0] == 0x02){//ÅÐ¶ÏÊÇ·ñÊÇÊýÂë¹ÜµÄ¿ØÖÆÊý¾Ý
+// 1467                 } else if(pRxFrame->pData[0] == 0x02){//ÅÐ¶ÏÊÇÊýÂë¹ÜµÄ¿ØÖÆÊý¾Ý
 ??ReportData_4:
         XRL     A,#0x2
-        JZ      $+5
-        LJMP    ??ReportData_3 & 0xFFFF
+        MOV     DPL,R6
+        MOV     DPH,R7
+        INC     DPTR
+        INC     DPTR
+        INC     DPTR
+        JNZ     ??ReportData_5
 // 1468                     DisplaySmg(pRxFrame->pData[1]);
         ; Setup parameters for call to function DisplaySmg
+        INC     DPTR
+        MOVX    A,@DPTR
+        MOV     R1,A
+        LCALL   ??DisplaySmg?relay
+        LJMP    ??ReportData_3 & 0xFFFF
+// 1469                 } else if(pRxFrame->pData[0] == 0x01){//ÅÐ¶ÏÊÇ·äÃùÆ÷
+??ReportData_5:
+        MOVX    A,@DPTR
+        XRL     A,#0x1
+        MOV     DPL,R6
+        MOV     DPH,R7
+        INC     DPTR
+        INC     DPTR
+        INC     DPTR
+        JNZ     ??ReportData_6
+// 1470                     ControlBeep(pRxFrame->pData[1]);
+        ; Setup parameters for call to function ControlBeep
+        INC     DPTR
+        MOVX    A,@DPTR
+        MOV     R1,A
+        LCALL   ??ControlBeep?relay
+        LJMP    ??ReportData_3 & 0xFFFF
+// 1471                 } else if(pRxFrame->pData[0] == 0x03){//ÅÐ¶ÏÊÇ¼ÌµçÆ÷
+??ReportData_6:
+        MOVX    A,@DPTR
+        XRL     A,#0x3
+        JZ      $+5
+        LJMP    ??ReportData_3 & 0xFFFF
+// 1472                     ControlRelay(pRxFrame->pData[1]);
+        ; Setup parameters for call to function ControlRelay
         MOV     DPL,R6
         MOV     DPH,R7
         INC     DPTR
@@ -5999,17 +6084,17 @@ ReportData:
         INC     DPTR
         MOVX    A,@DPTR
         MOV     R1,A
-        LCALL   ??DisplaySmg?relay
+        LCALL   ??ControlRelay?relay
         LJMP    ??ReportData_3 & 0xFFFF
-// 1469                 }
-// 1470               #endif
-// 1471               
-// 1472           }
-// 1473         }
-// 1474         break;
-// 1475       case FUN_CODE_SET_ADDR://ÉèµØÖ·
-// 1476         {
-// 1477           if(pRxFrame->ADDR==NativeAddr)//ÊÇ·ñ±¾»úµØÖ·
+// 1473                 }
+// 1474               #endif
+// 1475               
+// 1476           }
+// 1477         }
+// 1478         break;
+// 1479       case FUN_CODE_SET_ADDR://ÉèµØÖ·
+// 1480         {
+// 1481           if(pRxFrame->ADDR==NativeAddr)//ÊÇ·ñ±¾»úµØÖ·
 ??ReportData_2:
         MOV     DPL,R6
         MOV     DPH,R7
@@ -6020,8 +6105,8 @@ ReportData:
         XRL     A,R0
         JZ      $+5
         LJMP    ??ReportData_3 & 0xFFFF
-// 1478           {
-// 1479           NativeAddr=pRxFrame->pData[0];
+// 1482           {
+// 1483           NativeAddr=pRxFrame->pData[0];
         MOV     DPL,R6
         MOV     DPH,R7
         INC     DPTR
@@ -6030,7 +6115,7 @@ ReportData:
         MOVX    A,@DPTR
         MOV     DPTR,#NativeAddr
         MOVX    @DPTR,A
-// 1480           osal_nv_item_init(ZCD_NV_NATIVE_ADDRESS,sizeof(NativeAddr),NULL);
+// 1484           osal_nv_item_init(ZCD_NV_NATIVE_ADDRESS,sizeof(NativeAddr),NULL);
         ; Setup parameters for call to function osal_nv_item_init
         CLR     A
         MOV     ?V0 + 0,A
@@ -6046,7 +6131,7 @@ ReportData:
         MOV     A,#0x2
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 30)
-// 1481           osal_nv_write(ZCD_NV_NATIVE_ADDRESS,0,sizeof(NativeAddr),&NativeAddr);
+// 1485           osal_nv_write(ZCD_NV_NATIVE_ADDRESS,0,sizeof(NativeAddr),&NativeAddr);
         ; Setup parameters for call to function osal_nv_write
         MOV     ?V0 + 0,#NativeAddr & 0xff
         MOV     ?V0 + 1,#(NativeAddr >> 8) & 0xff
@@ -6066,8 +6151,8 @@ ReportData:
         MOV     A,#0x4
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 30)
-// 1482           FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,pRxFrame->pData,1);//´ò°ü
-// 1483           SendDataRequest(Frame,FrameLen);//·¢ËÍ
+// 1486           FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,pRxFrame->pData,1);//´ò°ü
+// 1487           SendDataRequest(Frame,FrameLen);//·¢ËÍ
         ; Setup parameters for call to function SendDataRequest
         ; Setup parameters for call to function FramePackage
         MOV     R0,#?V0 + 0
@@ -6087,15 +6172,15 @@ ReportData:
         INC     DPTR
         MOVX    A,@DPTR
         MOV     R4,A
-        SJMP    ??ReportData_5
+        SJMP    ??ReportData_7
           CFI CFA_XSP16 add(XSP16, 30)
-// 1484           }
-// 1485         }
-// 1486         break;
-// 1487       case FUN_CODE_READ_ADDR://¶ÁµØÖ·
-// 1488         {
-// 1489           FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,&NativeAddr,1);//´ò°ü
-// 1490           SendDataRequest(Frame,FrameLen);//·¢ËÍ
+// 1488           }
+// 1489         }
+// 1490         break;
+// 1491       case FUN_CODE_READ_ADDR://¶ÁµØÖ·
+// 1492         {
+// 1493           FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,&NativeAddr,1);//´ò°ü
+// 1494           SendDataRequest(Frame,FrameLen);//·¢ËÍ
 ??ReportData_1:
         ; Setup parameters for call to function SendDataRequest
         ; Setup parameters for call to function FramePackage
@@ -6110,7 +6195,7 @@ ReportData:
         LCALL   ?PUSH_XSTACK_I_TWO
           CFI CFA_XSP16 add(XSP16, 34)
         MOV     R4,#0x11
-??ReportData_5:
+??ReportData_7:
         MOV     DPL,R6
         MOV     DPH,R7
         MOVX    A,@DPTR
@@ -6132,27 +6217,27 @@ ReportData:
         MOV     R2,DPL
         MOV     R3,DPH
         LCALL   ??SendDataRequest?relay
-// 1491           
-// 1492         }
-// 1493         break;
-// 1494       }
-// 1495   
-// 1496   
-// 1497 
-// 1498 }
+// 1495           
+// 1496         }
+// 1497         break;
+// 1498       }
+// 1499   
+// 1500   
+// 1501 
+// 1502 }
 ??ReportData_3:
         MOV     A,#0x14
         LJMP    ?Subroutine5 & 0xFFFF
           CFI EndBlock cfiBlock73
-// 1499 #if defined(GTA_WMSCB_R1)
+// 1503 #if defined(GTA_WMSCB_R1)
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1500 void StepMotorRun(uint8 Dir,uint16 StepNum)
+// 1504 void StepMotorRun(uint8 Dir,uint16 StepNum)
 StepMotorRun:
           CFI Block cfiBlock74 Using cfiCommon0
           CFI Function StepMotorRun
         CODE
-// 1501 {
+// 1505 {
         FUNCALL StepMotorRun, ctrl_GTA_WMSCB
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -6227,7 +6312,7 @@ StepMotorRun:
         MOV     ?V0 + 4,R1
         MOV     ?V0 + 0,R2
         MOV     ?V0 + 1,R3
-// 1502   uint8 ForwardStep[4]={0x03,0x09,0x0C,0x06};
+// 1506   uint8 ForwardStep[4]={0x03,0x09,0x0C,0x06};
         MOV     A,#0x4
         LCALL   ?XSTACK_DISP0_8
         MOV     R4,DPL
@@ -6236,7 +6321,7 @@ StepMotorRun:
         MOV     DPL,#`?<Constant {3, 9, 12, 6}>` & 0xff
         MOV     A,#0x4
         LCALL   ?MOVE_LONG8_XDATA_XDATA
-// 1503   uint8 BackStep[4]={0x03,0x06,0x0C,0x09};
+// 1507   uint8 BackStep[4]={0x03,0x06,0x0C,0x09};
         MOV     DPL,?XSP + 0
         MOV     DPH,?XSP + 1
         MOV     R4,DPL
@@ -6245,21 +6330,21 @@ StepMotorRun:
         MOV     DPL,#`?<Constant {3, 6, 12, 9}>` & 0xff
         MOV     A,#0x4
         LCALL   ?MOVE_LONG8_XDATA_XDATA
-// 1504   uint16 i=0,j=0,k=0;
+// 1508   uint16 i=0,j=0,k=0;
         MOV     R6,A
         MOV     R7,A
         MOV     ?V0 + 2,A
         MOV     ?V0 + 3,A
-// 1505   uint8 index=0,l=0;
+// 1509   uint8 index=0,l=0;
         MOV     ?V0 + 6,A
         MOV     ?V0 + 5,A
-// 1506   for(i=0;i<StepNum;i++)
+// 1510   for(i=0;i<StepNum;i++)
         LJMP    ??StepMotorRun_0 & 0xFFFF
-// 1507   {
-// 1508     if(Dir)
-// 1509       ctrl_GTA_WMSCB('C',ForwardStep[index]);
-// 1510     else
-// 1511       ctrl_GTA_WMSCB('C',BackStep[index]);
+// 1511   {
+// 1512     if(Dir)
+// 1513       ctrl_GTA_WMSCB('C',ForwardStep[index]);
+// 1514     else
+// 1515       ctrl_GTA_WMSCB('C',BackStep[index]);
 ??StepMotorRun_1:
         ; Setup parameters for call to function ctrl_GTA_WMSCB
         MOV     DPL,?XSP + 0
@@ -6274,7 +6359,7 @@ StepMotorRun:
         MOV     R2,A
         MOV     R1,#0x43
         LCALL   ??ctrl_GTA_WMSCB?relay
-// 1512     if(i==(k*255-1)||i==0)
+// 1516     if(i==(k*255-1)||i==0)
         MOV     A,?V0 + 2
         MOV     B,#-0x1
         MUL     AB
@@ -6296,13 +6381,13 @@ StepMotorRun:
         MOV     A,R6
         ORL     A,R7
         JNZ     ??StepMotorRun_5
-// 1513     {
-// 1514       SegDisplay(l);
+// 1517     {
+// 1518       SegDisplay(l);
 ??StepMotorRun_4:
         ; Setup parameters for call to function SegDisplay
         MOV     R1,?V0 + 5
         LCALL   ??SegDisplay?relay
-// 1515       if(l++>8)l=0;
+// 1519       if(l++>8)l=0;
         MOV     ?V0 + 7,?V0 + 5
         MOV     A,#0x1
         ADD     A,?V0 + 7
@@ -6312,7 +6397,7 @@ StepMotorRun:
         SUBB    A,#0x9
         JC      ??StepMotorRun_6
         MOV     ?V0 + 5,#0x0
-// 1516       k++;
+// 1520       k++;
 ??StepMotorRun_6:
         MOV     A,?V0 + 2
         ADD     A,#0x1
@@ -6320,32 +6405,32 @@ StepMotorRun:
         MOV     A,?V0 + 3
         ADDC    A,#0x0
         MOV     ?V0 + 3,A
-// 1517     }
-// 1518     ctrl_GTA_WMSCB('A',i);
+// 1521     }
+// 1522     ctrl_GTA_WMSCB('A',i);
 ??StepMotorRun_5:
         ; Setup parameters for call to function ctrl_GTA_WMSCB
         MOV     A,R6
         MOV     R2,A
         MOV     R1,#0x41
         LCALL   ??ctrl_GTA_WMSCB?relay
-// 1519     
-// 1520     if(++index>=4)index=0;
+// 1523     
+// 1524     if(++index>=4)index=0;
         INC     ?V0 + 6
         MOV     A,?V0 + 6
         CLR     C
         SUBB    A,#0x4
         JC      ??StepMotorRun_7
         MOV     ?V0 + 6,#0x0
-// 1521     
-// 1522     for(j=0;j<3000;j++)
+// 1525     
+// 1526     for(j=0;j<3000;j++)
 ??StepMotorRun_7:
         MOV     R0,#-0x48
         MOV     R1,#0xb
-// 1523     {
-// 1524       asm("nop");            
+// 1527     {
+// 1528       asm("nop");            
 ??StepMotorRun_8:
         nop
-// 1525     }
+// 1529     }
         LCALL   ?Subroutine14 & 0xFFFF
 ??CrossCallReturnLabel_15:
         ORL     A,R1
@@ -6371,9 +6456,9 @@ StepMotorRun:
         MOV     A,#0x4
         LCALL   ?XSTACK_DISP0_8
         LJMP    ??StepMotorRun_2 & 0xFFFF
-// 1526     //ctrl_GTA_WMSCB('A',StepNum);
-// 1527   }
-// 1528 }
+// 1530     //ctrl_GTA_WMSCB('A',StepNum);
+// 1531   }
+// 1532 }
 ??StepMotorRun_9:
         MOV     A,#0x8
         LCALL   ?DEALLOC_XSTACK8
@@ -6444,15 +6529,15 @@ StepMotorRun:
           CFI EndBlock cfiCond75
           CFI EndBlock cfiCond76
           CFI EndBlock cfiPicker77
-// 1529 
+// 1533 
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1530 void SegDisplay(uint8 num)
+// 1534 void SegDisplay(uint8 num)
 SegDisplay:
           CFI Block cfiBlock78 Using cfiCommon0
           CFI Function SegDisplay
         CODE
-// 1531 {
+// 1535 {
         FUNCALL SegDisplay, ctrl_GTA_WMSCB
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -6485,7 +6570,7 @@ SegDisplay:
           CFI CFA_XSP16 add(XSP16, 20)
         MOV     A,R1
         MOV     R6,A
-// 1532   uint8 DispNum[10]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
+// 1536   uint8 DispNum[10]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
         MOV     DPL,?XSP + 0
         MOV     DPH,?XSP + 1
         MOV     R4,DPL
@@ -6494,13 +6579,13 @@ SegDisplay:
         MOV     DPL,#`?<Constant {63, 6, 91, 79, 102, 109, 125, 7, 1` & 0xff
         MOV     A,#0xa
         LCALL   ?MOVE_LONG8_XDATA_XDATA
-// 1533   //ctrl_GTA_WMSCB('M',0x80);
-// 1534   if(num<0x10)
+// 1537   //ctrl_GTA_WMSCB('M',0x80);
+// 1538   if(num<0x10)
         MOV     A,R6
         CLR     C
         SUBB    A,#0x10
         JNC     ??SegDisplay_0
-// 1535     ctrl_GTA_WMSCB('B',DispNum[num]);
+// 1539     ctrl_GTA_WMSCB('B',DispNum[num]);
         ; Setup parameters for call to function ctrl_GTA_WMSCB
         MOV     ?V0 + 0,R6
         MOV     DPL,?XSP + 0
@@ -6514,7 +6599,7 @@ SegDisplay:
         MOV     R2,A
         MOV     R1,#0x42
         LCALL   ??ctrl_GTA_WMSCB?relay
-// 1536 }
+// 1540 }
 ??SegDisplay_0:
         MOV     A,#0xa
         LJMP    ?Subroutine5 & 0xFFFF
@@ -6659,15 +6744,15 @@ SegDisplay:
           CFI EndBlock cfiCond85
           CFI EndBlock cfiCond86
           CFI EndBlock cfiPicker87
-// 1537 #endif
+// 1541 #endif
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1538 uint16 FramePackage(uint8 *pFrame,uint8 addr,uint8 cmd,uint8 *data,uint16 datalen)
+// 1542 uint16 FramePackage(uint8 *pFrame,uint8 addr,uint8 cmd,uint8 *data,uint16 datalen)
 FramePackage:
           CFI Block cfiBlock88 Using cfiCommon0
           CFI Function FramePackage
         CODE
-// 1539 {
+// 1543 {
         FUNCALL FramePackage, Crc16Code
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -6699,34 +6784,34 @@ FramePackage:
           CFI CFA_XSP16 add(XSP16, 14)
         ; Saved register size: 14
         ; Auto size: 0
-// 1540   uint16 i;
-// 1541   uint16 crc;
-// 1542   uint8 *p;
-// 1543     p=pFrame;
+// 1544   uint16 i;
+// 1545   uint16 crc;
+// 1546   uint8 *p;
+// 1547     p=pFrame;
         MOV     A,R2
         MOV     R6,A
         MOV     A,R3
         MOV     R7,A
-// 1544   *p++=FRAME_HEAD;//²»Ã÷bug ÔÙ¼ÓÒ»¸ö×Ö½Ú
+// 1548   *p++=FRAME_HEAD;//²»Ã÷bug ÔÙ¼ÓÒ»¸ö×Ö½Ú
         MOV     DPL,R6
         MOV     DPH,R7
         MOV     A,#0x7e
         MOVX    @DPTR,A
         INC     DPTR
-// 1545   *p++=FRAME_HEAD;
+// 1549   *p++=FRAME_HEAD;
         MOVX    @DPTR,A
         INC     DPTR
-// 1546   *p++=addr;
+// 1550   *p++=addr;
         MOV     A,R1
         MOVX    @DPTR,A
         INC     DPTR
-// 1547   *p++=cmd;
+// 1551   *p++=cmd;
         MOV     A,R4
         MOVX    @DPTR,A
         INC     DPTR
         MOV     R6,DPL
         MOV     R7,DPH
-// 1548   for(i=0;i<datalen;i++)
+// 1552   for(i=0;i<datalen;i++)
         MOV     R4,#0x0
         MOV     R5,#0x0
         MOV     A,#0xe
@@ -6744,8 +6829,8 @@ FramePackage:
         MOVX    A,@DPTR
         MOV     ?V0 + 1,A
         SJMP    ??FramePackage_0
-// 1549   {
-// 1550     *p++=*data++;
+// 1553   {
+// 1554     *p++=*data++;
 ??FramePackage_1:
         MOV     DPL,R0
         MOV     DPH,R1
@@ -6763,7 +6848,7 @@ FramePackage:
         INC     DPTR
         MOV     R6,DPL
         MOV     R7,DPH
-// 1551   }
+// 1555   }
         MOV     A,R4
         ADD     A,#0x1
         INC     R4
@@ -6777,8 +6862,8 @@ FramePackage:
         MOV     A,R5
         SUBB    A,?V0 + 1
         JC      ??FramePackage_1
-// 1552   //crc=Crc16Code(pFrame+1,datalen+2);//FRAME_HEAD²»¼Æ
-// 1553    crc=Crc16Code(pFrame+2,datalen+2);//FRAME_HEAD²»¼Æ
+// 1556   //crc=Crc16Code(pFrame+1,datalen+2);//FRAME_HEAD²»¼Æ
+// 1557    crc=Crc16Code(pFrame+2,datalen+2);//FRAME_HEAD²»¼Æ
         ; Setup parameters for call to function Crc16Code
         MOV     A,?V0 + 0
         ADD     A,#0x2
@@ -6790,17 +6875,17 @@ FramePackage:
         ADDC    A,#0x0
         MOV     R3,A
         LCALL   ??Crc16Code?relay
-// 1554   *p++=LO_UINT16(crc);
+// 1558   *p++=LO_UINT16(crc);
         MOV     A,R2
         MOV     DPL,R6
         MOV     DPH,R7
         MOVX    @DPTR,A
         INC     DPTR
-// 1555   *p=HI_UINT16(crc);
+// 1559   *p=HI_UINT16(crc);
         MOV     A,R3
         MOVX    @DPTR,A
-// 1556   //return datalen+5;
-// 1557   return datalen+6;//¶à¼ÓÒ»¸öFRAME_HEAD
+// 1560   //return datalen+5;
+// 1561   return datalen+6;//¶à¼ÓÒ»¸öFRAME_HEAD
         MOV     A,?V0 + 0
         ADD     A,#0x6
         MOV     R2,A
@@ -6810,23 +6895,23 @@ FramePackage:
         MOV     R7,#0x6
         LJMP    ?BANKED_LEAVE_XDATA
           CFI EndBlock cfiBlock88
-// 1558 }
-// 1559 
-// 1560   /*********************************************************************
-// 1561  * º¯ÊýÃû³Æ£ºReadADC
-// 1562  * ¹¦    ÄÜ£º¶ÁÈ¡ADCÖµ
-// 1563  * Èë¿Ú²ÎÊý£ºÍ¨µÀ
-// 1564  * ³ö¿Ú²ÎÊý£ºÎÞ
-// 1565  * ·µ »Ø Öµ£ºADÊý¾Ý()
-// 1566  ********************************************************************/
+// 1562 }
+// 1563 
+// 1564   /*********************************************************************
+// 1565  * º¯ÊýÃû³Æ£ºReadADC
+// 1566  * ¹¦    ÄÜ£º¶ÁÈ¡ADCÖµ
+// 1567  * Èë¿Ú²ÎÊý£ºÍ¨µÀ
+// 1568  * ³ö¿Ú²ÎÊý£ºÎÞ
+// 1569  * ·µ »Ø Öµ£ºADÊý¾Ý()
+// 1570  ********************************************************************/
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1567 uint16 ReadADC( uint8 channel )
+// 1571 uint16 ReadADC( uint8 channel )
 ReadADC:
           CFI Block cfiBlock89 Using cfiCommon0
           CFI Function ReadADC
         CODE
-// 1568 {
+// 1572 {
         MOV     A,#-0x10
         LCALL   ?BANKED_ENTER_XDATA
           CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
@@ -6851,39 +6936,39 @@ ReadADC:
         ; Auto size: 0
         MOV     A,R1
         MOV     R4,A
-// 1569   volatile unsigned char tmp,n;
-// 1570   signed short adcvalue;
-// 1571   float voltagevalue_X;
-// 1572 
-// 1573   /* XÖá¼ÓËÙ¶È²É¼¯ */
-// 1574   /* ÉèÖÃ»ù×¼µçÑ¹¡¢³éÈ¡ÂÊºÍµ¥¶ËÊäÈëÍ¨µÀ */
-// 1575   ADCCON3 = ((0x02 << 6) |  // ²ÉÓÃAVDD5Òý½ÅÉÏµÄµçÑ¹Îª»ù×¼µçÑ¹
-// 1576              (0x03 << 4) |  // ³éÈ¡ÂÊÎª512£¬ÏàÓ¦µÄÓÐÐ§Î»Îª12Î»(×î¸ßÎ»Îª·ûºÅÎ»)
-// 1577              channel);
+// 1573   volatile unsigned char tmp,n;
+// 1574   signed short adcvalue;
+// 1575   float voltagevalue_X;
+// 1576 
+// 1577   /* XÖá¼ÓËÙ¶È²É¼¯ */
+// 1578   /* ÉèÖÃ»ù×¼µçÑ¹¡¢³éÈ¡ÂÊºÍµ¥¶ËÊäÈëÍ¨µÀ */
+// 1579   ADCCON3 = ((0x02 << 6) |  // ²ÉÓÃAVDD5Òý½ÅÉÏµÄµçÑ¹Îª»ù×¼µçÑ¹
+// 1580              (0x03 << 4) |  // ³éÈ¡ÂÊÎª512£¬ÏàÓ¦µÄÓÐÐ§Î»Îª12Î»(×î¸ßÎ»Îª·ûºÅÎ»)
+// 1581              channel);
         MOV     A,#-0x50
         ORL     A,R4
         MOV     0xb6,A
-// 1578 
-// 1579   /* µÈ´ýÍ¨µÀ×ª»»Íê³É */
-// 1580   while ((ADCCON1 & 0x80) != 0x80);
+// 1582 
+// 1583   /* µÈ´ýÍ¨µÀ×ª»»Íê³É */
+// 1584   while ((ADCCON1 & 0x80) != 0x80);
 ??ReadADC_0:
         MOV     A,0xb4
         MOV     C,0xE0 /* A   */.7
         JNC     ??ReadADC_0
-// 1581 
-// 1582   /* ´ÓADCL£¬ADCH¶ÁÈ¡×ª»»Öµ£¬´Ë²Ù×÷»¹ÇåÁãADCCON1.EOC */
-// 1583   adcvalue = (signed short)ADCL;
+// 1585 
+// 1586   /* ´ÓADCL£¬ADCH¶ÁÈ¡×ª»»Öµ£¬´Ë²Ù×÷»¹ÇåÁãADCCON1.EOC */
+// 1587   adcvalue = (signed short)ADCL;
         MOV     A,0xba
         MOV     ?V0 + 0,A
-// 1584   adcvalue |= (signed short)(ADCH << 8); 
+// 1588   adcvalue |= (signed short)(ADCH << 8); 
         MOV     A,0xbb
         MOV     R0,A
         CLR     A
         XCH     A,R0
         MOV     ?V0 + 1,A
-// 1585 
-// 1586   /* ÈôadcvalueÐ¡ÓÚ0£¬¾ÍÈÏÎªËüÎª0 */
-// 1587   if(adcvalue < 0) adcvalue = 0;
+// 1589 
+// 1590   /* ÈôadcvalueÐ¡ÓÚ0£¬¾ÍÈÏÎªËüÎª0 */
+// 1591   if(adcvalue < 0) adcvalue = 0;
         CLR     C
         SUBB    A,#0x0
         MOV     C,0xD0 /* PSW */.2
@@ -6892,15 +6977,15 @@ ReadADC:
         JNC     ??ReadADC_1
         MOV     ?V0 + 0,R0
         MOV     ?V0 + 1,R0
-// 1588     
-// 1589   adcvalue >>= 4;  // È¡³ö12Î»ÓÐÐ§Î»
-// 1590     
-// 1591   /* ½«×ª»»Öµ»»ËãÎªÊµ¼ÊµçÑ¹Öµ */
-// 1592   voltagevalue_X = (adcvalue * 3.3) / 2047;  // 2047ÊÇÄ£ÄâÊäÈë´ïµ½VREFÊ±µÄÂúÁ¿³ÌÖµ
-// 1593                                              // ÓÉÓÚÓÐÐ§Î»ÊÇ12Î»(×î¸ßÎ»Îª·ûºÅÎ»)£¬
-// 1594                                              // ËùÒÔÕýµÄÂúÁ¿³ÌÖµÎª2047
-// 1595                                              // ´Ë´¦£¬VREF = 3.3V
-// 1596   return ((uint16)(voltagevalue_X * 1000));  // µçÑ¹·Å´ó100±¶±ãÓÚ´«Êä¼°ÉÏÎ»»ú´¦Àí
+// 1592     
+// 1593   adcvalue >>= 4;  // È¡³ö12Î»ÓÐÐ§Î»
+// 1594     
+// 1595   /* ½«×ª»»Öµ»»ËãÎªÊµ¼ÊµçÑ¹Öµ */
+// 1596   voltagevalue_X = (adcvalue * 3.3) / 2047;  // 2047ÊÇÄ£ÄâÊäÈë´ïµ½VREFÊ±µÄÂúÁ¿³ÌÖµ
+// 1597                                              // ÓÉÓÚÓÐÐ§Î»ÊÇ12Î»(×î¸ßÎ»Îª·ûºÅÎ»)£¬
+// 1598                                              // ËùÒÔÕýµÄÂúÁ¿³ÌÖµÎª2047
+// 1599                                              // ´Ë´¦£¬VREF = 3.3V
+// 1600   return ((uint16)(voltagevalue_X * 1000));  // µçÑ¹·Å´ó100±¶±ãÓÚ´«Êä¼°ÉÏÎ»»ú´¦Àí
 ??ReadADC_1:
         MOV     A,#0x4
         MOV     R0,#?V0 + 0
@@ -6940,15 +7025,15 @@ ReadADC:
         REQUIRE ADCCON1
         REQUIRE ADCL
         REQUIRE ADCH
-// 1597 }
+// 1601 }
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1598 void SendDataRequest(uint8 *pBuf,uint16 len)
+// 1602 void SendDataRequest(uint8 *pBuf,uint16 len)
 SendDataRequest:
           CFI Block cfiBlock90 Using cfiCommon0
           CFI Function SendDataRequest
         CODE
-// 1599 {
+// 1603 {
         FUNCALL SendDataRequest, AF_DataRequest
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -6987,47 +7072,47 @@ SendDataRequest:
           CFI CFA_XSP16 add(XSP16, 10)
         ; Saved register size: 10
         ; Auto size: 0
-// 1600     if(!ZG_DEVICE_COORDINATOR_TYPE)//·ÇÐ­µ÷Æ÷
+// 1604     if(!ZG_DEVICE_COORDINATOR_TYPE)//·ÇÐ­µ÷Æ÷
         MOV     DPTR,#zgDeviceLogicalType
         MOVX    A,@DPTR
         MOV     DPTR,#TestDirectSent_DstAddr + 8
         JZ      ??SendDataRequest_0
-// 1601       {
-// 1602         TestDirectSent_DstAddr.addrMode=(afAddrMode_t)Addr16Bit;//µØÖ·´«ËÍ
+// 1605       {
+// 1606         TestDirectSent_DstAddr.addrMode=(afAddrMode_t)Addr16Bit;//µØÖ·´«ËÍ
         MOV     A,#0x2
         LCALL   ??Subroutine17_0 & 0xFFFF
-// 1603         TestDirectSent_DstAddr.endPoint = 0;
-// 1604         TestDirectSent_DstAddr.addr.shortAddr = 0x0000;
+// 1607         TestDirectSent_DstAddr.endPoint = 0;
+// 1608         TestDirectSent_DstAddr.addr.shortAddr = 0x0000;
 ??CrossCallReturnLabel_18:
         MOV     DPTR,#TestDirectSent_DstAddr
         SJMP    ??CrossCallReturnLabel_3
-// 1605       }
-// 1606       else
-// 1607       {
-// 1608         if(ZG_DEVICE_COORDINATOR_TYPE)
-// 1609         {
-// 1610           TestDirectSent_DstAddr.addrMode=(afAddrMode_t)AddrBroadcast;//Addr16Bit;//µØÖ·´«ËÍ
+// 1609       }
+// 1610       else
+// 1611       {
+// 1612         if(ZG_DEVICE_COORDINATOR_TYPE)
+// 1613         {
+// 1614           TestDirectSent_DstAddr.addrMode=(afAddrMode_t)AddrBroadcast;//Addr16Bit;//µØÖ·´«ËÍ
 ??SendDataRequest_0:
         LCALL   ?Subroutine7 & 0xFFFF
-// 1611           TestDirectSent_DstAddr.endPoint = 0;
-// 1612           TestDirectSent_DstAddr.addr.shortAddr = 0xffff;//destAddr;
-// 1613           //TestDirectSent_DstAddr.addr.extAddr
-// 1614         }
-// 1615       }
+// 1615           TestDirectSent_DstAddr.endPoint = 0;
+// 1616           TestDirectSent_DstAddr.addr.shortAddr = 0xffff;//destAddr;
+// 1617           //TestDirectSent_DstAddr.addr.extAddr
+// 1618         }
+// 1619       }
 ??CrossCallReturnLabel_3:
         MOVX    @DPTR,A
         INC     DPTR
         MOVX    @DPTR,A
-// 1616      AF_DataRequest(    
-// 1617               &TestDirectSent_DstAddr,               //µØÖ·
-// 1618               &TransmitApp_epDesc,                //ÃèÊö
-// 1619               TRANSMITAPP_CLUSTERID_TESTMSG,      //×å
-// 1620                 len,                                  //len
-// 1621                 pBuf,//TransmitApp_Msg,             //DATA
-// 1622               &TransmitApp_TransID,               //
-// 1623               TRANSMITAPP_TX_OPTIONS,
-// 1624               AF_DEFAULT_RADIUS 
-// 1625               );
+// 1620      AF_DataRequest(    
+// 1621               &TestDirectSent_DstAddr,               //µØÖ·
+// 1622               &TransmitApp_epDesc,                //ÃèÊö
+// 1623               TRANSMITAPP_CLUSTERID_TESTMSG,      //×å
+// 1624                 len,                                  //len
+// 1625                 pBuf,//TransmitApp_Msg,             //DATA
+// 1626               &TransmitApp_TransID,               //
+// 1627               TRANSMITAPP_TX_OPTIONS,
+// 1628               AF_DEFAULT_RADIUS 
+// 1629               );
         ; Setup parameters for call to function AF_DataRequest
         MOV     ?V0 + 0,#0x1e
         MOV     R0,#?V0 + 0
@@ -7062,13 +7147,13 @@ SendDataRequest:
         MOV     A,#0x9
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 10)
-// 1626      HalLedBlink (HAL_LED_3, 1, 50, 200);
+// 1630      HalLedBlink (HAL_LED_3, 1, 50, 200);
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#-0x38
         MOV     R5,#0x0
         LJMP    ?Subroutine0 & 0xFFFF
           CFI EndBlock cfiBlock90
-// 1627 }
+// 1631 }
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
 ?Subroutine7:
@@ -7118,71 +7203,71 @@ SendDataRequest:
           CFI EndBlock cfiCond91
           CFI EndBlock cfiCond92
           CFI EndBlock cfiPicker93
-// 1628 
-// 1629 #if defined(GTA_WTHSB_R1)
-// 1630 uint8 readTempHumi(void)
-// 1631 {
-// 1632  float f_humi=0,f_temp=0; 
-// 1633  
-// 1634   uint8 checksum;
-// 1635  
-// 1636   /* ¿ØÖÆSHT11½øÐÐÎÂÊª¶È²âÁ¿ */
-// 1637   
-// 1638   
-// 1639   s_measure(temp_val,&checksum,TEMP); // ²âÁ¿ÎÂ¶È
-// 1640   s_measure(humi_val,&checksum,HUMI); // ²âÁ¿Ïà¶ÔÊª¶È
-// 1641   f_humi=BUILD_UINT16(humi_val[0],humi_val[1]);
-// 1642   f_temp=BUILD_UINT16(temp_val[0],temp_val[1]);
-// 1643   calc_sth11(&f_humi,&f_temp);
-// 1644   humi_val[0]=f_humi;//&(uint8)f_humi;
-// 1645   humi_val[1]=(f_humi-humi_val[0])*100;  
-// 1646   temp_val[0]=f_temp; 
-// 1647   temp_val[1]=(f_temp-temp_val[0])*100;  
-// 1648   return TRUE;
-// 1649 }
-// 1650 #endif
-// 1651 
-// 1652 #if defined(GTA_WMSCB_R1)
+// 1632 
+// 1633 #if defined(GTA_WTHSB_R1)
+// 1634 uint8 readTempHumi(void)
+// 1635 {
+// 1636  float f_humi=0,f_temp=0; 
+// 1637  
+// 1638   uint8 checksum;
+// 1639  
+// 1640   /* ¿ØÖÆSHT11½øÐÐÎÂÊª¶È²âÁ¿ */
+// 1641   
+// 1642   
+// 1643   s_measure(temp_val,&checksum,TEMP); // ²âÁ¿ÎÂ¶È
+// 1644   s_measure(humi_val,&checksum,HUMI); // ²âÁ¿Ïà¶ÔÊª¶È
+// 1645   f_humi=BUILD_UINT16(humi_val[0],humi_val[1]);
+// 1646   f_temp=BUILD_UINT16(temp_val[0],temp_val[1]);
+// 1647   calc_sth11(&f_humi,&f_temp);
+// 1648   humi_val[0]=f_humi;//&(uint8)f_humi;
+// 1649   humi_val[1]=(f_humi-humi_val[0])*100;  
+// 1650   temp_val[0]=f_temp; 
+// 1651   temp_val[1]=(f_temp-temp_val[0])*100;  
+// 1652   return TRUE;
+// 1653 }
+// 1654 #endif
+// 1655 
+// 1656 #if defined(GTA_WMSCB_R1)
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1653 void init_GTA_WMSCB(void)
+// 1657 void init_GTA_WMSCB(void)
 init_GTA_WMSCB:
           CFI Block cfiBlock94 Using cfiCommon0
           CFI Function init_GTA_WMSCB
         CODE
-// 1654 {
+// 1658 {
         ; Saved register size: 0
         ; Auto size: 0
-// 1655   P0SEL=P0SEL&0x8C;//10001100
+// 1659   P0SEL=P0SEL&0x8C;//10001100
         ANL     0xf3,#0x8c
-// 1656   P1SEL=P1SEL&0xF0;
+// 1660   P1SEL=P1SEL&0xF0;
         ANL     0xf4,#0xf0
-// 1657   P2SEL=P2SEL&0xFA;
+// 1661   P2SEL=P2SEL&0xFA;
         ANL     0xf5,#0xfa
-// 1658   //HAL_CONFIG_IO_OUTPUT(0, HAL_LCD_CS_PIN, 1);
-// 1659   IO_DIR_PORT_PIN(0, 0, IO_OUT);
+// 1662   //HAL_CONFIG_IO_OUTPUT(0, HAL_LCD_CS_PIN, 1);
+// 1663   IO_DIR_PORT_PIN(0, 0, IO_OUT);
         ORL     0xfd,#0x1
-// 1660   IO_DIR_PORT_PIN(0, 1, IO_OUT);
+// 1664   IO_DIR_PORT_PIN(0, 1, IO_OUT);
         ORL     0xfd,#0x2
-// 1661   IO_DIR_PORT_PIN(0, 4, IO_OUT);
+// 1665   IO_DIR_PORT_PIN(0, 4, IO_OUT);
         ORL     0xfd,#0x10
-// 1662   IO_DIR_PORT_PIN(0, 5, IO_OUT);
+// 1666   IO_DIR_PORT_PIN(0, 5, IO_OUT);
         ORL     0xfd,#0x20
-// 1663   IO_DIR_PORT_PIN(0, 6, IO_OUT);
+// 1667   IO_DIR_PORT_PIN(0, 6, IO_OUT);
         ORL     0xfd,#0x40
-// 1664   IO_DIR_PORT_PIN(1, 0, IO_OUT);
+// 1668   IO_DIR_PORT_PIN(1, 0, IO_OUT);
         ORL     0xfe,#0x1
-// 1665   IO_DIR_PORT_PIN(1, 1, IO_OUT);
+// 1669   IO_DIR_PORT_PIN(1, 1, IO_OUT);
         ORL     0xfe,#0x2
-// 1666   IO_DIR_PORT_PIN(1, 2, IO_OUT);
+// 1670   IO_DIR_PORT_PIN(1, 2, IO_OUT);
         ORL     0xfe,#0x4
-// 1667   IO_DIR_PORT_PIN(1, 3, IO_OUT);
+// 1671   IO_DIR_PORT_PIN(1, 3, IO_OUT);
         ORL     0xfe,#0x8
-// 1668   IO_DIR_PORT_PIN(2, 0, IO_OUT);
+// 1672   IO_DIR_PORT_PIN(2, 0, IO_OUT);
         ORL     0xff,#0x1
-// 1669   IO_DIR_PORT_PIN(2, 2, IO_OUT);
+// 1673   IO_DIR_PORT_PIN(2, 2, IO_OUT);
         ORL     0xff,#0x4
-// 1670 }
+// 1674 }
         LJMP    ?BRET
           CFI EndBlock cfiBlock94
         REQUIRE P0SEL
@@ -7191,32 +7276,32 @@ init_GTA_WMSCB:
         REQUIRE P0DIR
         REQUIRE P1DIR
         REQUIRE P2DIR
-// 1671 
+// 1675 
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1672 void ctrl_GTA_WMSCB(uint8 port,uint8 data)
+// 1676 void ctrl_GTA_WMSCB(uint8 port,uint8 data)
 ctrl_GTA_WMSCB:
           CFI Block cfiBlock95 Using cfiCommon0
           CFI Function ctrl_GTA_WMSCB
         CODE
-// 1673 {
+// 1677 {
         ; Saved register size: 0
         ; Auto size: 0
-// 1674   //uint8 i=0;
-// 1675   //init_GTA_WMSCB();
-// 1676   asm("nop"); 
-        nop
-// 1677   asm("nop"); 
-        nop
-// 1678 
-// 1679   T82C55A_WR=1;
-        SETB    0xa0.2
+// 1678   //uint8 i=0;
+// 1679   //init_GTA_WMSCB();
 // 1680   asm("nop"); 
         nop
 // 1681   asm("nop"); 
         nop
 // 1682 
-// 1683   switch(port)
+// 1683   T82C55A_WR=1;
+        SETB    0xa0.2
+// 1684   asm("nop"); 
+        nop
+// 1685   asm("nop"); 
+        nop
+// 1686 
+// 1687   switch(port)
         MOV     A,R1
         ADD     A,#-0x41
         JZ      ??ctrl_GTA_WMSCB_0
@@ -7227,165 +7312,165 @@ ctrl_GTA_WMSCB:
         ADD     A,#-0xa
         JZ      ??ctrl_GTA_WMSCB_3
         SJMP    ??ctrl_GTA_WMSCB_4
-// 1684   {
-// 1685   case        'A':
-// 1686     T82C55A_ADDR0=0;
+// 1688   {
+// 1689   case        'A':
+// 1690     T82C55A_ADDR0=0;
 ??ctrl_GTA_WMSCB_0:
         CLR     0xa0.0
-// 1687     T82C55A_ADDR1=0;
+// 1691     T82C55A_ADDR1=0;
         SJMP    ??ctrl_GTA_WMSCB_5
-// 1688     break;
-// 1689   case        'B':
-// 1690     T82C55A_ADDR0=1;
+// 1692     break;
+// 1693   case        'B':
+// 1694     T82C55A_ADDR0=1;
 ??ctrl_GTA_WMSCB_1:
         SETB    0xa0.0
-// 1691     T82C55A_ADDR1=0;
+// 1695     T82C55A_ADDR1=0;
 ??ctrl_GTA_WMSCB_5:
         CLR     0x90.3
-// 1692     break;  
+// 1696     break;  
         SJMP    ??ctrl_GTA_WMSCB_4
-// 1693   case        'C':
-// 1694     T82C55A_ADDR0=0;
+// 1697   case        'C':
+// 1698     T82C55A_ADDR0=0;
 ??ctrl_GTA_WMSCB_2:
         CLR     0xa0.0
-// 1695     T82C55A_ADDR1=1;
+// 1699     T82C55A_ADDR1=1;
         SJMP    ??ctrl_GTA_WMSCB_6
-// 1696     break;
-// 1697   case        'M':
-// 1698     T82C55A_ADDR0=1;
+// 1700     break;
+// 1701   case        'M':
+// 1702     T82C55A_ADDR0=1;
 ??ctrl_GTA_WMSCB_3:
         SETB    0xa0.0
-// 1699     T82C55A_ADDR1=1;
+// 1703     T82C55A_ADDR1=1;
 ??ctrl_GTA_WMSCB_6:
         SETB    0x90.3
-// 1700     break;
-// 1701   default:break;
-// 1702   }
-// 1703   asm("nop"); 
-??ctrl_GTA_WMSCB_4:
-        nop
-// 1704   asm("nop"); 
-        nop
-// 1705 
-// 1706   T82C55A_WR=0;
-        CLR     0xa0.2
+// 1704     break;
+// 1705   default:break;
+// 1706   }
 // 1707   asm("nop"); 
+??ctrl_GTA_WMSCB_4:
         nop
 // 1708   asm("nop"); 
         nop
 // 1709 
-// 1710   if(data&0x01)
+// 1710   T82C55A_WR=0;
+        CLR     0xa0.2
+// 1711   asm("nop"); 
+        nop
+// 1712   asm("nop"); 
+        nop
+// 1713 
+// 1714   if(data&0x01)
         MOV     A,R2
         MOV     C,0xE0 /* A   */.0
         JNC     ??ctrl_GTA_WMSCB_7
-// 1711     T82C55A_D0=1;
+// 1715     T82C55A_D0=1;
         SETB    0x80.0
         SJMP    ??ctrl_GTA_WMSCB_8
-// 1712   else
-// 1713     T82C55A_D0=0;
+// 1716   else
+// 1717     T82C55A_D0=0;
 ??ctrl_GTA_WMSCB_7:
         CLR     0x80.0
-// 1714   
-// 1715   if(data&0x02)
+// 1718   
+// 1719   if(data&0x02)
 ??ctrl_GTA_WMSCB_8:
         MOV     C,0xE0 /* A   */.1
         JNC     ??ctrl_GTA_WMSCB_9
-// 1716     T82C55A_D1=1;
+// 1720     T82C55A_D1=1;
         SETB    0x80.1
         SJMP    ??ctrl_GTA_WMSCB_10
-// 1717   else
-// 1718     T82C55A_D1=0;
+// 1721   else
+// 1722     T82C55A_D1=0;
 ??ctrl_GTA_WMSCB_9:
         CLR     0x80.1
-// 1719   
-// 1720   if(data&0x04)
+// 1723   
+// 1724   if(data&0x04)
 ??ctrl_GTA_WMSCB_10:
         MOV     C,0xE0 /* A   */.2
         JNC     ??ctrl_GTA_WMSCB_11
-// 1721     T82C55A_D2=1;
+// 1725     T82C55A_D2=1;
         SETB    0x80.4
         SJMP    ??ctrl_GTA_WMSCB_12
-// 1722   else
-// 1723     T82C55A_D2=0;
+// 1726   else
+// 1727     T82C55A_D2=0;
 ??ctrl_GTA_WMSCB_11:
         CLR     0x80.4
-// 1724   
-// 1725   if(data&0x08)
+// 1728   
+// 1729   if(data&0x08)
 ??ctrl_GTA_WMSCB_12:
         MOV     C,0xE0 /* A   */.3
         JNC     ??ctrl_GTA_WMSCB_13
-// 1726     T82C55A_D3=1;
+// 1730     T82C55A_D3=1;
         SETB    0x80.5
         SJMP    ??ctrl_GTA_WMSCB_14
-// 1727   else
-// 1728     T82C55A_D3=0;
+// 1731   else
+// 1732     T82C55A_D3=0;
 ??ctrl_GTA_WMSCB_13:
         CLR     0x80.5
-// 1729   
-// 1730   if(data&0x10)
+// 1733   
+// 1734   if(data&0x10)
 ??ctrl_GTA_WMSCB_14:
         MOV     C,0xE0 /* A   */.4
         JNC     ??ctrl_GTA_WMSCB_15
-// 1731     T82C55A_D4=1;
+// 1735     T82C55A_D4=1;
         SETB    0x80.6
         SJMP    ??ctrl_GTA_WMSCB_16
-// 1732   else
-// 1733     T82C55A_D4=0;
+// 1736   else
+// 1737     T82C55A_D4=0;
 ??ctrl_GTA_WMSCB_15:
         CLR     0x80.6
-// 1734   
-// 1735   if(data&0x20)
+// 1738   
+// 1739   if(data&0x20)
 ??ctrl_GTA_WMSCB_16:
         MOV     C,0xE0 /* A   */.5
         JNC     ??ctrl_GTA_WMSCB_17
-// 1736     T82C55A_D5=1;
+// 1740     T82C55A_D5=1;
         SETB    0x90.0
         SJMP    ??ctrl_GTA_WMSCB_18
-// 1737   else
-// 1738     T82C55A_D5=0;
+// 1741   else
+// 1742     T82C55A_D5=0;
 ??ctrl_GTA_WMSCB_17:
         CLR     0x90.0
-// 1739   
-// 1740   if(data&0x40)
+// 1743   
+// 1744   if(data&0x40)
 ??ctrl_GTA_WMSCB_18:
         MOV     C,0xE0 /* A   */.6
         JNC     ??ctrl_GTA_WMSCB_19
-// 1741     T82C55A_D6=1;
+// 1745     T82C55A_D6=1;
         SETB    0x90.1
         SJMP    ??ctrl_GTA_WMSCB_20
-// 1742   else
-// 1743     T82C55A_D6=0;
+// 1746   else
+// 1747     T82C55A_D6=0;
 ??ctrl_GTA_WMSCB_19:
         CLR     0x90.1
-// 1744   
-// 1745   if(data&0x80)
+// 1748   
+// 1749   if(data&0x80)
 ??ctrl_GTA_WMSCB_20:
         MOV     C,0xE0 /* A   */.7
         JNC     ??ctrl_GTA_WMSCB_21
-// 1746     T82C55A_D7=1;
+// 1750     T82C55A_D7=1;
         SETB    0x90.2
         SJMP    ??ctrl_GTA_WMSCB_22
-// 1747   else
-// 1748     T82C55A_D7=0;
+// 1751   else
+// 1752     T82C55A_D7=0;
 ??ctrl_GTA_WMSCB_21:
         CLR     0x90.2
-// 1749   asm("nop"); 
-??ctrl_GTA_WMSCB_22:
-        nop
-// 1750   asm("nop"); 
-        nop
-// 1751 
-// 1752   T82C55A_WR=1;
-        SETB    0xa0.2
 // 1753   asm("nop"); 
+??ctrl_GTA_WMSCB_22:
         nop
 // 1754   asm("nop"); 
         nop
 // 1755 
-// 1756   T82C55A_WR=0;
+// 1756   T82C55A_WR=1;
+        SETB    0xa0.2
+// 1757   asm("nop"); 
+        nop
+// 1758   asm("nop"); 
+        nop
+// 1759 
+// 1760   T82C55A_WR=0;
         CLR     0xa0.2
-// 1757   
-// 1758 }
+// 1761   
+// 1762 }
         LJMP    ?BRET
           CFI EndBlock cfiBlock95
         REQUIRE _A_P2
@@ -7618,10 +7703,10 @@ __Constant_447a0000:
         DD 447A0000H
 
         END
-// 1759 
-// 1760 #endif
+// 1763 
+// 1764 #endif
 // 
-// 3 456 bytes in segment BANKED_CODE
+// 3 498 bytes in segment BANKED_CODE
 //   144 bytes in segment BANK_RELAYS
 //    13 bytes in segment SFR_AN
 //     1 byte  in segment XDATA_I
@@ -7629,7 +7714,7 @@ __Constant_447a0000:
 //    55 bytes in segment XDATA_ROM_C
 //   163 bytes in segment XDATA_Z
 // 
-// 3 601 bytes of CODE  memory
+// 3 643 bytes of CODE  memory
 //    43 bytes of CONST memory (+ 12 bytes shared)
 //     0 bytes of DATA  memory (+ 13 bytes shared)
 //   164 bytes of XDATA memory

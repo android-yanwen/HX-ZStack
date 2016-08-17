@@ -16,4 +16,6 @@ extern void HC595StoreData(uint8 val);
 extern void HC595SendData(void);
 extern void DisplaySmg(uint8 num);
 extern void ControlStepMotor(uint8 flg);
+extern void ControlBeep(uint8 flg);
+extern void ControlRelay(uint8 flg);
 #endif

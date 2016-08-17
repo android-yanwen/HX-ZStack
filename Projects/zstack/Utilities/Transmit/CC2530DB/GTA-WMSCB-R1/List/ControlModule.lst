@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-# IAR C/C++ Compiler V8.20.2.41139 for 8051             17/Aug/2016  12:15:56 #
+# IAR C/C++ Compiler V8.20.2.41139 for 8051             17/Aug/2016  14:41:20 #
 # Copyright 2004-2013 IAR Systems AB.                                         #
 #                                                                             #
 #    Core               =  plain                                              #
@@ -10,17 +10,19 @@
 #    Constant location  =  data_rom                                           #
 #    Dptr setup         =  1,16                                               #
 #                                                                             #
-#    Source file        =  E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\Source\ControlModule.c           #
-#    Command line       =  -f E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstac #
-#                          k\Utilities\Transmit\CC2530DB\..\..\..\Tools\CC253 #
-#                          0DB\f8wEndev.cfg (-DCPU32MHZ -DROOT=__near_func    #
-#                          -DMAC_CFG_TX_DATA_MAX=3 -DMAC_CFG_TX_MAX=6         #
-#                          -DMAC_CFG_RX_MAX=3) -f E:\ZSTACK-GTAMODBUS-v1.0£¨Û #
-#                          ³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2530DB\ #
-#                          ..\..\..\Tools\CC2530DB\f8wConfig.cfg              #
-#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
-#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x00001000          #
+#    Source file        =  E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\Source\ControlModule. #
+#                          c                                                  #
+#    Command line       =  -f E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Pro #
+#                          jects\zstack\Utilities\Transmit\CC2530DB\..\..\..\ #
+#                          Tools\CC2530DB\f8wEndev.cfg (-DCPU32MHZ            #
+#                          -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3         #
+#                          -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f          #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\Too #
+#                          ls\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO -DSECURE=0  #
+#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
+#                          -DDEFAULT_CHANLIST=0x00001000                      #
 #                          -DZDAPP_CONFIG_PAN_ID=0x1178                       #
 #                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
 #                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
@@ -41,86 +43,94 @@
 #                          __code" -DGENERIC=__generic                        #
 #                          -DRFD_RCVC_ALWAYS_ON=TRUE -DPOLL_RATE=1000         #
 #                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
-#                          -DREJOIN_POLL_RATE=440 E:\ZSTACK-GTAMODBUS-v1.0£¨Û #
-#                          ³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\Co #
-#                          ntrolModule.c -D xNWK_AUTO_POLL -D xMT_TASK -D     #
-#                          xZTOOL_P1 -D xMT_SYS_FUNC -D xMT_ZDO_FUNC -D       #
-#                          ZDNWKMGR_MIN_TRANSMISSIONS=0 -D xGTA_DEBUG -D      #
-#                          ZIGBEEPRO -D GTA_WMSCB_R1 -lC                      #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\GTA-WMSCB-R1\List\ -lA  #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\GTA-WMSCB-R1\List\      #
-#                          --diag_suppress Pe001,Pa010 -o                     #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\GTA-WMSCB-R1\Obj\ -e    #
-#                          --no_code_motion --debug --core=plain --dptr=16,1  #
-#                          --data_model=large --code_model=banked             #
-#                          --calling_convention=xdata_reentrant               #
-#                          --place_constants=data_rom --nr_virtual_regs 16    #
-#                          -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstac #
-#                          k\Utilities\Transmit\CC2530DB\ -I                  #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\..\Source\ -I           #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\..\..\..\ZMain\TI2530DB #
-#                          \ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zst #
-#                          ack\Utilities\Transmit\CC2530DB\..\..\..\..\..\Com #
-#                          ponents\hal\include\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨ #
-#                          Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2530DB #
-#                          \..\..\..\..\..\Components\hal\target\CC2530EB\    #
-#                          -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstac #
-#                          k\Utilities\Transmit\CC2530DB\..\..\..\..\..\Compo #
-#                          nents\mac\include\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ #
-#                          ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2530DB\. #
-#                          .\..\..\..\..\Components\mac\high_level\ -I        #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\..\..\..\..\..\Componen #
-#                          ts\mac\low_level\srf04\ -I                         #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\..\..\..\..\..\Componen #
-#                          ts\mac\low_level\srf04\single_chip\ -I             #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\..\..\..\..\..\Componen #
-#                          ts\mt\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Project #
-#                          s\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\. #
-#                          .\Components\osal\include\ -I                      #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\..\..\..\..\..\Componen #
-#                          ts\services\saddr\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ #
-#                          ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2530DB\. #
-#                          .\..\..\..\..\Components\services\sdata\ -I        #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\..\..\..\..\..\Componen #
-#                          ts\stack\af\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\P #
-#                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\. #
-#                          .\..\..\Components\stack\nwk\ -I                   #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\..\..\..\..\..\Componen #
-#                          ts\stack\sapi\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£© #
-#                          \Projects\zstack\Utilities\Transmit\CC2530DB\..\.. #
-#                          \..\..\..\Components\stack\sec\ -I                 #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\..\..\..\..\..\Componen #
-#                          ts\stack\sys\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\ #
-#                          Projects\zstack\Utilities\Transmit\CC2530DB\..\..\ #
-#                          ..\..\..\Components\stack\zdo\ -I                  #
-#                          E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\..\..\..\..\..\Componen #
-#                          ts\zmac\ -I E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje #
-#                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\.. #
-#                          \..\Components\zmac\f8w\ -Ohz --require_prototypes #
-#    List file          =  E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\GTA-WMSCB-R1\List\Contr #
-#                          olModule.lst                                       #
-#    Object file        =  E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\U #
-#                          tilities\Transmit\CC2530DB\GTA-WMSCB-R1\Obj\Contro #
-#                          lModule.r51                                        #
+#                          -DREJOIN_POLL_RATE=440 E:\AndroidStu\ZSTACK-GTAMOD #
+#                          BUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmi #
+#                          t\Source\ControlModule.c -D xNWK_AUTO_POLL -D      #
+#                          xMT_TASK -D xZTOOL_P1 -D xMT_SYS_FUNC -D           #
+#                          xMT_ZDO_FUNC -D ZDNWKMGR_MIN_TRANSMISSIONS=0 -D    #
+#                          xGTA_DEBUG -D ZIGBEEPRO -D GTA_WMSCB_R1 -lC        #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\GTA-WMSCB-R1 #
+#                          \List\ -lA E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ #
+#                          ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2530DB\G #
+#                          TA-WMSCB-R1\List\ --diag_suppress Pe001,Pa010 -o   #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\GTA-WMSCB-R1 #
+#                          \Obj\ -e --no_code_motion --debug --core=plain     #
+#                          --dptr=16,1 --data_model=large                     #
+#                          --code_model=banked --calling_convention=xdata_ree #
+#                          ntrant --place_constants=data_rom                  #
+#                          --nr_virtual_regs 16 -I E:\AndroidStu\ZSTACK-GTAMO #
+#                          DBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transm #
+#                          it\CC2530DB\ -I E:\AndroidStu\ZSTACK-GTAMODBUS-v1. #
+#                          0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC253 #
+#                          0DB\..\Source\ -I E:\AndroidStu\ZSTACK-GTAMODBUS-v #
+#                          1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2 #
+#                          530DB\..\..\..\ZMain\TI2530DB\ -I                  #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\hal\include\ -I                      #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\hal\target\CC2530EB\ -I              #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\mac\include\ -I                      #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\mac\high_level\ -I                   #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\mac\low_level\srf04\ -I              #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\mac\low_level\srf04\single_chip\ -I  #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\mt\ -I E:\AndroidStu\ZSTACK-GTAMODBU #
+#                          S-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\ #
+#                          CC2530DB\..\..\..\..\..\Components\osal\include\   #
+#                          -I E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Pro #
+#                          jects\zstack\Utilities\Transmit\CC2530DB\..\..\..\ #
+#                          ..\..\Components\services\saddr\ -I                #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\services\sdata\ -I                   #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\stack\af\ -I                         #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\stack\nwk\ -I                        #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\stack\sapi\ -I                       #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\stack\sec\ -I                        #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\stack\sys\ -I                        #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\stack\zdo\ -I                        #
+#                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\..\..\..\..\ #
+#                          ..\Components\zmac\ -I E:\AndroidStu\ZSTACK-GTAMOD #
+#                          BUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmi #
+#                          t\CC2530DB\..\..\..\..\..\Components\zmac\f8w\     #
+#                          -Ohz --require_prototypes                          #
+#    List file          =  E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\GTA-WMSCB-R1 #
+#                          \List\ControlModule.lst                            #
+#    Object file        =  E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projec #
+#                          ts\zstack\Utilities\Transmit\CC2530DB\GTA-WMSCB-R1 #
+#                          \Obj\ControlModule.r51                             #
 #                                                                             #
 #                                                                             #
 ###############################################################################
 
-E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\ControlModule.c
+E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\ControlModule.c
       1          #include "ControlModule.h"
 
    \                                 In  segment SFR_AN, at 0x80
@@ -229,13 +239,20 @@ E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\Contr
      17              HC595StoreData(0x00);
    \   000030                ; Setup parameters for call to function HC595StoreData
    \   000030   7900         MOV     R1,#0x0
-   \   000032   12....       LCALL   ??HC595StoreData?relay
+   \   000032                REQUIRE ?Subroutine0
+   \   000032                ; // Fall through to label ?Subroutine0
      18              HC595SendData();
-   \   000035                ; Setup parameters for call to function HC595SendData
-   \   000035   12....       LCALL   ??HC595SendData?relay
      19          }
-   \   000038   7F01         MOV     R7,#0x1
-   \   00003A   02....       LJMP    ?BANKED_LEAVE_XDATA
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine0:
+   \   000000   12....       LCALL   ??HC595StoreData?relay
+   \   000003                ; Setup parameters for call to function HC595SendData
+   \   000003                ; Setup parameters for call to function HC595SendData
+   \   000003                ; Setup parameters for call to function HC595SendData
+   \   000003   12....       LCALL   ??HC595SendData?relay
+   \   000006   7F01         MOV     R7,#0x1
+   \   000008   02....       LJMP    ?BANKED_LEAVE_XDATA
      20          
      21          /**
      22          * Desc:¿ØÖÆµç»úÕý·´×ª
@@ -277,7 +294,7 @@ E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\Contr
    \   00001D                ; Setup parameters for call to function HC595StoreData
    \   00001D   7900         MOV     R1,#0x0
    \   00001F   12....       LCALL   ??HC595StoreData?relay
-     35                      if(flg == 0x00)
+     35                      if(flg == 0x00) //Õý×ª
    \   000022   E5..         MOV     A,?V0 + 2
    \   000024   8E..         MOV     ?V0 + 0,R6
    \   000026   700A         JNZ     ??ControlStepMotor_2
@@ -322,51 +339,166 @@ E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\Contr
    \   000057   1F           DEC     R7
    \   000058   EF           MOV     A,R7
    \   000059   70B1         JNZ     ??ControlStepMotor_0
-     43              
-     44          }
+     43          }
    \   00005B   7F03         MOV     R7,#0x3
    \   00005D   02....       LJMP    ?BANKED_LEAVE_XDATA
-     45          
-     46          /**
-     47          * ³õÊ¼»¯HC595µÄIO¿Ú
+     44          /**
+     45          * Desc: ·¢ËÍÊý¾Ýµ½595£¬¿ØÖÆ·äÃùÆ÷µÄ¿ª¹Ø
+     46          * Param: flg 0x00 ´ò¿ª
+     47          *            0xff ¹Ø±Õ
      48          */
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-     49          void HC595IOInit(void){
+     49          void ControlBeep(uint8 flg){
+   \                     ControlBeep:
+   \   000000   74F7         MOV     A,#-0x9
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 9
+   \   000005                ; Auto size: 0
+   \   000005   E9           MOV     A,R1
+   \   000006   FE           MOV     R6,A
+     50              uint8 u_StepNum, i;
+                           ^
+Warning[Pe177]: variable "u_StepNum" was declared but never referenced
+
+      uint8 u_StepNum, i;
+                       ^
+"E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\ControlModule.c",50  Warning[Pe177]: 
+          variable "i" was declared but never referenced
+     51              HC595IOInit();
+   \   000007                ; Setup parameters for call to function HC595IOInit
+   \   000007   12....       LCALL   ??HC595IOInit?relay
+     52              HC595StoreData(0x00);
+   \   00000A                ; Setup parameters for call to function HC595StoreData
+   \   00000A   7900         MOV     R1,#0x0
+   \   00000C   12....       LCALL   ??HC595StoreData?relay
+     53              HC595StoreData(0x00);
+   \   00000F                ; Setup parameters for call to function HC595StoreData
+   \   00000F   7900         MOV     R1,#0x0
+   \   000011   12....       LCALL   ??HC595StoreData?relay
+     54              HC595StoreData(0x00);
+   \   000014                ; Setup parameters for call to function HC595StoreData
+   \   000014   7900         MOV     R1,#0x0
+   \   000016   12....       LCALL   ??HC595StoreData?relay
+     55              HC595StoreData(0x00);
+   \   000019                ; Setup parameters for call to function HC595StoreData
+   \   000019   7900         MOV     R1,#0x0
+   \   00001B   12....       LCALL   ??HC595StoreData?relay
+     56              if(flg == 0x00)//¿ª·äÃùÆ÷
+   \   00001E   EE           MOV     A,R6
+   \   00001F   7004         JNZ     ??ControlBeep_0
+     57                  HC595StoreData(0x20);
+   \   000021                ; Setup parameters for call to function HC595StoreData
+   \   000021   7920         MOV     R1,#0x20
+   \   000023   8002         SJMP    ??ControlBeep_1
+     58              else 
+     59                  HC595StoreData(0x00);
+   \                     ??ControlBeep_0:
+   \   000025                ; Setup parameters for call to function HC595StoreData
+   \   000025   7900         MOV     R1,#0x0
+   \                     ??ControlBeep_1:
+   \   000027   02....       LJMP    ?Subroutine0 & 0xFFFF
+     60              HC595SendData();
+     61          }
+     62          /**
+     63          * Desc: ·¢ËÍÊý¾Ýµ½595£¬¿ØÖÆ¼ÌµçÆ÷µÄ¿ª¹Ø
+     64          * Param: flg 0x00 ´ò¿ª
+     65          *            0xff ¹Ø±Õ
+     66          */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     67          void ControlRelay(uint8 flg){
+   \                     ControlRelay:
+   \   000000   74F7         MOV     A,#-0x9
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 9
+   \   000005                ; Auto size: 0
+   \   000005   E9           MOV     A,R1
+   \   000006   FE           MOV     R6,A
+     68              uint8 u_StepNum, i;
+                           ^
+Warning[Pe177]: variable "u_StepNum" was declared but never referenced
+
+      uint8 u_StepNum, i;
+                       ^
+"E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\ControlModule.c",68  Warning[Pe177]: 
+          variable "i" was declared but never referenced
+     69              HC595IOInit();
+   \   000007                ; Setup parameters for call to function HC595IOInit
+   \   000007   12....       LCALL   ??HC595IOInit?relay
+     70              HC595StoreData(0x00);
+   \   00000A                ; Setup parameters for call to function HC595StoreData
+   \   00000A   7900         MOV     R1,#0x0
+   \   00000C   12....       LCALL   ??HC595StoreData?relay
+     71              HC595StoreData(0x00);
+   \   00000F                ; Setup parameters for call to function HC595StoreData
+   \   00000F   7900         MOV     R1,#0x0
+   \   000011   12....       LCALL   ??HC595StoreData?relay
+     72              HC595StoreData(0x00);
+   \   000014                ; Setup parameters for call to function HC595StoreData
+   \   000014   7900         MOV     R1,#0x0
+   \   000016   12....       LCALL   ??HC595StoreData?relay
+     73              HC595StoreData(0x00);
+   \   000019                ; Setup parameters for call to function HC595StoreData
+   \   000019   7900         MOV     R1,#0x0
+   \   00001B   12....       LCALL   ??HC595StoreData?relay
+     74              if(flg == 0x00)//¼ÌµçÆ÷¿ª¹Ø±ÕºÏ
+   \   00001E   EE           MOV     A,R6
+   \   00001F   7004         JNZ     ??ControlRelay_0
+     75                  HC595StoreData(0x10);
+   \   000021                ; Setup parameters for call to function HC595StoreData
+   \   000021   7910         MOV     R1,#0x10
+   \   000023   8002         SJMP    ??ControlRelay_1
+     76              else 
+     77                  HC595StoreData(0x00);
+   \                     ??ControlRelay_0:
+   \   000025                ; Setup parameters for call to function HC595StoreData
+   \   000025   7900         MOV     R1,#0x0
+   \                     ??ControlRelay_1:
+   \   000027   02....       LJMP    ?Subroutine0 & 0xFFFF
+     78              HC595SendData();
+     79          }
+     80          
+     81          /**
+     82          * ³õÊ¼»¯HC595µÄIO¿Ú
+     83          */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     84          void HC595IOInit(void){
    \                     HC595IOInit:
    \   000000                ; Saved register size: 0
    \   000000                ; Auto size: 0
-     50              IO_DIR_PORT_PIN(0, 0, IO_OUT);
+     85              IO_DIR_PORT_PIN(0, 0, IO_OUT);
    \   000000   43FD01       ORL     0xfd,#0x1
-     51              IO_DIR_PORT_PIN(0, 1, IO_OUT);
+     86              IO_DIR_PORT_PIN(0, 1, IO_OUT);
    \   000003   43FD02       ORL     0xfd,#0x2
-     52              IO_DIR_PORT_PIN(0, 4, IO_OUT);
+     87              IO_DIR_PORT_PIN(0, 4, IO_OUT);
    \   000006   43FD10       ORL     0xfd,#0x10
-     53              IO_DIR_PORT_PIN(1, 2, IO_OUT);
+     88              IO_DIR_PORT_PIN(1, 2, IO_OUT);
    \   000009   43FE04       ORL     0xfe,#0x4
-     54              EN = 0;
+     89              EN = 0;
    \   00000C   C292         CLR     0x90.2
-     55          }
+     90          }
    \   00000E   02....       LJMP    ?BRET
    \   000011                REQUIRE P0DIR
    \   000011                REQUIRE P1DIR
    \   000011                REQUIRE _A_P1
-     56          
-     57          /**
-     58          * ½«valÊý¾Ý´æÈë595Ëø´æÆ÷
-     59          */
+     91          
+     92          /**
+     93          * ½«valÊý¾Ý´æÈë595Ëø´æÆ÷
+     94          */
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-     60          void HC595StoreData(uint8 val){
+     95          void HC595StoreData(uint8 val){
    \                     HC595StoreData:
    \   000000   C0..         PUSH    ?V0 + 0
    \   000002   C0..         PUSH    ?V0 + 1
    \   000004                ; Saved register size: 2
    \   000004                ; Auto size: 0
-     61              uint8 i;
-     62              for(i = 0; i < 8; i++){
+     96              uint8 i;
+     97              for(i = 0; i < 8; i++){
    \   000004   7A00         MOV     R2,#0x0
-     63                  if((val << i) & 0x80){
+     98                  if((val << i) & 0x80){
    \                     ??HC595StoreData_0:
    \   000006   89..         MOV     ?V0 + 0,R1
    \   000008   75..00       MOV     ?V0 + 1,#0x0
@@ -376,45 +508,45 @@ E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\Contr
    \   000011   E5..         MOV     A,?V0 + 0
    \   000013   5480         ANL     A,#0x80
    \   000015   6004         JZ      ??HC595StoreData_1
-     64                      DI = 1;
+     99                      DI = 1;
    \   000017   D280         SETB    0x80.0
    \   000019   8002         SJMP    ??HC595StoreData_2
-     65                  } else {
-     66                      DI = 0;
+    100                  } else {
+    101                      DI = 0;
    \                     ??HC595StoreData_1:
    \   00001B   C280         CLR     0x80.0
-     67                  }
-     68                  SCLK = 0;
+    102                  }
+    103                  SCLK = 0;
    \                     ??HC595StoreData_2:
    \   00001D   C281         CLR     0x80.1
-     69                  SCLK = 1;
+    104                  SCLK = 1;
    \   00001F   D281         SETB    0x80.1
-     70              }
+    105              }
    \   000021   0A           INC     R2
    \   000022   EA           MOV     A,R2
    \   000023   C3           CLR     C
    \   000024   9408         SUBB    A,#0x8
    \   000026   40DE         JC      ??HC595StoreData_0
-     71          }
+    106          }
    \   000028   D0..         POP     ?V0 + 1
    \   00002A   D0..         POP     ?V0 + 0
    \   00002C   02....       LJMP    ?BRET
    \   00002F                REQUIRE _A_P0
-     72          
-     73          /**
-     74          * ½«Ëø´æÆ÷ÖÐµÄÊý¾Ý²¢ÐÐÊä³ö£¬ÊÍ·ÅÊý¾Ý
-     75          */
+    107          
+    108          /**
+    109          * ½«Ëø´æÆ÷ÖÐµÄÊý¾Ý²¢ÐÐÊä³ö£¬ÊÍ·ÅÊý¾Ý
+    110          */
 
    \                                 In  segment BANKED_CODE, align 1, keep-with-next
-     76          void HC595SendData(void){
+    111          void HC595SendData(void){
    \                     HC595SendData:
    \   000000                ; Saved register size: 0
    \   000000                ; Auto size: 0
-     77              RCLK = 0;
+    112              RCLK = 0;
    \   000000   C284         CLR     0x80.4
-     78              RCLK = 1;
+    113              RCLK = 1;
    \   000002   D284         SETB    0x80.4
-     79          }
+    114          }
    \   000004   02....       LJMP    ?BRET
    \   000007                REQUIRE _A_P0
 
@@ -427,6 +559,16 @@ E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\Contr
    \                     ??ControlStepMotor?relay:
    \   000000   12....       LCALL   ?BDISPATCH
    \   000003   ......       DC24    ControlStepMotor
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??ControlBeep?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    ControlBeep
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??ControlRelay?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    ControlRelay
 
    \                                 In  segment BANK_RELAYS, align 1
    \                     ??HC595IOInit?relay:
@@ -442,12 +584,20 @@ E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\Contr
    \                     ??HC595SendData?relay:
    \   000000   12....       LCALL   ?BDISPATCH
    \   000003   ......       DC24    HC595SendData
-     80          
+    115          
 
    Maximum stack usage in bytes:
 
    ISTACK PSTACK XSTACK Function
    ------ ------ ------ --------
+       0      0      9  ControlBeep
+                          0 0  9 -> HC595IOInit
+                          0 0  9 -> HC595SendData
+                          0 0  9 -> HC595StoreData
+       0      0      9  ControlRelay
+                          0 0  9 -> HC595IOInit
+                          0 0  9 -> HC595SendData
+                          0 0  9 -> HC595StoreData
        0      0     11  ControlStepMotor
                           0 0 11 -> HC595IOInit
                           0 0 11 -> HC595SendData
@@ -466,13 +616,18 @@ E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\Contr
 
    Bytes  Function/Label
    -----  --------------
+       6  ??ControlBeep?relay
+       6  ??ControlRelay?relay
        6  ??ControlStepMotor?relay
        6  ??DisplaySmg?relay
        6  ??HC595IOInit?relay
        6  ??HC595SendData?relay
        6  ??HC595StoreData?relay
+      11  ?Subroutine0
+      42  ControlBeep
+      42  ControlRelay
       96  ControlStepMotor
-      61  DisplaySmg
+      50  DisplaySmg
       17  HC595IOInit
        7  HC595SendData
       47  HC595StoreData
@@ -485,14 +640,14 @@ E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\Contr
       10  smgCode
 
  
- 228 bytes in segment BANKED_CODE
-  30 bytes in segment BANK_RELAYS
+ 312 bytes in segment BANKED_CODE
+  42 bytes in segment BANK_RELAYS
    4 bytes in segment SFR_AN
   26 bytes in segment XDATA_ROM_C
  
- 258 bytes of CODE  memory
+ 354 bytes of CODE  memory
   26 bytes of CONST memory
    0 bytes of DATA  memory (+ 4 bytes shared)
 
 Errors: none
-Warnings: none
+Warnings: 4

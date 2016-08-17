@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-400062196
+Checksum=-1355838368
 [CallStack]
 ShowArgs=0
 [Disassembly]
@@ -90,6 +90,13 @@ Fmt23={W}0:pBuf[5]	4	0
 Fmt24={W}0:pBuf[6]	4	0
 Fmt25={W}0:temp_val[0]	3	0
 Fmt26={W}0:temp_val[1]	3	0
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\..\..\Components\hal\target\CC2530EB\hal_key.c}.531.2" 0 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "LogicalCode:0x2FBB6" 0 0 0 0 "" 0 ""
+Count=2
+[ChipconEmu]
+Stop timers on halt=0
+Leave target running=1
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -97,13 +104,9 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[Breakpoints]
-Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\..\..\Components\hal\target\CC2530EB\hal_key.c}.531.1" 0 0 0 0 "" 0 ""
-Bp1=_ "STD_CODE" "LogicalCode:0x2FBB6" 0 0 0 0 "" 0 ""
-Count=2
-[ChipconEmu]
-Stop timers on halt=0
-Leave target running=1
 [Aliases]
-Count=0
-SuppressDialog=0
+A0=_ "E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Components\mac\low_level\srf04\single_chip\mac_mcu.c" ""
+A1=_ "E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Components\stack\zdo\ZDObject.c" ""
+A2=_ "E:\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+Count=3
+SuppressDialog=1
