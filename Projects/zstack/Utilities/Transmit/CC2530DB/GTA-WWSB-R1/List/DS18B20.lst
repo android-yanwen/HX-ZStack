@@ -1,0 +1,582 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.20.2.41139 for 8051             11/Aug/2016  19:01:05 #
+# Copyright 2004-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#                                                                             #
+#    Source file        =  D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\Source\DS18B20.c  #
+#    Command line       =  -f D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£© #
+#                          \Projects\zstack\Utilities\Transmit\CC2530DB\..\.. #
+#                          \..\Tools\CC2530DB\f8wEndev.cfg (-DCPU32MHZ        #
+#                          -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3         #
+#                          -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f          #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \Tools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO         #
+#                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR       #
+#                          -DDEFAULT_CHANLIST=0x00001000                      #
+#                          -DZDAPP_CONFIG_PAN_ID=0x1178                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=3             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=2    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=TRUE -DPOLL_RATE=1000         #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 D:\work\ZSTACK-GTAMODBUS-Ö÷ #
+#                          ¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Projects\zstack\Utilities\Tra #
+#                          nsmit\Source\DS18B20.c -D NWK_AUTO_POLL -D         #
+#                          MT_TASK -D ZTOOL_P1 -D MT_SYS_FUNC -D MT_ZDO_FUNC  #
+#                          -D ZDNWKMGR_MIN_TRANSMISSIONS=0 -D GTA_DEBUG -D    #
+#                          ZIGBEEPRO -D GTA_WWSB_R1 -lC                       #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\GTA-WWSB #
+#                          -R1\List\ -lA D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140 #
+#                          707£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2 #
+#                          530DB\GTA-WWSB-R1\List\ --diag_suppress            #
+#                          Pe001,Pa010 -o D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«14 #
+#                          0707£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC #
+#                          2530DB\GTA-WWSB-R1\Obj\ -e --no_code_motion        #
+#                          --debug --core=plain --dptr=16,1                   #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£© #
+#                          \Projects\zstack\Utilities\Transmit\CC2530DB\ -I   #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\Sourc #
+#                          e\ -I D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³Î #
+#                          Ä£©\Projects\zstack\Utilities\Transmit\CC2530DB\.. #
+#                          \..\..\ZMain\TI2530DB\ -I                          #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\hal\include\ -I                  #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\hal\target\CC2530EB\ -I          #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\mac\include\ -I                  #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\mac\high_level\ -I               #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\mac\low_level\srf04\ -I          #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\mac\low_level\srf04\single_chip\ #
+#                           -I D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£ #
+#                          ©\Projects\zstack\Utilities\Transmit\CC2530DB\..\. #
+#                          .\..\..\..\Components\mt\ -I                       #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\osal\include\ -I                 #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\services\saddr\ -I               #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\services\sdata\ -I               #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\stack\af\ -I                     #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\stack\nwk\ -I                    #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\stack\sapi\ -I                   #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\stack\sec\ -I                    #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\stack\sys\ -I                    #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\stack\zdo\ -I                    #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\zmac\ -I                         #
+#                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\.. #
+#                          \..\..\Components\zmac\f8w\ -Ohz                   #
+#                          --require_prototypes                               #
+#    List file          =  D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\GTA-WWSB #
+#                          -R1\List\DS18B20.lst                               #
+#    Object file        =  D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Pr #
+#                          ojects\zstack\Utilities\Transmit\CC2530DB\GTA-WWSB #
+#                          -R1\Obj\DS18B20.r51                                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\DS18B20.c
+      1          #include "DS18B20.h"
+
+   \                                 In  segment SFR_AN, at 0x80
+   \   union <unnamed> volatile __sfr _A_P0
+   \                     _A_P0:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xfd
+   \   unsigned char volatile __sfr P0DIR
+   \                     P0DIR:
+   \   000000                DS 1
+      2          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+      3          unsigned char sensor_data_values[2];
+   \                     sensor_data_values:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+      4          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+      5          void Delay_nus( uint16 s ){
+   \                     Delay_nus:
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+   \   000000   8003         SJMP    ??Delay_nus_0
+      6              while ( s-- ) {
+      7                  asm("NOP");
+   \                     ??Delay_nus_1:
+   \   000002   00           NOP
+      8                  asm("NOP");
+   \   000003   00           NOP
+      9                  asm("NOP");
+   \   000004   00           NOP
+     10              }
+   \                     ??Delay_nus_0:
+   \   000005   EA           MOV     A,R2
+   \   000006   F8           MOV     R0,A
+   \   000007   EB           MOV     A,R3
+   \   000008   F9           MOV     R1,A
+   \   000009   E8           MOV     A,R0
+   \   00000A   24FF         ADD     A,#-0x1
+   \   00000C   1A           DEC     R2
+   \   00000D   E9           MOV     A,R1
+   \   00000E   34FF         ADDC    A,#-0x1
+   \   000010   FB           MOV     R3,A
+   \   000011   E8           MOV     A,R0
+   \   000012   49           ORL     A,R1
+   \   000013   70ED         JNZ     ??Delay_nus_1
+     11          }
+   \   000015   02....       LJMP    ?BRET
+     12          
+     13          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     14          void write_1820 ( unsigned char x ){
+   \                     write_1820:
+   \   000000   74F6         MOV     A,#-0xa
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 10
+   \   000005                ; Auto size: 0
+   \   000005   E9           MOV     A,R1
+   \   000006   FF           MOV     R7,A
+     15              unsigned char m;
+     16              SET_OUT;
+   \   000007   43FD02       ORL     0xfd,#0x2
+     17              for(m = 0; m < 8; m++){
+   \   00000A   7E00         MOV     R6,#0x0
+     18                  CL_DQ;
+   \                     ??write_1820_0:
+   \   00000C   C281         CLR     0x80.1
+     19                  if(x&(1<<m)){
+   \   00000E   75..01       MOV     ?V0 + 0,#0x1
+   \   000011   75..00       MOV     ?V0 + 1,#0x0
+   \   000014   EE           MOV     A,R6
+   \   000015   78..         MOV     R0,#?V0 + 0
+   \   000017   12....       LCALL   ?S_SHL
+   \   00001A   E5..         MOV     A,?V0 + 0
+   \   00001C   5F           ANL     A,R7
+   \   00001D   6004         JZ      ??write_1820_1
+     20                      SET_DQ;
+   \   00001F   D281         SETB    0x80.1
+   \   000021   8002         SJMP    ??write_1820_2
+     21                  } else {
+     22                      CL_DQ;
+   \                     ??write_1820_1:
+   \   000023   C281         CLR     0x80.1
+     23                  }
+     24                  Delay_nus(40);   //50~60us
+   \                     ??write_1820_2:
+   \   000025                ; Setup parameters for call to function Delay_nus
+   \   000025   7A28         MOV     R2,#0x28
+   \   000027   7B00         MOV     R3,#0x0
+   \   000029   12....       LCALL   ??Delay_nus?relay
+     25                  SET_DQ;
+   \   00002C   D281         SETB    0x80.1
+     26              }
+   \   00002E   0E           INC     R6
+   \   00002F   EE           MOV     A,R6
+   \   000030   C3           CLR     C
+   \   000031   9408         SUBB    A,#0x8
+   \   000033   40D7         JC      ??write_1820_0
+     27          }
+   \   000035   7F02         MOV     R7,#0x2
+   \   000037   02....       LJMP    ?BANKED_LEAVE_XDATA
+   \   00003A                REQUIRE P0DIR
+   \   00003A                REQUIRE _A_P0
+     28          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     29          unsigned char read_1820(void){
+   \                     read_1820:
+   \   000000   74F4         MOV     A,#-0xc
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 12
+   \   000005                ; Auto size: 0
+     30              unsigned char temp, k, n;
+     31              temp = 0;
+   \   000005   75..00       MOV     ?V0 + 0,#0x0
+     32              for(n = 0; n < 8; n++){
+   \   000008   7E00         MOV     R6,#0x0
+     33                  CL_DQ;
+   \                     ??read_1820_0:
+   \   00000A   C281         CLR     0x80.1
+     34                  SET_DQ;
+   \   00000C   D281         SETB    0x80.1
+     35                  SET_IN;
+   \   00000E   53FDFD       ANL     0xfd,#0xfd
+     36                  k = IN_DQ;  //¶ÁÊý¾Ý´ÓµÍÎ»¿ªÊ¼
+     37                  if(k){
+   \   000011   A281         MOV     C,0x80.1
+   \   000013   75..01       MOV     ?V0 + 2,#0x1
+   \   000016   75..00       MOV     ?V0 + 3,#0x0
+   \   000019   EE           MOV     A,R6
+   \   00001A   78..         MOV     R0,#?V0 + 2
+   \   00001C   5009         JNC     ??read_1820_1
+     38                      temp |= (1<<n);
+   \   00001E   12....       LCALL   ?S_SHL
+   \   000021   E5..         MOV     A,?V0 + 2
+   \   000023   42..         ORL     ?V0 + 0,A
+   \   000025   8008         SJMP    ??read_1820_2
+     39                  } else {
+     40                      temp &= ~(1 << n);
+   \                     ??read_1820_1:
+   \   000027   12....       LCALL   ?S_SHL
+   \   00002A   E5..         MOV     A,?V0 + 2
+   \   00002C   F4           CPL     A
+   \   00002D   52..         ANL     ?V0 + 0,A
+     41                  }
+     42                  Delay_nus(70);
+   \                     ??read_1820_2:
+   \   00002F                ; Setup parameters for call to function Delay_nus
+   \   00002F   7A46         MOV     R2,#0x46
+   \   000031   7B00         MOV     R3,#0x0
+   \   000033   12....       LCALL   ??Delay_nus?relay
+     43                  SET_OUT;
+   \   000036   43FD02       ORL     0xfd,#0x2
+     44              }
+   \   000039   0E           INC     R6
+   \   00003A   EE           MOV     A,R6
+   \   00003B   C3           CLR     C
+   \   00003C   9408         SUBB    A,#0x8
+   \   00003E   40CA         JC      ??read_1820_0
+     45              return (temp);
+   \   000040   A9..         MOV     R1,?V0 + 0
+   \   000042   7F04         MOV     R7,#0x4
+   \   000044   02....       LJMP    ?BANKED_LEAVE_XDATA
+   \   000047                REQUIRE _A_P0
+   \   000047                REQUIRE P0DIR
+     46          }
+     47          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     48          bool init_1820(void){
+   \                     init_1820:
+   \   000000   C082         PUSH    DPL
+   \   000002   C083         PUSH    DPH
+   \   000004                ; Saved register size: 2
+   \   000004                ; Auto size: 0
+     49              SET_OUT;
+   \   000004   43FD02       ORL     0xfd,#0x2
+     50              SET_DQ;
+   \   000007   D281         SETB    0x80.1
+     51              CL_DQ;
+   \   000009   C281         CLR     0x80.1
+     52              Delay_nus(200); //À­µÍÒ»¶ÎÊ±¼ä
+   \   00000B                ; Setup parameters for call to function Delay_nus
+   \   00000B   7AC8         MOV     R2,#-0x38
+   \   00000D   7B00         MOV     R3,#0x0
+   \   00000F   12....       LCALL   ??Delay_nus?relay
+     53              SET_DQ;//ÊÍ·Å
+   \   000012   D281         SETB    0x80.1
+     54              SET_IN;//ÊäÈë
+   \   000014   53FDFD       ANL     0xfd,#0xfd
+     55              Delay_nus(40);//ÊÍ·Å×ÜÏßºóµÈ´ý15~240us
+   \   000017                ; Setup parameters for call to function Delay_nus
+   \   000017   7A28         MOV     R2,#0x28
+   \   000019   7B00         MOV     R3,#0x0
+   \   00001B   12....       LCALL   ??Delay_nus?relay
+     56              while(IN_DQ){;}//µÈ´ý18b20»Ø¸´
+   \                     ??init_1820_0:
+   \   00001E   A281         MOV     C,0x80.1
+   \   000020   40FC         JC      ??init_1820_0
+     57              Delay_nus(240);//»Ø¸´µÄµÍµçÆ½ÔÚ60µ½240us
+   \   000022                ; Setup parameters for call to function Delay_nus
+   \   000022   7AF0         MOV     R2,#-0x10
+   \   000024   7B00         MOV     R3,#0x0
+   \   000026   12....       LCALL   ??Delay_nus?relay
+     58              SET_OUT;
+   \   000029   43FD02       ORL     0xfd,#0x2
+     59              SET_DQ;//»Øµ½³õÊ¼DQ=1
+   \   00002C   D281         SETB    0x80.1
+     60              return 1;
+   \   00002E   7901         MOV     R1,#0x1
+   \   000030                REQUIRE ?Subroutine0
+   \   000030                REQUIRE P0DIR
+   \   000030                REQUIRE _A_P0
+   \   000030                ; // Fall through to label ?Subroutine0
+     61          }
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine0:
+   \   000000   D083         POP     DPH
+   \   000002   D082         POP     DPL
+   \   000004   02....       LJMP    ?BRET
+     62          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     63          void read_data(void){
+   \                     read_data:
+   \   000000   74F7         MOV     A,#-0x9
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 9
+   \   000005                ; Auto size: 0
+     64              unsigned int j;
+     65              unsigned char temph, templ;
+     66              unsigned char a, b, c;
+     67              init_1820();
+   \   000005                ; Setup parameters for call to function init_1820
+   \   000005   12....       LCALL   ??init_1820?relay
+     68              write_1820(0xcc);
+   \   000008                ; Setup parameters for call to function write_1820
+   \   000008   79CC         MOV     R1,#-0x34
+   \   00000A   12....       LCALL   ??write_1820?relay
+     69              write_1820(0x44);
+   \   00000D                ; Setup parameters for call to function write_1820
+   \   00000D   7944         MOV     R1,#0x44
+   \   00000F   12....       LCALL   ??write_1820?relay
+     70              for(j = 20; j > 1; j--){
+   \   000012   7E13         MOV     R6,#0x13
+     71                  Delay_nus(500000);
+                                   ^
+Warning[Pe069]: integer conversion resulted in truncation
+
+      unsigned char a, b, c;
+                          ^
+"D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\DS18B20.c",66  Warning[Pe177]: 
+          variable "c" was declared but never referenced
+   \                     ??read_data_0:
+   \   000014                ; Setup parameters for call to function Delay_nus
+   \   000014   7A20         MOV     R2,#0x20
+   \   000016   7BA1         MOV     R3,#-0x5f
+   \   000018   12....       LCALL   ??Delay_nus?relay
+     72              }
+   \   00001B   1E           DEC     R6
+   \   00001C   EE           MOV     A,R6
+   \   00001D   70F5         JNZ     ??read_data_0
+     73              init_1820();
+   \   00001F                ; Setup parameters for call to function init_1820
+   \   00001F   12....       LCALL   ??init_1820?relay
+     74              write_1820(0xbe);
+   \   000022                ; Setup parameters for call to function write_1820
+   \   000022   79BE         MOV     R1,#-0x42
+   \   000024   12....       LCALL   ??write_1820?relay
+     75              
+     76              templ = read_1820();
+   \   000027                ; Setup parameters for call to function read_1820
+   \   000027   12....       LCALL   ??read_1820?relay
+   \   00002A   E9           MOV     A,R1
+   \   00002B   FE           MOV     R6,A
+     77              temph = read_1820();
+   \   00002C                ; Setup parameters for call to function read_1820
+   \   00002C   12....       LCALL   ??read_1820?relay
+     78              a = temph << 4;
+     79              a+=(templ&0xf0) >> 4;
+     80              b = templ & 0x0f;
+     81              temph = a;
+     82              templ = b & 0x00ff;
+     83              sensor_data_values[0] = templ;
+   \   00002F   740F         MOV     A,#0xf
+   \   000031   5E           ANL     A,R6
+   \   000032   90....       MOV     DPTR,#sensor_data_values
+   \   000035   F0           MOVX    @DPTR,A
+     84              sensor_data_values[1] = temph;
+   \   000036   EE           MOV     A,R6
+   \   000037   C4           SWAP    A
+   \   000038   540F         ANL     A,#0xf
+   \   00003A   F8           MOV     R0,A
+   \   00003B   E9           MOV     A,R1
+   \   00003C   C4           SWAP    A
+   \   00003D   54F0         ANL     A,#0xf0
+   \   00003F   28           ADD     A,R0
+   \   000040   A3           INC     DPTR
+   \   000041   F0           MOVX    @DPTR,A
+     85          }
+   \   000042   7F01         MOV     R7,#0x1
+   \   000044   02....       LJMP    ?BANKED_LEAVE_XDATA
+     86          
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     87          unsigned char* DataChange(void){
+   \                     DataChange:
+   \   000000   C082         PUSH    DPL
+   \   000002   C083         PUSH    DPH
+   \   000004                ; Saved register size: 2
+   \   000004                ; Auto size: 6
+   \   000004   74FA         MOV     A,#-0x6
+   \   000006   12....       LCALL   ?ALLOC_XSTACK8
+     88              unsigned char temph, templ;
+     89              unsigned char ch[6];
+     90              unsigned int num;
+     91              unsigned i;
+     92              templ = sensor_data_values[0];
+     93              temph = sensor_data_values[1];
+     94              num = templ*625;    //Ð¡Êý²¿·ÖµÄÈ¡ÖµÃ¿Î»´ú±í0.0625£¨¾«¶È£©
+     95              if(temph/100==0){
+     96                  ch[0] = 0;
+     97              } else {
+     98                  ch[0] = temph/100+0x30;
+     99              }
+    100              if((temph/10%10==0) && (temph/100==0)){
+    101                  ch[1] = 0;
+    102              } else {
+    103                  ch[1] = temph/10%10 + 0x30;
+    104              }
+    105              ch[2] = temph%10 + 0x30;
+    106              ch[3] = '.';
+    107              ch[4] = num/1000 + 0x30;
+    108              ch[5] = '\0';
+    109              return ch;
+                            ^
+Warning[Pe1056]: returning pointer to local variable
+
+      unsigned i;
+               ^
+"D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\DS18B20.c",91  Warning[Pe177]: 
+          variable "i" was declared but never referenced
+   \   000009   85..82       MOV     DPL,?XSP + 0
+   \   00000C   85..83       MOV     DPH,?XSP + 1
+   \   00000F   AA82         MOV     R2,DPL
+   \   000011   AB83         MOV     R3,DPH
+   \   000013   7406         MOV     A,#0x6
+   \   000015   12....       LCALL   ?DEALLOC_XSTACK8
+   \   000018   80..         SJMP    ?Subroutine0
+    110          }
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??Delay_nus?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    Delay_nus
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??write_1820?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    write_1820
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??read_1820?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    read_1820
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??init_1820?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    init_1820
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??read_data?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    read_data
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??DataChange?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    DataChange
+    111          
+    112          
+    113          
+    114          
+    115          
+    116          
+    117          
+    118          
+    119          
+
+   Maximum stack usage in bytes:
+
+   ISTACK PSTACK XSTACK Function
+   ------ ------ ------ --------
+       2      0      6  DataChange
+       0      0     12  Delay_nus
+       2      0      9  init_1820
+                          2 0  0 -> Delay_nus
+       0      0     21  read_1820
+                          0 0 12 -> Delay_nus
+       0      0      9  read_data
+                          0 0  9 -> Delay_nus
+                          0 0  9 -> init_1820
+                          0 0  9 -> read_1820
+                          0 0  9 -> write_1820
+       0      0     19  write_1820
+                          0 0 10 -> Delay_nus
+
+
+   Segment part sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       6  ??DataChange?relay
+       6  ??Delay_nus?relay
+       6  ??init_1820?relay
+       6  ??read_1820?relay
+       6  ??read_data?relay
+       6  ??write_1820?relay
+       7  ?Subroutine0
+      26  DataChange
+      24  Delay_nus
+       1  P0DIR
+       1  _A_P0
+      48  init_1820
+      71  read_1820
+      71  read_data
+       2  sensor_data_values
+      58  write_1820
+
+ 
+ 305 bytes in segment BANKED_CODE
+  36 bytes in segment BANK_RELAYS
+   2 bytes in segment SFR_AN
+   2 bytes in segment XDATA_Z
+ 
+ 341 bytes of CODE  memory
+   0 bytes of DATA  memory (+ 2 bytes shared)
+   2 bytes of XDATA memory
+
+Errors: none
+Warnings: 4
