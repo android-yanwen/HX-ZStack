@@ -18,4 +18,5 @@ extern void DisplaySmg(uint8 num);
 extern void ControlStepMotor(uint8 flg);
 extern void ControlBeep(uint8 flg);
 extern void ControlRelay(uint8 flg);
+extern void ControlLeds(uint8 num);
 #endif

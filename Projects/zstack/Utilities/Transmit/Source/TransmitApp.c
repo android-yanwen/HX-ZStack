@@ -249,7 +249,12 @@ static uint8 readTempHumi(void);
 #endif
 
 #if defined(GTA_WMSCB_R1)
-
+__interrupt void T3_ISR(void);
+void initTimer3(void);
+void startTimer3(void);
+void stopTimer3(void);
+uint8 u_LedsNumber = 0;
+bool isScan = false;
 #endif
 
 uint8 Flag_ReportData=0;
@@ -277,7 +282,6 @@ void SendDataRequest(uint8 *pBuf,uint16 len);
  * PUBLIC FUNCTIONS
  */
 void TransmitApp_DisplayResults( void );
-
 /*********************************************************************
  * @fn      TransmitApp_Init
  *
@@ -381,6 +385,8 @@ void TransmitApp_Init( byte task_id )
 #endif
 #if defined GTA_WMSCB_R1
   NativeAddr = 0x22;  //设置控制模块的ZigBee地址
+//  initTimer3();//初始化定时器3
+//  stopTimer3();
 #endif
 
 }
@@ -647,6 +653,16 @@ UINT16 TransmitApp_ProcessEvent( byte task_id, UINT16 events )
     return (events ^ TRANSMITAPP_START_REPORT_EVT);
   }
   
+#if defined GTA_WMSCB_R1
+  // 此事件用于LED点阵扫描显示
+  if(events & TRANSMITAPP_LEDS_DISPLAY_EVT){
+      if(isScan == true){
+        osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_LEDS_DISPLAY_EVT, 1);
+        ControlLeds(u_LedsNumber);
+      }
+    return events ^ TRANSMITAPP_LEDS_DISPLAY_EVT;
+  }
+#endif
   
 
   // Discard unknown events
@@ -1432,45 +1448,30 @@ void ReportData(ModBusFrame_t *pRxFrame)
               #endif
                 
               #if defined(GTA_WMSCB_R1)
-               /*
-              ctrl_GTA_WMSCB('M',0x80);
-              for(j=0;j<1000;j++)
-              {
-               
-               ctrl_GTA_WMSCB('A',led);
-               ctrl_GTA_WMSCB('B',led++);
-              StepMotorRun(1,4096);
-              StepMotorRun(0,4096);
-              }
-                */
-                /*init_GTA_WMSCB();
-                ctrl_GTA_WMSCB('M',0x80);
-                if(pRxFrame->pData[0]==0x00)
-                {
-                  //ctrl_GTA_WMSCB('M',0x80);
-                  osal_int_disable( INTS_ALL );
-                  StepMotorRun(pRxFrame->pData[1],BUILD_UINT16(pRxFrame->pData[2],pRxFrame->pData[3]));
-                  osal_int_enable( INTS_ALL );
+                if(pRxFrame->pData[0] == 0x04){//判断是否是LED点阵
+                    //startTimer3();  //LED点阵需要开启定时器进行扫描
+                    isScan = true;
+                    u_LedsNumber = pRxFrame->pData[1];
+                } else {
+                    //stopTimer3();  //如果操作的不是LED点阵，一定要关闭定时器
+                    isScan = false;
+                    /*if(isScan == false){
+                        osal_stop_timerEx(TransmitApp_TaskID, TRANSMITAPP_LEDS_DISPLAY_EVT);
+                    }   */         
+                    if(pRxFrame->pData[0] == 0x00){  //判断是电机的控制数据
+                        ControlStepMotor(pRxFrame->pData[1]);
+                    } else if(pRxFrame->pData[0] == 0x02){//判断是数码管的控制数据
+                        DisplaySmg(pRxFrame->pData[1]);
+                    } else if(pRxFrame->pData[0] == 0x01){//判断是蜂鸣器
+                        ControlBeep(pRxFrame->pData[1]);
+                    } else if(pRxFrame->pData[0] == 0x03){//判断是继电器
+                        ControlRelay(pRxFrame->pData[1]);
+                    } 
                 }
-                if(pRxFrame->pData[0]==0x01)
-                {
-                  //ctrl_GTA_WMSCB('M',0x80);
-                  ctrl_GTA_WMSCB('A',pRxFrame->pData[1]);
+                if(isScan == true){
+                    osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_LEDS_DISPLAY_EVT, 1);            
                 }
-                if(pRxFrame->pData[0]==0x02)
-                {
-
-                  SegDisplay(pRxFrame->pData[1]);
-                }*/
-                if(pRxFrame->pData[0] == 0x00){  //判断是电机的控制数据
-                    ControlStepMotor(pRxFrame->pData[1]);
-                } else if(pRxFrame->pData[0] == 0x02){//判断是数码管的控制数据
-                    DisplaySmg(pRxFrame->pData[1]);
-                } else if(pRxFrame->pData[0] == 0x01){//判断是蜂鸣器
-                    ControlBeep(pRxFrame->pData[1]);
-                } else if(pRxFrame->pData[0] == 0x03){//判断是继电器
-                    ControlRelay(pRxFrame->pData[1]);
-                }
+                
               #endif
               
           }
@@ -1654,111 +1655,32 @@ uint8 readTempHumi(void)
 #endif
 
 #if defined(GTA_WMSCB_R1)
-void init_GTA_WMSCB(void)
-{
-  P0SEL=P0SEL&0x8C;//10001100
-  P1SEL=P1SEL&0xF0;
-  P2SEL=P2SEL&0xFA;
-  //HAL_CONFIG_IO_OUTPUT(0, HAL_LCD_CS_PIN, 1);
-  IO_DIR_PORT_PIN(0, 0, IO_OUT);
-  IO_DIR_PORT_PIN(0, 1, IO_OUT);
-  IO_DIR_PORT_PIN(0, 4, IO_OUT);
-  IO_DIR_PORT_PIN(0, 5, IO_OUT);
-  IO_DIR_PORT_PIN(0, 6, IO_OUT);
-  IO_DIR_PORT_PIN(1, 0, IO_OUT);
-  IO_DIR_PORT_PIN(1, 1, IO_OUT);
-  IO_DIR_PORT_PIN(1, 2, IO_OUT);
-  IO_DIR_PORT_PIN(1, 3, IO_OUT);
-  IO_DIR_PORT_PIN(2, 0, IO_OUT);
-  IO_DIR_PORT_PIN(2, 2, IO_OUT);
+/**
+* 初始化定时器3的相关寄存器
+*/
+void initTimer3(void){
+    T3CTL |= 0x08 ;   //开溢出中断
+//    T3IE = 1;   //开总中断和 T3中断
+    T3CTL|=0XE0;   //128 分频,128/16000000*N=0.5S,N=65200
+    T3CTL &= ~0X03;   //自动重装 00－>0xff  65200/256=254(次)
+    T3CTL |=0X10;   //启动
+//    EA = 0;    //开总中断
 }
 
-void ctrl_GTA_WMSCB(uint8 port,uint8 data)
-{
-  //uint8 i=0;
-  //init_GTA_WMSCB();
-  asm("nop"); 
-  asm("nop"); 
-
-  T82C55A_WR=1;
-  asm("nop"); 
-  asm("nop"); 
-
-  switch(port)
-  {
-  case        'A':
-    T82C55A_ADDR0=0;
-    T82C55A_ADDR1=0;
-    break;
-  case        'B':
-    T82C55A_ADDR0=1;
-    T82C55A_ADDR1=0;
-    break;  
-  case        'C':
-    T82C55A_ADDR0=0;
-    T82C55A_ADDR1=1;
-    break;
-  case        'M':
-    T82C55A_ADDR0=1;
-    T82C55A_ADDR1=1;
-    break;
-  default:break;
-  }
-  asm("nop"); 
-  asm("nop"); 
-
-  T82C55A_WR=0;
-  asm("nop"); 
-  asm("nop"); 
-
-  if(data&0x01)
-    T82C55A_D0=1;
-  else
-    T82C55A_D0=0;
-  
-  if(data&0x02)
-    T82C55A_D1=1;
-  else
-    T82C55A_D1=0;
-  
-  if(data&0x04)
-    T82C55A_D2=1;
-  else
-    T82C55A_D2=0;
-  
-  if(data&0x08)
-    T82C55A_D3=1;
-  else
-    T82C55A_D3=0;
-  
-  if(data&0x10)
-    T82C55A_D4=1;
-  else
-    T82C55A_D4=0;
-  
-  if(data&0x20)
-    T82C55A_D5=1;
-  else
-    T82C55A_D5=0;
-  
-  if(data&0x40)
-    T82C55A_D6=1;
-  else
-    T82C55A_D6=0;
-  
-  if(data&0x80)
-    T82C55A_D7=1;
-  else
-    T82C55A_D7=0;
-  asm("nop"); 
-  asm("nop"); 
-
-  T82C55A_WR=1;
-  asm("nop"); 
-  asm("nop"); 
-
-  T82C55A_WR=0;
-  
+void startTimer3(void){
+    T3IE = 1;
+}
+void stopTimer3(void){
+    T3IE = 0;
 }
 
+/************************************
+定时器3中断函数
+************************************/
+#pragma vector = T3_VECTOR    //定时器 T3
+__interrupt void T3_ISR(void)
+{
+    IRCON = 0x00;   //清中断标志,也可由硬件自动完成
+    ControlLeds(u_LedsNumber);
+}
 #endif

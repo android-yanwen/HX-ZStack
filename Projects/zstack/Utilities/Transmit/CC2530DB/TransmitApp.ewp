@@ -18278,12 +18278,14 @@
       <name>$PROJ_DIR$\..\Source\ControlModule.c</name>
       <excluded>
         <configuration>CoordinatorEB</configuration>
+        <configuration>GTA-WIRSB-R1</configuration>
       </excluded>
     </file>
     <file>
       <name>$PROJ_DIR$\..\Source\ControlModule.h</name>
       <excluded>
         <configuration>CoordinatorEB</configuration>
+        <configuration>GTA-WIRSB-R1</configuration>
       </excluded>
     </file>
     <file>
