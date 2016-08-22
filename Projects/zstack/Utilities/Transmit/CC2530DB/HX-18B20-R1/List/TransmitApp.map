@@ -3,7 +3,11 @@ Warning[w69]: Address translation (-M, -b# or -b@) has no effect on the output f
 #                                                                              #
 #      IAR Universal Linker V5.4.1.30                                          #
 #                                                                              #
+<<<<<<< HEAD
 #           Link time     =  18/Aug/2016  16:40:49                             #
+=======
+#           Link time     =  19/Aug/2016  14:09:08                             #
+>>>>>>> 9bdda41db292089b4aaa92d73aaad0c816a78236
 #           Target CPU    =  x51                                               #
 #           List file     =  E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0（鄢文）\Proje #
 #                            cts\zstack\Utilities\Transmit\CC2530DB\HX-18B20-R #
@@ -39,9 +43,12 @@ Warning[w69]: Address translation (-M, -b# or -b@) has no effect on the output f
 #                            1\Obj\BindingTable.r51                            #
 #                            E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0（鄢文）\Proje #
 #                            cts\zstack\Utilities\Transmit\CC2530DB\HX-18B20-R #
+<<<<<<< HEAD
 #                            1\Obj\ControlModule.r51                           #
 #                            E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0（鄢文）\Proje #
 #                            cts\zstack\Utilities\Transmit\CC2530DB\HX-18B20-R #
+=======
+>>>>>>> 9bdda41db292089b4aaa92d73aaad0c816a78236
 #                            1\Obj\DS18B20.r51                                 #
 #                            E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0（鄢文）\Proje #
 #                            cts\zstack\Utilities\Transmit\CC2530DB\HX-18B20-R #
@@ -14870,8 +14877,13 @@ XDATA_Z
 
     *************************************************************************
 
+<<<<<<< HEAD
   FILE NAME : E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0（鄢文）\Projects\zstack\Utilities\Transmit\CC2530DB\HX-18B20-R1\Obj\ControlModule.r51
   PROGRAM MODULE, NAME : ControlModule
+=======
+  FILE NAME : E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0（鄢文）\Projects\zstack\Utilities\Transmit\CC2530DB\HX-18B20-R1\Obj\DS18B20.r51
+  PROGRAM MODULE, NAME : DS18B20
+>>>>>>> 9bdda41db292089b4aaa92d73aaad0c816a78236
 
   SEGMENTS IN THE MODULE
   ======================
