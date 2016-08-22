@@ -18278,14 +18278,18 @@
       <name>$PROJ_DIR$\..\Source\ControlModule.c</name>
       <excluded>
         <configuration>CoordinatorEB</configuration>
+        <configuration>GTA-WTHSB-R1</configuration>
         <configuration>GTA-WIRSB-R1</configuration>
+        <configuration>HX-18B20-R1</configuration>
       </excluded>
     </file>
     <file>
       <name>$PROJ_DIR$\..\Source\ControlModule.h</name>
       <excluded>
         <configuration>CoordinatorEB</configuration>
+        <configuration>GTA-WTHSB-R1</configuration>
         <configuration>GTA-WIRSB-R1</configuration>
+        <configuration>HX-18B20-R1</configuration>
       </excluded>
     </file>
     <file>
@@ -18293,6 +18297,7 @@
       <excluded>
         <configuration>CoordinatorEB</configuration>
         <configuration>GTA-WWSB-R1</configuration>
+        <configuration>GTA-WTHSB-R1</configuration>
         <configuration>GTA-WMSCB-R1</configuration>
         <configuration>GTA-WIRSB-R1</configuration>
         <configuration>GTA-WFSB-R1</configuration>
@@ -18306,6 +18311,7 @@
       <excluded>
         <configuration>CoordinatorEB</configuration>
         <configuration>GTA-WWSB-R1</configuration>
+        <configuration>GTA-WTHSB-R1</configuration>
         <configuration>GTA-WMSCB-R1</configuration>
         <configuration>GTA-WIRSB-R1</configuration>
         <configuration>GTA-WFSB-R1</configuration>
@@ -18328,6 +18334,7 @@
       <excluded>
         <configuration>CoordinatorEB</configuration>
         <configuration>GTA-WWSB-R1</configuration>
+        <configuration>GTA-WTHSB-R1</configuration>
         <configuration>GTA-WMSCB-R1</configuration>
         <configuration>GTA-WIRSB-R1</configuration>
         <configuration>GTA-WFSB-R1</configuration>
@@ -18342,6 +18349,7 @@
       <excluded>
         <configuration>CoordinatorEB</configuration>
         <configuration>GTA-WWSB-R1</configuration>
+        <configuration>GTA-WTHSB-R1</configuration>
         <configuration>GTA-WMSCB-R1</configuration>
         <configuration>GTA-WIRSB-R1</configuration>
         <configuration>GTA-WFSB-R1</configuration>
