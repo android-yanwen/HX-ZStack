@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                            /
-// IAR C/C++ Compiler V8.20.2.41139 for 8051            15/Aug/2016  21:39:33 /
+// IAR C/C++ Compiler V8.20.2.41139 for 8051            18/Aug/2016  16:58:07 /
 // Copyright 2004-2013 IAR Systems AB.                                        /
 //                                                                            /
 //    Core               =  plain                                             /
@@ -10,17 +10,17 @@
 //    Constant location  =  data_rom                                          /
 //    Dptr setup         =  1,16                                              /
 //                                                                            /
-//    Source file        =  D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\Source\Transmit /
-//                          App.c                                             /
-//    Command line       =  -f D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£ /
-//                          ©\Projects\zstack\Utilities\Transmit\CC2530DB\..\ /
-//                          ..\..\Tools\CC2530DB\f8wEndev.cfg (-DCPU32MHZ     /
+//    Source file        =  E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\Source\TransmitApp. /
+//                          c                                                 /
+//    Command line       =  -f E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Pr /
+//                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\. /
+//                          .\Tools\CC2530DB\f8wEndev.cfg (-DCPU32MHZ         /
 //                          -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3        /
 //                          -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f         /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\Tools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO      /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\T /
+//                          ools\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO          /
 //                          -DSECURE=0 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR      /
 //                          -DDEFAULT_CHANLIST=0x00001000                     /
 //                          -DZDAPP_CONFIG_PAN_ID=0x1178                      /
@@ -43,89 +43,88 @@
 //                          __code" -DGENERIC=__generic                       /
 //                          -DRFD_RCVC_ALWAYS_ON=TRUE -DPOLL_RATE=1000        /
 //                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)  /
-//                          -DREJOIN_POLL_RATE=440 D:\work\ZSTACK-GTAMODBUS-Ö /
-//                          ÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Projects\zstack\Utilities\T /
-//                          ransmit\Source\TransmitApp.c -D NWK_AUTO_POLL -D  /
+//                          -DREJOIN_POLL_RATE=440 E:\AndroidStu\ZSTACK-GTAMO /
+//                          DBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Trans /
+//                          mit\Source\TransmitApp.c -D NWK_AUTO_POLL -D      /
 //                          MT_TASK -D ZTOOL_P1 -D MT_SYS_FUNC -D             /
 //                          MT_ZDO_FUNC -D ZDNWKMGR_MIN_TRANSMISSIONS=0 -D    /
 //                          GTA_DEBUG -D ZIGBEEPRO -D GTA_WIRSB_R1 -lC        /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\GTA-WI /
-//                          RSB-R1\List\ -lA D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´ /
-//                          «140707£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmi /
-//                          t\CC2530DB\GTA-WIRSB-R1\List\ --diag_suppress     /
-//                          Pe001,Pa010 -o D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«1 /
-//                          40707£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\ /
-//                          CC2530DB\GTA-WIRSB-R1\Obj\ -e --no_code_motion    /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\GTA-WIRSB- /
+//                          R1\List\ -lA E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£ /
+//                          ¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2530 /
+//                          DB\GTA-WIRSB-R1\List\ --diag_suppress             /
+//                          Pe001,Pa010 -o E:\AndroidStu\ZSTACK-GTAMODBUS-v1. /
+//                          0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC25 /
+//                          30DB\GTA-WIRSB-R1\Obj\ -e --no_code_motion        /
 //                          --debug --core=plain --dptr=16,1                  /
 //                          --data_model=large --code_model=banked            /
 //                          --calling_convention=xdata_reentrant              /
 //                          --place_constants=data_rom --nr_virtual_regs 16   /
-//                          -I D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£ /
-//                          ©\Projects\zstack\Utilities\Transmit\CC2530DB\    /
-//                          -I D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£ /
-//                          ©\Projects\zstack\Utilities\Transmit\CC2530DB\..\ /
-//                          Source\ -I D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«14070 /
-//                          7£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC25 /
-//                          30DB\..\..\..\ZMain\TI2530DB\ -I                  /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
+//                          -I E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Pr /
+//                          ojects\zstack\Utilities\Transmit\CC2530DB\ -I     /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\Source\ /
+//                           -I E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\P /
 //                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\hal\include\ -I               /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\hal\target\CC2530EB\ -I       /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\mac\include\ -I               /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\mac\high_level\ -I            /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\mac\low_level\srf04\ -I       /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\mac\low_level\srf04\single_ch /
-//                          ip\ -I D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û /
-//                          ³ÎÄ£©\Projects\zstack\Utilities\Transmit\CC2530DB /
-//                          \..\..\..\..\..\Components\mt\ -I                 /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\osal\include\ -I              /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\services\saddr\ -I            /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\services\sdata\ -I            /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\stack\af\ -I                  /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\stack\nwk\ -I                 /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\stack\sapi\ -I                /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\stack\sec\ -I                 /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\stack\sys\ -I                 /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\stack\zdo\ -I                 /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\zmac\ -I                      /
-//                          D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\..\..\ /
-//                          ..\..\..\Components\zmac\f8w\ -Ohz                /
+//                          ..\ZMain\TI2530DB\ -I E:\AndroidStu\ZSTACK-GTAMOD /
+//                          BUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transm /
+//                          it\CC2530DB\..\..\..\..\..\Components\hal\include /
+//                          \ -I E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\ /
+//                          Projects\zstack\Utilities\Transmit\CC2530DB\..\.. /
+//                          \..\..\..\Components\hal\target\CC2530EB\ -I      /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\mac\include\ -I                   /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\mac\high_level\ -I                /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\mac\low_level\srf04\ -I           /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\mac\low_level\srf04\single_chip\  /
+//                          -I E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Pr /
+//                          ojects\zstack\Utilities\Transmit\CC2530DB\..\..\. /
+//                          .\..\..\Components\mt\ -I                         /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\osal\include\ -I                  /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\services\saddr\ -I                /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\services\sdata\ -I                /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\af\ -I                      /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\nwk\ -I                     /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\sapi\ -I                    /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\sec\ -I                     /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\sys\ -I                     /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\stack\zdo\ -I                     /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\zmac\ -I                          /
+//                          E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\..\..\..\. /
+//                          .\..\Components\zmac\f8w\ -Ohz                    /
 //                          --require_prototypes                              /
-//    List file          =  D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\P /
-//                          rojects\zstack\Utilities\Transmit\CC2530DB\GTA-WI /
-//                          RSB-R1\List\TransmitApp.s51                       /
+//    List file          =  E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Proje /
+//                          cts\zstack\Utilities\Transmit\CC2530DB\GTA-WIRSB- /
+//                          R1\List\TransmitApp.s51                           /
 //                                                                            /
 //                                                                            /
 ///////////////////////////////////////////////////////////////////////////////
@@ -823,7 +822,7 @@ uartRxCB            SYMBOL "uartRxCB"
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN zgDeviceLogicalType
 
-// D:\work\ZSTACK-GTAMODBUS-Ö÷¶¯ÉÏ´«140707£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\TransmitApp.c
+// E:\AndroidStu\ZSTACK-GTAMODBUS-v1.0£¨Û³ÎÄ£©\Projects\zstack\Utilities\Transmit\Source\TransmitApp.c
 //    1 /**************************************************************************************************
 //    2   Filename:       TransmitApp.c
 //    3   Revised:        $Date: 2012-03-05 09:54:49 -0800 (Mon, 05 Mar 2012) $
@@ -969,74 +968,78 @@ ADCH:
 //  119 #include "WHFRFID.h"
 //  120 #endif
 //  121 #include <string.h>
-//  122 /*********************************************************************
-//  123  * MACROS
-//  124  */
-//  125 
+//  122 
+//  123 #if defined GTA_WMSCB_R1
+//  124 #include "ControlModule.h"
+//  125 #endif
 //  126 /*********************************************************************
-//  127  * CONSTANTS
+//  127  * MACROS
 //  128  */
-//  129 //#define TRANSMITAPP_RANDOM_LEN
-//  130 
-//  131 #define TRANSMITAPP_STATE_WAITING 0
-//  132 #define TRANSMITAPP_STATE_SENDING 1
-//  133 
-//  134 #if !defined ( RTR_NWK )
-//  135   // Use these 2 lines to add a delay between each packet sent
-//  136   //  - default for end devices
-//  137   #define TRANSMITAPP_DELAY_SEND
-//  138   #define TRANSMITAPP_SEND_DELAY    (RESPONSE_POLL_RATE * 2)  // in MSecs
-//  139 #endif
-//  140 
-//  141 // Send with or without APS ACKs
-//  142 //#define TRANSMITAPP_TX_OPTIONS    (AF_DISCV_ROUTE | AF_ACK_REQUEST)
-//  143 #define TRANSMITAPP_TX_OPTIONS    AF_DISCV_ROUTE
+//  129 
+//  130 /*********************************************************************
+//  131  * CONSTANTS
+//  132  */
+//  133 //#define TRANSMITAPP_RANDOM_LEN
+//  134 
+//  135 #define TRANSMITAPP_STATE_WAITING 0
+//  136 #define TRANSMITAPP_STATE_SENDING 1
+//  137 
+//  138 #if !defined ( RTR_NWK )
+//  139   // Use these 2 lines to add a delay between each packet sent
+//  140   //  - default for end devices
+//  141   #define TRANSMITAPP_DELAY_SEND
+//  142   #define TRANSMITAPP_SEND_DELAY    (RESPONSE_POLL_RATE * 2)  // in MSecs
+//  143 #endif
 //  144 
-//  145 #define TRANSMITAPP_INITIAL_MSG_COUNT  2
-//  146 
-//  147 #define TRANSMITAPP_TRANSMIT_TIME   4  // 4 MS
-//  148 #define TRANSMITAPP_DISPLAY_TIMER   (2 * 1000)
-//  149 
-//  150 #if defined ( TRANSMITAPP_FRAGMENTED )
-//  151 #define TRANSMITAPP_MAX_DATA_LEN    225
-//  152 #else
-//  153 #define TRANSMITAPP_MAX_DATA_LEN    102
-//  154 #endif
-//  155 
-//  156 /*********************************************************************
-//  157  * TYPEDEFS
-//  158  */
+//  145 // Send with or without APS ACKs
+//  146 //#define TRANSMITAPP_TX_OPTIONS    (AF_DISCV_ROUTE | AF_ACK_REQUEST)
+//  147 #define TRANSMITAPP_TX_OPTIONS    AF_DISCV_ROUTE
+//  148 
+//  149 #define TRANSMITAPP_INITIAL_MSG_COUNT  2
+//  150 
+//  151 #define TRANSMITAPP_TRANSMIT_TIME   4  // 4 MS
+//  152 #define TRANSMITAPP_DISPLAY_TIMER   (2 * 1000)
+//  153 
+//  154 #if defined ( TRANSMITAPP_FRAGMENTED )
+//  155 #define TRANSMITAPP_MAX_DATA_LEN    225
+//  156 #else
+//  157 #define TRANSMITAPP_MAX_DATA_LEN    102
+//  158 #endif
 //  159 
 //  160 /*********************************************************************
-//  161  * GLOBAL VARIABLES
+//  161  * TYPEDEFS
 //  162  */
 //  163 
-//  164 
-//  165 // This is the buffer that is sent out as data.
+//  164 /*********************************************************************
+//  165  * GLOBAL VARIABLES
+//  166  */
+//  167 
+//  168 
+//  169 // This is the buffer that is sent out as data.
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//  166 byte TransmitApp_Msg[ TRANSMITAPP_MAX_DATA_LEN ];
+//  170 byte TransmitApp_Msg[ TRANSMITAPP_MAX_DATA_LEN ];
 TransmitApp_Msg:
         DS 102
         REQUIRE __INIT_XDATA_Z
-//  167 
-//  168 // This is the Cluster ID List and should be filled with Application
-//  169 // specific cluster IDs.
+//  171 
+//  172 // This is the Cluster ID List and should be filled with Application
+//  173 // specific cluster IDs.
 
         RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
         DATA16
-//  170 const cId_t TransmitApp_ClusterList[TRANSMITAPP_MAX_CLUSTERS] =
+//  174 const cId_t TransmitApp_ClusterList[TRANSMITAPP_MAX_CLUSTERS] =
 TransmitApp_ClusterList:
         DW 161
-//  171 {
-//  172   TRANSMITAPP_CLUSTERID_TESTMSG  // MSG Cluster ID
-//  173 };
-//  174 
+//  175 {
+//  176   TRANSMITAPP_CLUSTERID_TESTMSG  // MSG Cluster ID
+//  177 };
+//  178 
 
         RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
         DATA8
-//  175 const SimpleDescriptionFormat_t TransmitApp_SimpleDesc =
+//  179 const SimpleDescriptionFormat_t TransmitApp_SimpleDesc =
 TransmitApp_SimpleDesc:
         DB 1
         DATA16
@@ -1051,102 +1054,102 @@ TransmitApp_SimpleDesc:
         DB 1
         DATA16
         DW TransmitApp_ClusterList
-//  176 {
-//  177   TRANSMITAPP_ENDPOINT,              //  int    Endpoint;
-//  178   TRANSMITAPP_PROFID,                //  uint16 AppProfId[2];
-//  179   TRANSMITAPP_DEVICEID,              //  uint16 AppDeviceId[2];
-//  180   TRANSMITAPP_DEVICE_VERSION,        //  int    AppDevVer:4;
-//  181   TRANSMITAPP_FLAGS,                 //  int    AppFlags:4;
-//  182   TRANSMITAPP_MAX_CLUSTERS,          //  byte   AppNumInClusters;
-//  183   (cId_t *)TransmitApp_ClusterList,  //  byte   *pAppInClusterList;
-//  184   TRANSMITAPP_MAX_CLUSTERS,          //  byte   AppNumInClusters;
-//  185   (cId_t *)TransmitApp_ClusterList   //  byte   *pAppInClusterList;
-//  186 };
-//  187 
-//  188 // This is the Endpoint/Interface description.  It is defined here, but
-//  189 // filled-in in TransmitApp_Init().  Another way to go would be to fill
-//  190 // in the structure here and make it a "const" (in code space).  The
-//  191 // way it's defined in this sample app it is define in RAM.
+//  180 {
+//  181   TRANSMITAPP_ENDPOINT,              //  int    Endpoint;
+//  182   TRANSMITAPP_PROFID,                //  uint16 AppProfId[2];
+//  183   TRANSMITAPP_DEVICEID,              //  uint16 AppDeviceId[2];
+//  184   TRANSMITAPP_DEVICE_VERSION,        //  int    AppDevVer:4;
+//  185   TRANSMITAPP_FLAGS,                 //  int    AppFlags:4;
+//  186   TRANSMITAPP_MAX_CLUSTERS,          //  byte   AppNumInClusters;
+//  187   (cId_t *)TransmitApp_ClusterList,  //  byte   *pAppInClusterList;
+//  188   TRANSMITAPP_MAX_CLUSTERS,          //  byte   AppNumInClusters;
+//  189   (cId_t *)TransmitApp_ClusterList   //  byte   *pAppInClusterList;
+//  190 };
+//  191 
+//  192 // This is the Endpoint/Interface description.  It is defined here, but
+//  193 // filled-in in TransmitApp_Init().  Another way to go would be to fill
+//  194 // in the structure here and make it a "const" (in code space).  The
+//  195 // way it's defined in this sample app it is define in RAM.
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//  192 endPointDesc_t TransmitApp_epDesc;
+//  196 endPointDesc_t TransmitApp_epDesc;
 TransmitApp_epDesc:
         DS 6
         REQUIRE __INIT_XDATA_Z
-//  193 
-//  194 /*********************************************************************
-//  195  * EXTERNAL VARIABLES
-//  196  */
 //  197 
 //  198 /*********************************************************************
-//  199  * EXTERNAL FUNCTIONS
+//  199  * EXTERNAL VARIABLES
 //  200  */
 //  201 
 //  202 /*********************************************************************
-//  203  * LOCAL VARIABLES
+//  203  * EXTERNAL FUNCTIONS
 //  204  */
 //  205 
-//  206 // Task ID for event processing - received when TransmitApp_Init() is called.
+//  206 /*********************************************************************
+//  207  * LOCAL VARIABLES
+//  208  */
+//  209 
+//  210 // Task ID for event processing - received when TransmitApp_Init() is called.
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//  207 byte TransmitApp_TaskID;
+//  211 byte TransmitApp_TaskID;
 TransmitApp_TaskID:
-        DS 1
-        REQUIRE __INIT_XDATA_Z
-//  208 
-
-        RSEG XDATA_Z:XDATA:NOROOT(0)
-        DATA8
-//  209 devStates_t TransmitApp_NwkState;
-TransmitApp_NwkState:
-        DS 1
-        REQUIRE __INIT_XDATA_Z
-//  210 
-
-        RSEG XDATA_Z:XDATA:NOROOT(0)
-        DATA8
-//  211 static byte TransmitApp_TransID;  // This is the unique message ID (counter)
-TransmitApp_TransID:
         DS 1
         REQUIRE __INIT_XDATA_Z
 //  212 
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//  213 afAddrType_t TransmitApp_DstAddr;
+//  213 devStates_t TransmitApp_NwkState;
+TransmitApp_NwkState:
+        DS 1
+        REQUIRE __INIT_XDATA_Z
+//  214 
+
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA8
+//  215 static byte TransmitApp_TransID;  // This is the unique message ID (counter)
+TransmitApp_TransID:
+        DS 1
+        REQUIRE __INIT_XDATA_Z
+//  216 
+
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA8
+//  217 afAddrType_t TransmitApp_DstAddr;
 TransmitApp_DstAddr:
         DS 12
         REQUIRE __INIT_XDATA_Z
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//  214 afAddrType_t TestDirectSent_DstAddr;
+//  218 afAddrType_t TestDirectSent_DstAddr;
 TestDirectSent_DstAddr:
         DS 12
         REQUIRE __INIT_XDATA_Z
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//  215 byte TransmitApp_State;
+//  219 byte TransmitApp_State;
 TransmitApp_State:
         DS 1
         REQUIRE __INIT_XDATA_Z
-//  216 
-//  217 // Shadow of the OSAL system clock used for calculating actual time expired.
+//  220 
+//  221 // Shadow of the OSAL system clock used for calculating actual time expired.
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA32
-//  218 static uint32 clkShdw;
+//  222 static uint32 clkShdw;
 clkShdw:
         DS 4
         REQUIRE __INIT_XDATA_Z
-//  219 // Running total count of test messages recv/sent since beginning current run.
+//  223 // Running total count of test messages recv/sent since beginning current run.
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA32
-//  220 static uint32 rxTotal, txTotal;
+//  224 static uint32 rxTotal, txTotal;
 rxTotal:
         DS 4
         REQUIRE __INIT_XDATA_Z
@@ -1156,11 +1159,11 @@ rxTotal:
 txTotal:
         DS 4
         REQUIRE __INIT_XDATA_Z
-//  221 // Running count of test messages recv/sent since last display / update - 1 Hz.
+//  225 // Running count of test messages recv/sent since last display / update - 1 Hz.
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA32
-//  222 static uint32 rxAccum, txAccum;
+//  226 static uint32 rxAccum, txAccum;
 rxAccum:
         DS 4
         REQUIRE __INIT_XDATA_Z
@@ -1170,131 +1173,135 @@ rxAccum:
 txAccum:
         DS 4
         REQUIRE __INIT_XDATA_Z
-//  223 
-
-        RSEG XDATA_Z:XDATA:NOROOT(0)
-        DATA8
-//  224 static byte timerOn;
-timerOn:
-        DS 1
-        REQUIRE __INIT_XDATA_Z
-//  225 
-
-        RSEG XDATA_Z:XDATA:NOROOT(0)
-        DATA8
-//  226 static byte timesToSend;
-timesToSend:
-        DS 1
-        REQUIRE __INIT_XDATA_Z
 //  227 
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
-        DATA16
-//  228 uint16 pktCounter;
-pktCounter:
-        DS 2
+        DATA8
+//  228 static byte timerOn;
+timerOn:
+        DS 1
         REQUIRE __INIT_XDATA_Z
 //  229 
-//  230 // Max Data Request Length
+
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA8
+//  230 static byte timesToSend;
+timesToSend:
+        DS 1
+        REQUIRE __INIT_XDATA_Z
+//  231 
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA16
-//  231 uint16 TransmitApp_MaxDataLength;
+//  232 uint16 pktCounter;
+pktCounter:
+        DS 2
+        REQUIRE __INIT_XDATA_Z
+//  233 
+//  234 // Max Data Request Length
+
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA16
+//  235 uint16 TransmitApp_MaxDataLength;
 TransmitApp_MaxDataLength:
         DS 2
         REQUIRE __INIT_XDATA_Z
-//  232 
+//  236 
 
         RSEG XDATA_I:XDATA:NOROOT(0)
-//  233 uint8   NativeAddr=0x01;
+//  237 uint8   NativeAddr=0x01;
 NativeAddr:
         DATA8
         DS 1
         REQUIRE `?<Initializer for NativeAddr>`
         REQUIRE __INIT_XDATA_I
-//  234 
-//  235 #if defined(GTA_DEBUG)
+//  238 
+//  239 #if defined(GTA_DEBUG)
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//  236 uint8 Test_Mark=0;
+//  240 uint8 Test_Mark=0;
 Test_Mark:
         DS 1
         REQUIRE __INIT_XDATA_Z
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//  237 uint8 Test_Buf[15];
+//  241 uint8 Test_Buf[15];
 Test_Buf:
         DS 15
         REQUIRE __INIT_XDATA_Z
-//  238 #endif
-//  239 
-//  240 #if defined(GTA_WTHSB_R1)
-//  241 
-//  242 char temp_val[2];
-//  243 char humi_val[2];
-//  244 static uint8 readTempHumi(void);
-//  245 #endif
-//  246 
-//  247 #if defined(GTA_WMSCB_R1)
-//  248 
+//  242 #endif
+//  243 
+//  244 #if defined(GTA_WTHSB_R1)
+//  245 
+//  246 char temp_val[2];
+//  247 char humi_val[2];
+//  248 static uint8 readTempHumi(void);
 //  249 #endif
 //  250 
+//  251 #if defined(GTA_WMSCB_R1)
+//  252 __interrupt void T3_ISR(void);
+//  253 void initTimer3(void);
+//  254 void startTimer3(void);
+//  255 void stopTimer3(void);
+//  256 uint8 u_LedsNumber = 0;
+//  257 bool isScan = false;
+//  258 #endif
+//  259 
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//  251 uint8 Flag_ReportData=0;
+//  260 uint8 Flag_ReportData=0;
 Flag_ReportData:
         DS 1
         REQUIRE __INIT_XDATA_Z
-//  252 
-//  253 /*********************************************************************
-//  254  * LOCAL FUNCTIONS
-//  255  */
-//  256 void TransmitApp_ProcessZDOMsgs( zdoIncomingMsg_t *inMsg );
-//  257 void TransmitApp_HandleKeys( byte shift, byte keys );
-//  258 void TransmitApp_MessageMSGCB( afIncomingMSGPacket_t *pckt );
-//  259 void TransmitApp_ProcessZDOIncomingMsgs( zdoIncomingMsg_t *inMsg );//microdjg
-//  260 void TransmitApp_SendTheMessage( void );
-//  261 void TransmitApp_ChangeState( void );
-//  262 
-//  263 void ReportData(ModBusFrame_t *pRxFrame);
-//  264 uint16 FramePackage(uint8 *pFrame,uint8 addr,uint8 cmd,uint8 *data,uint16 datalen);
-//  265 uint16 ReadADC(uint8 channel);
-//  266 void SendDataRequest(uint8 *pBuf,uint16 len);
-//  267 
-//  268 /*********************************************************************
-//  269  * NETWORK LAYER CALLBACKS
-//  270  */
+//  261 
+//  262 /*********************************************************************
+//  263  * LOCAL FUNCTIONS
+//  264  */
+//  265 void TransmitApp_ProcessZDOMsgs( zdoIncomingMsg_t *inMsg );
+//  266 void TransmitApp_HandleKeys( byte shift, byte keys );
+//  267 void TransmitApp_MessageMSGCB( afIncomingMSGPacket_t *pckt );
+//  268 void TransmitApp_ProcessZDOIncomingMsgs( zdoIncomingMsg_t *inMsg );//microdjg
+//  269 void TransmitApp_SendTheMessage( void );
+//  270 void TransmitApp_ChangeState( void );
 //  271 
-//  272 /*********************************************************************
-//  273  * PUBLIC FUNCTIONS
-//  274  */
-//  275 void TransmitApp_DisplayResults( void );
+//  272 void ReportData(ModBusFrame_t *pRxFrame);
+//  273 uint16 FramePackage(uint8 *pFrame,uint8 addr,uint8 cmd,uint8 *data,uint16 datalen);
+//  274 uint16 ReadADC(uint8 channel);
+//  275 void SendDataRequest(uint8 *pBuf,uint16 len);
 //  276 
 //  277 /*********************************************************************
-//  278  * @fn      TransmitApp_Init
-//  279  *
-//  280  * @brief   Initialization function for the Generic App Task.
-//  281  *          This is called during initialization and should contain
-//  282  *          any application specific initialization (ie. hardware
-//  283  *          initialization/setup, table initialization, power up
-//  284  *          notificaiton ... ).
-//  285  *
-//  286  * @param   task_id - the ID assigned by OSAL.  This ID should be
-//  287  *                    used to send messages and set timers.
-//  288  *
-//  289  * @return  none
-//  290  */
+//  278  * NETWORK LAYER CALLBACKS
+//  279  */
+//  280 
+//  281 /*********************************************************************
+//  282  * PUBLIC FUNCTIONS
+//  283  */
+//  284 void TransmitApp_DisplayResults( void );
+//  285 /*********************************************************************
+//  286  * @fn      TransmitApp_Init
+//  287  *
+//  288  * @brief   Initialization function for the Generic App Task.
+//  289  *          This is called during initialization and should contain
+//  290  *          any application specific initialization (ie. hardware
+//  291  *          initialization/setup, table initialization, power up
+//  292  *          notificaiton ... ).
+//  293  *
+//  294  * @param   task_id - the ID assigned by OSAL.  This ID should be
+//  295  *                    used to send messages and set timers.
+//  296  *
+//  297  * @return  none
+//  298  */
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  291 void TransmitApp_Init( byte task_id )
+//  299 void TransmitApp_Init( byte task_id )
 TransmitApp_Init:
           CFI Block cfiBlock0 Using cfiCommon0
           CFI Function TransmitApp_Init
         CODE
-//  292 {
+//  300 {
         FUNCALL TransmitApp_Init, initUart
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -1426,26 +1433,26 @@ TransmitApp_Init:
           CFI CFA_XSP16 add(XSP16, 12)
         MOV     A,R1
         MOV     R6,A
-//  293 #if !defined ( TRANSMITAPP_FRAGMENTED )
-//  294   afDataReqMTU_t mtu;
-//  295 #endif
-//  296   uint16 i;
-//  297   
-//  298   #if defined(GTA_WTHSB_R1)
-//  299   Hal_SHT11_Init();
-//  300   s_connectionreset();
-//  301   #endif
-//  302 /*#if defined (HX_18B20_R1)
-//  303   P0SEL &= 0x00;
-//  304 #endif*/
+//  301 #if !defined ( TRANSMITAPP_FRAGMENTED )
+//  302   afDataReqMTU_t mtu;
+//  303 #endif
+//  304   uint16 i;
 //  305   
-//  306   
-//  307   initUart(uartRxCB);//microdjg
+//  306   #if defined(GTA_WTHSB_R1)
+//  307   Hal_SHT11_Init();
+//  308   s_connectionreset();
+//  309   #endif
+//  310 /*#if defined (HX_18B20_R1)
+//  311   P0SEL &= 0x00;
+//  312 #endif*/
+//  313   
+//  314   
+//  315   initUart(uartRxCB);//microdjg
         ; Setup parameters for call to function initUart
         MOV     R2,#??uartRxCB?relay & 0xff
         MOV     R3,#(??uartRxCB?relay >> 8) & 0xff
         LCALL   ??initUart?relay
-//  308   osal_nv_item_init(ZCD_NV_NATIVE_ADDRESS,sizeof(NativeAddr),NULL);
+//  316   osal_nv_item_init(ZCD_NV_NATIVE_ADDRESS,sizeof(NativeAddr),NULL);
         ; Setup parameters for call to function osal_nv_item_init
         CLR     A
         MOV     ?V0 + 0,A
@@ -1461,7 +1468,7 @@ TransmitApp_Init:
         MOV     A,#0x2
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 12)
-//  309   osal_nv_read(ZCD_NV_NATIVE_ADDRESS,0,sizeof(NativeAddr),&NativeAddr);
+//  317   osal_nv_read(ZCD_NV_NATIVE_ADDRESS,0,sizeof(NativeAddr),&NativeAddr);
         ; Setup parameters for call to function osal_nv_read
         MOV     ?V0 + 0,#NativeAddr & 0xff
         MOV     ?V0 + 1,#(NativeAddr >> 8) & 0xff
@@ -1481,133 +1488,133 @@ TransmitApp_Init:
         MOV     A,#0x4
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 12)
-//  310   
-//  311   TransmitApp_TaskID = task_id;
+//  318   
+//  319   TransmitApp_TaskID = task_id;
         MOV     A,R6
         MOV     DPTR,#TransmitApp_TaskID
         MOVX    @DPTR,A
-//  312   TransmitApp_NwkState = DEV_INIT;
+//  320   TransmitApp_NwkState = DEV_INIT;
         MOV     DPTR,#TransmitApp_NwkState
         MOV     A,#0x1
         MOVX    @DPTR,A
-//  313   TransmitApp_TransID = 0;
+//  321   TransmitApp_TransID = 0;
         MOV     DPTR,#TransmitApp_TransID
         CLR     A
         MOVX    @DPTR,A
-//  314 
-//  315   pktCounter = 0;
+//  322 
+//  323   pktCounter = 0;
         MOV     DPTR,#pktCounter
         MOVX    @DPTR,A
         INC     DPTR
         MOVX    @DPTR,A
-//  316 
-//  317   TransmitApp_State = TRANSMITAPP_STATE_WAITING;
+//  324 
+//  325   TransmitApp_State = TRANSMITAPP_STATE_WAITING;
         MOV     DPTR,#TransmitApp_State
         MOVX    @DPTR,A
-//  318 
-//  319   // Device hardware initialization can be added here or in main() (Zmain.c).
-//  320   // If the hardware is application specific - add it here.
-//  321   // If the hardware is other parts of the device add it in main().
-//  322 
-//  323   TransmitApp_DstAddr.addrMode = (afAddrMode_t)AddrNotPresent;//°ó¶¨·¢
+//  326 
+//  327   // Device hardware initialization can be added here or in main() (Zmain.c).
+//  328   // If the hardware is application specific - add it here.
+//  329   // If the hardware is other parts of the device add it in main().
+//  330 
+//  331   TransmitApp_DstAddr.addrMode = (afAddrMode_t)AddrNotPresent;//°ó¶¨·¢
         MOV     DPTR,#TransmitApp_DstAddr + 8
         MOVX    @DPTR,A
-//  324   TransmitApp_DstAddr.endPoint = 0;
+//  332   TransmitApp_DstAddr.endPoint = 0;
         INC     DPTR
         MOVX    @DPTR,A
-//  325   TransmitApp_DstAddr.addr.shortAddr = 0;//ÎÞËùÎ½
+//  333   TransmitApp_DstAddr.addr.shortAddr = 0;//ÎÞËùÎ½
         MOV     DPTR,#TransmitApp_DstAddr
         MOVX    @DPTR,A
         INC     DPTR
         MOVX    @DPTR,A
-//  326 
-//  327   // Fill out the endpoint description.
-//  328   TransmitApp_epDesc.endPoint = TRANSMITAPP_ENDPOINT;
+//  334 
+//  335   // Fill out the endpoint description.
+//  336   TransmitApp_epDesc.endPoint = TRANSMITAPP_ENDPOINT;
         MOV     DPTR,#TransmitApp_epDesc
         INC     A
         MOVX    @DPTR,A
-//  329   TransmitApp_epDesc.task_id = &TransmitApp_TaskID;
+//  337   TransmitApp_epDesc.task_id = &TransmitApp_TaskID;
         INC     DPTR
         MOV     A,#TransmitApp_TaskID & 0xff
         MOVX    @DPTR,A
         INC     DPTR
         MOV     A,#(TransmitApp_TaskID >> 8) & 0xff
         MOVX    @DPTR,A
-//  330   TransmitApp_epDesc.simpleDesc
-//  331             = (SimpleDescriptionFormat_t *)&TransmitApp_SimpleDesc;
+//  338   TransmitApp_epDesc.simpleDesc
+//  339             = (SimpleDescriptionFormat_t *)&TransmitApp_SimpleDesc;
         INC     DPTR
         MOV     A,#TransmitApp_SimpleDesc & 0xff
         MOVX    @DPTR,A
         INC     DPTR
         MOV     A,#(TransmitApp_SimpleDesc >> 8) & 0xff
         LCALL   ??Subroutine19_0 & 0xFFFF
-//  332   TransmitApp_epDesc.latencyReq = noLatencyReqs;
-//  333   
-//  334   
-//  335   
-//  336   //if(ZG_DEVICE_COORDINATOR_TYPE)
-//  337   //{
-//  338     //HalLcdInit();
-//  339     //HalLcd_HW_WriteLine(HAL_LCD_LINE_1,"GTA Zigbee Test");
-//  340     HalLcdWriteString( "GTA Zigbee", HAL_LCD_LINE_1 );
+//  340   TransmitApp_epDesc.latencyReq = noLatencyReqs;
+//  341   
+//  342   
+//  343   
+//  344   //if(ZG_DEVICE_COORDINATOR_TYPE)
+//  345   //{
+//  346     //HalLcdInit();
+//  347     //HalLcd_HW_WriteLine(HAL_LCD_LINE_1,"GTA Zigbee Test");
+//  348     HalLcdWriteString( "GTA Zigbee", HAL_LCD_LINE_1 );
 ??CrossCallReturnLabel_26:
         ; Setup parameters for call to function HalLcdWriteString
         MOV     R1,#0x1
         MOV     R2,#`?<Constant "GTA Zigbee">` & 0xff
         MOV     R3,#(`?<Constant "GTA Zigbee">` >> 8) & 0xff
         LCALL   ??HalLcdWriteString?relay
-//  341   //}
-//  342 
-//  343 
-//  344   // Register the endpoint/interface description with the AF
-//  345   afRegister( &TransmitApp_epDesc );
+//  349   //}
+//  350 
+//  351 
+//  352   // Register the endpoint/interface description with the AF
+//  353   afRegister( &TransmitApp_epDesc );
         ; Setup parameters for call to function afRegister
         MOV     R2,#TransmitApp_epDesc & 0xff
         MOV     R3,#(TransmitApp_epDesc >> 8) & 0xff
         LCALL   ??afRegister?relay
-//  346 
-//  347   // Register for all key events - This app will handle all key events
-//  348   RegisterForKeys( TransmitApp_TaskID );
+//  354 
+//  355   // Register for all key events - This app will handle all key events
+//  356   RegisterForKeys( TransmitApp_TaskID );
         ; Setup parameters for call to function RegisterForKeys
         MOV     DPTR,#TransmitApp_TaskID
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   ??RegisterForKeys?relay
-//  349 
-//  350   // Update the display
-//  351 #if defined ( LCD_SUPPORTED )
-//  352   HalLcdWriteString( "TransmitApp", HAL_LCD_LINE_2 );
-//  353 #endif
-//  354 
-//  355   // Set the data length
-//  356 #if defined ( TRANSMITAPP_FRAGMENTED )
-//  357   TransmitApp_MaxDataLength = TRANSMITAPP_MAX_DATA_LEN;
-//  358 #else
-//  359   mtu.kvp        = FALSE;
+//  357 
+//  358   // Update the display
+//  359 #if defined ( LCD_SUPPORTED )
+//  360   HalLcdWriteString( "TransmitApp", HAL_LCD_LINE_2 );
+//  361 #endif
+//  362 
+//  363   // Set the data length
+//  364 #if defined ( TRANSMITAPP_FRAGMENTED )
+//  365   TransmitApp_MaxDataLength = TRANSMITAPP_MAX_DATA_LEN;
+//  366 #else
+//  367   mtu.kvp        = FALSE;
         MOV     DPL,?XSP + 0
         MOV     DPH,?XSP + 1
         CLR     A
         MOVX    @DPTR,A
-//  360   mtu.aps.secure = FALSE;
+//  368   mtu.aps.secure = FALSE;
         INC     A
         LCALL   ?XSTACK_DISP0_8
         CLR     A
         LCALL   ?Subroutine5 & 0xFFFF
-//  361   TransmitApp_MaxDataLength = afDataReqMTU( &mtu );
+//  369   TransmitApp_MaxDataLength = afDataReqMTU( &mtu );
 ??CrossCallReturnLabel_0:
         LCALL   ??afDataReqMTU?relay
         MOV     A,R1
         MOV     DPTR,#TransmitApp_MaxDataLength
         LCALL   ??Subroutine19_0 & 0xFFFF
-//  362 #endif
-//  363 
-//  364   // Generate the data
-//  365   for (i=0; i<TransmitApp_MaxDataLength; i++)
+//  370 #endif
+//  371 
+//  372   // Generate the data
+//  373   for (i=0; i<TransmitApp_MaxDataLength; i++)
 ??CrossCallReturnLabel_29:
         MOV     R0,A
         SJMP    ??TransmitApp_Init_0
-//  366   {
-//  367     TransmitApp_Msg[i] = (uint8) i;
+//  374   {
+//  375     TransmitApp_Msg[i] = (uint8) i;
 ??TransmitApp_Init_1:
         MOV     A,#TransmitApp_Msg & 0xff
         ADD     A,R0
@@ -1617,7 +1624,7 @@ TransmitApp_Init:
         MOV     DPH,A
         MOV     A,R0
         MOVX    @DPTR,A
-//  368   }
+//  376   }
         ADD     A,#0x1
         INC     R0
         MOV     A,R1
@@ -1636,8 +1643,8 @@ TransmitApp_Init:
         MOV     A,R1
         SUBB    A,R3
         JC      ??TransmitApp_Init_1
-//  369 
-//  370   ZDO_RegisterForZDOMsg( TransmitApp_TaskID, End_Device_Bind_rsp );
+//  377 
+//  378   ZDO_RegisterForZDOMsg( TransmitApp_TaskID, End_Device_Bind_rsp );
         ; Setup parameters for call to function ZDO_RegisterForZDOMsg
         MOV     R2,#0x20
         MOV     R3,#-0x80
@@ -1645,7 +1652,7 @@ TransmitApp_Init:
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   ??ZDO_RegisterForZDOMsg?relay
-//  371   ZDO_RegisterForZDOMsg( TransmitApp_TaskID, Match_Desc_rsp );
+//  379   ZDO_RegisterForZDOMsg( TransmitApp_TaskID, Match_Desc_rsp );
         ; Setup parameters for call to function ZDO_RegisterForZDOMsg
         MOV     R2,#0x6
         MOV     R3,#-0x80
@@ -1653,7 +1660,7 @@ TransmitApp_Init:
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   ??ZDO_RegisterForZDOMsg?relay
-//  372   ZDO_RegisterForZDOMsg( TransmitApp_TaskID,TRANSMITAPP_CLUSTERID_TESTMSG);
+//  380   ZDO_RegisterForZDOMsg( TransmitApp_TaskID,TRANSMITAPP_CLUSTERID_TESTMSG);
         ; Setup parameters for call to function ZDO_RegisterForZDOMsg
         MOV     R2,#-0x5f
         MOV     R3,#0x0
@@ -1661,13 +1668,18 @@ TransmitApp_Init:
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   ??ZDO_RegisterForZDOMsg?relay
-//  373   
-//  374 #if defined (HX_18B20_R1)
-//  375   osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_START_REPORT_EVT, 1000);
-//  376   Flag_ReportData = true;
-//  377 #endif
-//  378 
-//  379 }
+//  381   
+//  382 #if defined (HX_18B20_R1)
+//  383   osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_START_REPORT_EVT, 1000);
+//  384   Flag_ReportData = true;
+//  385 #endif
+//  386 #if defined GTA_WMSCB_R1
+//  387   NativeAddr = 0x22;  //ÉèÖÃ¿ØÖÆÄ£¿éµÄZigBeeµØÖ·
+//  388 //  initTimer3();//³õÊ¼»¯¶¨Ê±Æ÷3
+//  389 //  stopTimer3();
+//  390 #endif
+//  391 
+//  392 }
         MOV     A,#0x2
           CFI EndBlock cfiBlock0
         REQUIRE ?Subroutine4
@@ -1695,28 +1707,28 @@ TransmitApp_Init:
           CFI Valid
         LJMP    ??Subroutine16_0 & 0xFFFF
           CFI EndBlock cfiBlock1
-//  380 
-//  381 /*********************************************************************
-//  382  * @fn      TransmitApp_ProcessEvent
-//  383  *
-//  384  * @brief   Generic Application Task event processor.  This function
-//  385  *          is called to process all events for the task.  Events
-//  386  *          include timers, messages and any other user defined events.
-//  387  *
-//  388  * @param   task_id  - The OSAL assigned task ID.
-//  389  * @param   events - events to process.  This is a bit map and can
-//  390  *                   contain more than one event.
-//  391  *
-//  392  * @return  none
-//  393  */
+//  393 
+//  394 /*********************************************************************
+//  395  * @fn      TransmitApp_ProcessEvent
+//  396  *
+//  397  * @brief   Generic Application Task event processor.  This function
+//  398  *          is called to process all events for the task.  Events
+//  399  *          include timers, messages and any other user defined events.
+//  400  *
+//  401  * @param   task_id  - The OSAL assigned task ID.
+//  402  * @param   events - events to process.  This is a bit map and can
+//  403  *                   contain more than one event.
+//  404  *
+//  405  * @return  none
+//  406  */
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  394 UINT16 TransmitApp_ProcessEvent( byte task_id, UINT16 events )
+//  407 UINT16 TransmitApp_ProcessEvent( byte task_id, UINT16 events )
 TransmitApp_ProcessEvent:
           CFI Block cfiBlock2 Using cfiCommon0
           CFI Function TransmitApp_ProcessEvent
         CODE
-//  395 {
+//  408 {
         FUNCALL TransmitApp_ProcessEvent, osal_msg_receive
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -1944,100 +1956,100 @@ TransmitApp_ProcessEvent:
         MOV     R6,A
         MOV     A,R3
         MOV     R7,A
-//  396   afIncomingMSGPacket_t *MSGpkt;
-//  397   afDataConfirm_t *afDataConfirm;
-//  398   (void)task_id;  // Intentionally unreferenced parameter
-//  399 
-//  400   // Data Confirmation message fields
-//  401   ZStatus_t sentStatus;
-//  402   byte sentEP;
-//  403   
-//  404 
-//  405   
-//  406   uint8 Frame[20];//ÁÙÊ±Éè¶¨µÄ´óÐ¡
-//  407   uint8 data[10];//
-//  408   uint16 i=0,j=0;
-//  409   uint8 led=0;
-//  410   uint16 temp;
-//  411   uint16 FrameLen;
-//  412   
-//  413 
-//  414   if ( events & SYS_EVENT_MSG )
+//  409   afIncomingMSGPacket_t *MSGpkt;
+//  410   afDataConfirm_t *afDataConfirm;
+//  411   (void)task_id;  // Intentionally unreferenced parameter
+//  412 
+//  413   // Data Confirmation message fields
+//  414   ZStatus_t sentStatus;
+//  415   byte sentEP;
+//  416   
+//  417 
+//  418   
+//  419   uint8 Frame[20];//ÁÙÊ±Éè¶¨µÄ´óÐ¡
+//  420   uint8 data[10];//
+//  421   uint16 i=0,j=0;
+//  422   uint8 led=0;
+//  423   uint16 temp;
+//  424   uint16 FrameLen;
+//  425   
+//  426 
+//  427   if ( events & SYS_EVENT_MSG )
         ANL     A,#0x80
         JNZ     $+5
         LJMP    ??TransmitApp_ProcessEvent_0 & 0xFFFF
-//  415   {
-//  416     MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive( TransmitApp_TaskID );
+//  428   {
+//  429     MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive( TransmitApp_TaskID );
         ; Setup parameters for call to function osal_msg_receive
         SJMP    ??TransmitApp_ProcessEvent_1
-//  417     while ( MSGpkt )
-//  418     {
-//  419       switch ( MSGpkt->hdr.event )
-//  420       {
-//  421         case ZDO_CB_MSG:
-//  422           TransmitApp_ProcessZDOMsgs( (zdoIncomingMsg_t *)MSGpkt );
-//  423           break;
-//  424 
-//  425         case KEY_CHANGE:
-//  426           TransmitApp_HandleKeys( ((keyChange_t *)MSGpkt)->state, ((keyChange_t *)MSGpkt)->keys );
-//  427           break;
-//  428 
-//  429         case AF_DATA_CONFIRM_CMD:
-//  430           // This message is received as a confirmation of a data packet sent.
-//  431           // The status is of ZStatus_t type [defined in ZComDef.h]
-//  432           // The message fields are defined in AF.h
-//  433           afDataConfirm = (afDataConfirm_t *)MSGpkt;
-//  434           sentEP = afDataConfirm->endpoint;
-//  435           sentStatus = afDataConfirm->hdr.status;
-//  436 
-//  437           if ( (ZSuccess == sentStatus) &&
-//  438                (TransmitApp_epDesc.endPoint == sentEP) )
-//  439           {
-//  440 #if !defined ( TRANSMITAPP_RANDOM_LEN )
-//  441             txAccum += TransmitApp_MaxDataLength;
-//  442 #endif
-//  443             if ( !timerOn )
-//  444             {
-//  445               osal_start_timerEx( TransmitApp_TaskID,TRANSMITAPP_RCVTIMER_EVT,
-//  446                                                      TRANSMITAPP_DISPLAY_TIMER);
-//  447               clkShdw = osal_GetSystemClock();
-//  448               timerOn = TRUE;
-//  449             }
-//  450           }
-//  451 
-//  452           // Action taken when confirmation is received: Send the next message.
-//  453           TransmitApp_SetSendEvt();
-//  454           break;
-//  455 
-//  456         case AF_INCOMING_MSG_CMD:
-//  457           TransmitApp_MessageMSGCB( MSGpkt );
-//  458           
-//  459           break;
-//  460 
-//  461         case ZDO_STATE_CHANGE:
-//  462           TransmitApp_NwkState = (devStates_t)(MSGpkt->hdr.status);
+//  430     while ( MSGpkt )
+//  431     {
+//  432       switch ( MSGpkt->hdr.event )
+//  433       {
+//  434         case ZDO_CB_MSG:
+//  435           TransmitApp_ProcessZDOMsgs( (zdoIncomingMsg_t *)MSGpkt );
+//  436           break;
+//  437 
+//  438         case KEY_CHANGE:
+//  439           TransmitApp_HandleKeys( ((keyChange_t *)MSGpkt)->state, ((keyChange_t *)MSGpkt)->keys );
+//  440           break;
+//  441 
+//  442         case AF_DATA_CONFIRM_CMD:
+//  443           // This message is received as a confirmation of a data packet sent.
+//  444           // The status is of ZStatus_t type [defined in ZComDef.h]
+//  445           // The message fields are defined in AF.h
+//  446           afDataConfirm = (afDataConfirm_t *)MSGpkt;
+//  447           sentEP = afDataConfirm->endpoint;
+//  448           sentStatus = afDataConfirm->hdr.status;
+//  449 
+//  450           if ( (ZSuccess == sentStatus) &&
+//  451                (TransmitApp_epDesc.endPoint == sentEP) )
+//  452           {
+//  453 #if !defined ( TRANSMITAPP_RANDOM_LEN )
+//  454             txAccum += TransmitApp_MaxDataLength;
+//  455 #endif
+//  456             if ( !timerOn )
+//  457             {
+//  458               osal_start_timerEx( TransmitApp_TaskID,TRANSMITAPP_RCVTIMER_EVT,
+//  459                                                      TRANSMITAPP_DISPLAY_TIMER);
+//  460               clkShdw = osal_GetSystemClock();
+//  461               timerOn = TRUE;
+//  462             }
+//  463           }
+//  464 
+//  465           // Action taken when confirmation is received: Send the next message.
+//  466           TransmitApp_SetSendEvt();
+//  467           break;
+//  468 
+//  469         case AF_INCOMING_MSG_CMD:
+//  470           TransmitApp_MessageMSGCB( MSGpkt );
+//  471           
+//  472           break;
+//  473 
+//  474         case ZDO_STATE_CHANGE:
+//  475           TransmitApp_NwkState = (devStates_t)(MSGpkt->hdr.status);
 ??TransmitApp_ProcessEvent_2:
         INC     DPTR
         MOVX    A,@DPTR
         MOV     DPTR,#TransmitApp_NwkState
         MOVX    @DPTR,A
-//  463 
-//  464           break;
-//  465 
-//  466         default:
-//  467           break;
-//  468       }
-//  469 
-//  470       // Release the memory
-//  471       osal_msg_deallocate( (uint8 *)MSGpkt );
+//  476 
+//  477           break;
+//  478 
+//  479         default:
+//  480           break;
+//  481       }
+//  482 
+//  483       // Release the memory
+//  484       osal_msg_deallocate( (uint8 *)MSGpkt );
 ??TransmitApp_ProcessEvent_3:
         ; Setup parameters for call to function osal_msg_deallocate
         MOV     R2,?V0 + 0
         MOV     R3,?V0 + 1
         LCALL   ??osal_msg_deallocate?relay
-//  472 
-//  473       // Next
-//  474       MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive( TransmitApp_TaskID );
+//  485 
+//  486       // Next
+//  487       MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive( TransmitApp_TaskID );
         ; Setup parameters for call to function osal_msg_receive
 ??TransmitApp_ProcessEvent_1:
         MOV     DPTR,#TransmitApp_TaskID
@@ -2132,75 +2144,75 @@ TransmitApp_ProcessEvent:
         ; Setup parameters for call to function TransmitApp_SetSendEvt
         LCALL   ??TransmitApp_SetSendEvt?relay
         LJMP    ??TransmitApp_ProcessEvent_3 & 0xFFFF
-//  475     }
-//  476 
-//  477     // Squash compiler warnings until values are used.
-//  478     (void)sentStatus;
-//  479     (void)sentEP;
-//  480 
-//  481     // Return unprocessed events
-//  482     return (events ^ SYS_EVENT_MSG);
+//  488     }
+//  489 
+//  490     // Squash compiler warnings until values are used.
+//  491     (void)sentStatus;
+//  492     (void)sentEP;
+//  493 
+//  494     // Return unprocessed events
+//  495     return (events ^ SYS_EVENT_MSG);
 ??TransmitApp_ProcessEvent_4:
         MOV     A,R6
         MOV     R2,A
         MOV     A,R7
         XRL     A,#0x80
         LJMP    ??TransmitApp_ProcessEvent_9 & 0xFFFF
-//  483   }
-//  484 
-//  485   // Send a message out
-//  486   if ( events & TRANSMITAPP_SEND_MSG_EVT )
+//  496   }
+//  497 
+//  498   // Send a message out
+//  499   if ( events & TRANSMITAPP_SEND_MSG_EVT )
 ??TransmitApp_ProcessEvent_0:
         MOV     A,R6
         MOV     C,0xE0 /* A   */.0
         JNC     ??TransmitApp_ProcessEvent_10
-//  487   {
-//  488     if ( TransmitApp_State == TRANSMITAPP_STATE_SENDING )
+//  500   {
+//  501     if ( TransmitApp_State == TRANSMITAPP_STATE_SENDING )
         MOV     DPTR,#TransmitApp_State
         MOVX    A,@DPTR
         XRL     A,#0x1
         JNZ     ??TransmitApp_ProcessEvent_11
-//  489     {
-//  490       TransmitApp_SendTheMessage();
+//  502     {
+//  503       TransmitApp_SendTheMessage();
         ; Setup parameters for call to function TransmitApp_SendTheMessage
         LCALL   ??TransmitApp_SendTheMessage?relay
-//  491     }
-//  492 
-//  493     // Return unprocessed events
-//  494     return (events ^ TRANSMITAPP_SEND_MSG_EVT);
+//  504     }
+//  505 
+//  506     // Return unprocessed events
+//  507     return (events ^ TRANSMITAPP_SEND_MSG_EVT);
 ??TransmitApp_ProcessEvent_11:
         MOV     A,R6
         XRL     A,#0x1
         LJMP    ??TransmitApp_ProcessEvent_12 & 0xFFFF
-//  495   }
-//  496 
-//  497   // Timed wait from error
-//  498   if ( events & TRANSMITAPP_SEND_ERR_EVT )
+//  508   }
+//  509 
+//  510   // Timed wait from error
+//  511   if ( events & TRANSMITAPP_SEND_ERR_EVT )
 ??TransmitApp_ProcessEvent_10:
         ANL     A,#0x4
         JZ      ??TransmitApp_ProcessEvent_13
-//  499   {
-//  500     TransmitApp_SetSendEvt();
+//  512   {
+//  513     TransmitApp_SetSendEvt();
         ; Setup parameters for call to function TransmitApp_SetSendEvt
         LCALL   ??TransmitApp_SetSendEvt?relay
-//  501 
-//  502     // Return unprocessed events
-//  503     return (events ^ TRANSMITAPP_SEND_ERR_EVT);
+//  514 
+//  515     // Return unprocessed events
+//  516     return (events ^ TRANSMITAPP_SEND_ERR_EVT);
         MOV     A,R6
         XRL     A,#0x4
         LJMP    ??TransmitApp_ProcessEvent_12 & 0xFFFF
-//  504   }
-//  505 
-//  506   // Receive timer
-//  507   if ( events & TRANSMITAPP_RCVTIMER_EVT )
+//  517   }
+//  518 
+//  519   // Receive timer
+//  520   if ( events & TRANSMITAPP_RCVTIMER_EVT )
 ??TransmitApp_ProcessEvent_13:
         MOV     A,R6
         ANL     A,#0x2
         JZ      ??TransmitApp_ProcessEvent_14
-//  508   {
-//  509     // Setup to display the next result
-//  510     osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_RCVTIMER_EVT,
-//  511                                             TRANSMITAPP_DISPLAY_TIMER );
+//  521   {
+//  522     // Setup to display the next result
+//  523     osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_RCVTIMER_EVT,
+//  524                                             TRANSMITAPP_DISPLAY_TIMER );
         ; Setup parameters for call to function osal_start_timerEx
         MOV     R4,#-0x30
         MOV     R5,#0x7
@@ -2210,45 +2222,45 @@ TransmitApp_ProcessEvent:
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   ??osal_start_timerEx?relay
-//  512     TransmitApp_DisplayResults();
+//  525     TransmitApp_DisplayResults();
         ; Setup parameters for call to function TransmitApp_DisplayResults
         LCALL   ??TransmitApp_DisplayResults?relay
-//  513 
-//  514     return (events ^ TRANSMITAPP_RCVTIMER_EVT);
+//  526 
+//  527     return (events ^ TRANSMITAPP_RCVTIMER_EVT);
         MOV     A,R6
         XRL     A,#0x2
         LJMP    ??TransmitApp_ProcessEvent_12 & 0xFFFF
-//  515   }
-//  516   if ( events & TRANSMITAPP_BIND_REQUEST_EVT)//microdjg
+//  528   }
+//  529   if ( events & TRANSMITAPP_BIND_REQUEST_EVT)//microdjg
 ??TransmitApp_ProcessEvent_14:
         MOV     A,R6
         ANL     A,#0x8
         JZ      ??TransmitApp_ProcessEvent_15
-//  517   {
-//  518     SendBindRequest();//×Ô¶¯¿ªÊ¼°ó¶¨ microdjg
+//  530   {
+//  531     SendBindRequest();//×Ô¶¯¿ªÊ¼°ó¶¨ microdjg
         ; Setup parameters for call to function SendBindRequest
         LCALL   ??SendBindRequest?relay
-//  519     //osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_BIND_REQUEST_EVT,3000 );
-//  520     return (events ^ TRANSMITAPP_BIND_REQUEST_EVT);
+//  532     //osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_BIND_REQUEST_EVT,3000 );
+//  533     return (events ^ TRANSMITAPP_BIND_REQUEST_EVT);
         MOV     A,R6
         XRL     A,#0x8
         LJMP    ??TransmitApp_ProcessEvent_12 & 0xFFFF
-//  521   }
-//  522   
-//  523   
-//  524   if ( events & TRANSMITAPP_START_REPORT_EVT )
+//  534   }
+//  535   
+//  536   
+//  537   if ( events & TRANSMITAPP_START_REPORT_EVT )
 ??TransmitApp_ProcessEvent_15:
         MOV     A,R6
         ANL     A,#0x10
         JNZ     $+5
         LJMP    ??TransmitApp_ProcessEvent_16 & 0xFFFF
-//  525   {
-//  526     if(Flag_ReportData)
+//  538   {
+//  539     if(Flag_ReportData)
         MOV     DPTR,#Flag_ReportData
         MOVX    A,@DPTR
         JZ      ??TransmitApp_ProcessEvent_17
-//  527       {
-//  528         osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_START_REPORT_EVT, 1000);
+//  540       {
+//  541         osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_START_REPORT_EVT, 1000);
         ; Setup parameters for call to function osal_start_timerEx
         MOV     R4,#-0x18
         MOV     R5,#0x3
@@ -2258,8 +2270,8 @@ TransmitApp_ProcessEvent:
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   ??osal_start_timerEx?relay
-//  529       }
-//  530     HalLedBlink(HAL_LED_1,1,50,300);
+//  542       }
+//  543     HalLedBlink(HAL_LED_1,1,50,300);
 ??TransmitApp_ProcessEvent_17:
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#0x2c
@@ -2268,60 +2280,60 @@ TransmitApp_ProcessEvent:
         MOV     R2,#0x1
         MOV     R1,#0x1
         LCALL   ??HalLedBlink?relay
-//  531     
-//  532     
-//  533     
-//  534     
-//  535     #if defined ( GTA_WWSB_R1 )||(GTA_WFSB_R1) //´«¸ÐÆ÷   
-//  536     temp=ReadADC(4);//¶ÁÓêµÎµçÑ¹Öµ
-//  537     data[0]=1;
-//  538     if(temp>3000)
-//  539       data[1]=0x01;
-//  540     else
-//  541       data[1]=0x00;
-//  542     //data[1]=LO_UINT16(temp);
-//  543     //data[2]=HI_UINT16(temp);
-//  544 #if defined GTA_WWSB_R1
-//  545     NativeAddr = 0x11;//ÓêµÎ´«¸ÐÆ÷µØÖ·
-//  546 #elif defined GTA_WFSB_R1
-//  547     NativeAddr = 0x16;//»ðÑæ´«¸ÐÆ÷µØÖ·
-//  548 #endif
-//  549     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
-//  550     SendDataRequest(Frame,FrameLen);//·¢ËÍ
-//  551     #endif
-//  552     
-//  553     
-//  554     #if defined (GTA_WVSB_R1)||(GTA_WIRSB_R1)
-//  555     temp=ReadADC(4);
+//  544     
+//  545     
+//  546     
+//  547     
+//  548     #if defined ( GTA_WWSB_R1 )||(GTA_WFSB_R1) //´«¸ÐÆ÷   
+//  549     temp=ReadADC(4);//¶ÁµçÑ¹Öµ
+//  550     data[0]=1;
+//  551     if(temp>3000)
+//  552       data[1]=0x01;
+//  553     else
+//  554       data[1]=0x00;
+//  555     //data[1]=LO_UINT16(temp);
+//  556     //data[2]=HI_UINT16(temp);
+//  557 #if defined GTA_WWSB_R1
+//  558     NativeAddr = 0x11;//ÓêµÎ´«¸ÐÆ÷µØÖ·
+//  559 #elif defined GTA_WFSB_R1
+//  560     NativeAddr = 0x16;//»ðÑæ´«¸ÐÆ÷µØÖ·
+//  561 #endif
+//  562     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
+//  563     SendDataRequest(Frame,FrameLen);//·¢ËÍ
+//  564     #endif
+//  565     
+//  566     
+//  567     #if defined (GTA_WVSB_R1)||(GTA_WIRSB_R1)
+//  568     temp=ReadADC(4);
         ; Setup parameters for call to function ReadADC
         MOV     R1,#0x4
         LCALL   ??ReadADC?relay
-//  556     data[0]=1;
+//  569     data[0]=1;
         LCALL   ?Subroutine6 & 0xFFFF
-//  557     if(temp>3000)
+//  570     if(temp>3000)
 ??CrossCallReturnLabel_2:
         JC      ??TransmitApp_ProcessEvent_18
-//  558       data[1]=0x00;
+//  571       data[1]=0x00;
         LCALL   ?XSTACK_DISP0_8
         CLR     A
         SJMP    ??TransmitApp_ProcessEvent_19
-//  559     else
-//  560       data[1]=0x01;
+//  572     else
+//  573       data[1]=0x01;
 ??TransmitApp_ProcessEvent_18:
         LCALL   ?XSTACK_DISP0_8
         MOV     A,#0x1
 ??TransmitApp_ProcessEvent_19:
         MOVX    @DPTR,A
-//  561 #if defined GTA_WVSB_R1
-//  562     NativeAddr = 0x13;//Çã½Ç´«¸ÐÆ÷µØÖ·
-//  563 #elif defined GTA_WIRSB_R1
-//  564     NativeAddr = 0x15;//ºìÍâ´«¸ÐÆ÷µØÖ·
+//  574 #if defined GTA_WVSB_R1
+//  575     NativeAddr = 0x13;//Çã½Ç´«¸ÐÆ÷µØÖ·
+//  576 #elif defined GTA_WIRSB_R1
+//  577     NativeAddr = 0x15;//ºìÍâ´«¸ÐÆ÷µØÖ·
         MOV     DPTR,#NativeAddr
         MOV     A,#0x15
         LCALL   ?Subroutine9 & 0xFFFF
-//  565 #endif
-//  566     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
-//  567     SendDataRequest(Frame,FrameLen);//·¢ËÍ
+//  578 #endif
+//  579     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
+//  580     SendDataRequest(Frame,FrameLen);//·¢ËÍ
 ??CrossCallReturnLabel_6:
         LCALL   ?PUSH_XSTACK_I_TWO
           CFI CFA_XSP16 add(XSP16, 48)
@@ -2351,79 +2363,79 @@ TransmitApp_ProcessEvent:
         MOV     R2,DPL
         MOV     R3,DPH
         LCALL   ??SendDataRequest?relay
-//  568     #endif
-//  569     
-//  570     #if defined ( GTA_WUSB_R1 )
-//  571     IO_DIR_PORT_PIN(0, 6, IO_IN);
-//  572     data[0]=1;
-//  573     if(IO_SENSOR)
-//  574       data[1]=0x01;
-//  575     else
-//  576       data[1]=0x00;
-//  577     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
-//  578     SendDataRequest(Frame,FrameLen);//·¢ËÍ
-//  579     #endif
-//  580     
-//  581     #if defined (GTA_WISB_R1)
-//  582     temp=ReadADC(4);//
-//  583     data[0]=2;
-//  584     data[1]=LO_UINT16(temp);
-//  585     data[2]=HI_UINT16(temp);
-//  586     NativeAddr = 0x14;//¹âÕÕ´«¸ÐÆ÷µØÖ·
-//  587     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,3);//´ò°ü
-//  588     SendDataRequest(Frame,FrameLen);//·¢ËÍ
-//  589     #endif
-//  590     
-//  591     
-//  592     #if defined ( GTA_WTHSB_R1 ) //ÎÂÊª¶È´«¸ÐÆ÷  
+//  581     #endif
+//  582     
+//  583     #if defined ( GTA_WUSB_R1 )
+//  584     IO_DIR_PORT_PIN(0, 6, IO_IN);
+//  585     data[0]=1;
+//  586     if(IO_SENSOR)
+//  587       data[1]=0x01;
+//  588     else
+//  589       data[1]=0x00;
+//  590     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
+//  591     SendDataRequest(Frame,FrameLen);//·¢ËÍ
+//  592     #endif
 //  593     
-//  594     readTempHumi();
-//  595     data[0]=4;
-//  596     data[1]=humi_val[0];//L
-//  597     data[2]=humi_val[1];//H
-//  598     data[3]=temp_val[0];
-//  599     data[4]=temp_val[1];
-//  600     NativeAddr = 0x12;//ÎÂÊª¶È´«¸ÐÆ÷µØÖ·
-//  601     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,5);//´ò°ü
-//  602     SendDataRequest(Frame,FrameLen);//·¢ËÍ
-//  603     HalUARTWrite(HAL_UART_PORT_0, Frame, FrameLen);
+//  594     #if defined (GTA_WISB_R1)
+//  595     temp=ReadADC(4);//
+//  596     data[0]=2;
+//  597     data[1]=LO_UINT16(temp);
+//  598     data[2]=HI_UINT16(temp);
+//  599     NativeAddr = 0x14;//¹âÕÕ´«¸ÐÆ÷µØÖ·
+//  600     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,3);//´ò°ü
+//  601     SendDataRequest(Frame,FrameLen);//·¢ËÍ
+//  602     #endif
+//  603     
 //  604     
-//  605     #endif
+//  605     #if defined ( GTA_WTHSB_R1 ) //ÎÂÊª¶È´«¸ÐÆ÷  
 //  606     
-//  607     //¿ÉÈ¼ÆøÌåCombustible gas¡¢¾Æ¾«Alcohol¡¢ÑÌÎíSmoke
-//  608 #if defined ( HX_WCGSB_R1 ) || (HX_ALCOHOL_SENSOR) || (HX_SMOKE_SENSOR)
-//  609     IO_DIR_PORT_PIN(0, 1, IO_IN);
-//  610     data[0]=1;
-//  611     if(IO_COMBUSTIBLE_GAS_PORT)
-//  612       data[1] = 1;
-//  613     else
-//  614       data[1] = 0;
-//  615 #if defined HX_SMOKE_SENSOR
-//  616     NativeAddr = 0x21;//ÑÌÎí´«¸ÐÆ÷µØÖ·
-//  617 #elif defined HX_ALCOHOL_SENSOR
-//  618     NativeAddr = 0x20;//¾Æ¾«´«¸ÐÆ÷µØÖ·
-//  619 #elif defined HX_WCGSB_R1
-//  620     NativeAddr = 0x18;//¿ÉÈ¼ÆøÌå´«¸ÐÆ÷µØÖ·
-//  621 #endif
-//  622     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
-//  623     SendDataRequest(Frame,FrameLen);//·¢ËÍ
-//  624 #endif
-//  625     
-//  626 #if defined ( HX_18B20_R1 )
-//  627     uint8* pTempData;
-//  628     read_data();
-//  629     pTempData = DataChange();
-//  630     data[0]=4;
-//  631     data[1]=*pTempData++;//temperature H
-//  632     data[2]=*pTempData;//temperature L
-//  633     NativeAddr = 0x19;//ÉèÖÃ18b20µÄZigBeeµØÖ·Îª19h
-//  634     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,3);//´ò°ü
-//  635     SendDataRequest(Frame,FrameLen);//·¢ËÍ
-//  636     HalUARTWrite(HAL_UART_PORT_0, Frame, FrameLen);
+//  607     readTempHumi();
+//  608     data[0]=4;
+//  609     data[1]=humi_val[0];//L
+//  610     data[2]=humi_val[1];//H
+//  611     data[3]=temp_val[0];
+//  612     data[4]=temp_val[1];
+//  613     NativeAddr = 0x12;//ÎÂÊª¶È´«¸ÐÆ÷µØÖ·
+//  614     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,5);//´ò°ü
+//  615     SendDataRequest(Frame,FrameLen);//·¢ËÍ
+//  616     HalUARTWrite(HAL_UART_PORT_0, Frame, FrameLen);
+//  617     
+//  618     #endif
+//  619     
+//  620     //¿ÉÈ¼ÆøÌåCombustible gas¡¢¾Æ¾«Alcohol¡¢ÑÌÎíSmoke
+//  621 #if defined ( HX_WCGSB_R1 ) || (HX_ALCOHOL_SENSOR) || (HX_SMOKE_SENSOR)
+//  622     IO_DIR_PORT_PIN(0, 1, IO_IN);
+//  623     data[0]=1;
+//  624     if(IO_COMBUSTIBLE_GAS_PORT)
+//  625       data[1] = 1;
+//  626     else
+//  627       data[1] = 0;
+//  628 #if defined HX_SMOKE_SENSOR
+//  629     NativeAddr = 0x21;//ÑÌÎí´«¸ÐÆ÷µØÖ·
+//  630 #elif defined HX_ALCOHOL_SENSOR
+//  631     NativeAddr = 0x20;//¾Æ¾«´«¸ÐÆ÷µØÖ·
+//  632 #elif defined HX_WCGSB_R1
+//  633     NativeAddr = 0x18;//¿ÉÈ¼ÆøÌå´«¸ÐÆ÷µØÖ·
+//  634 #endif
+//  635     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
+//  636     SendDataRequest(Frame,FrameLen);//·¢ËÍ
 //  637 #endif
 //  638     
-//  639     
-//  640     return (events ^ TRANSMITAPP_START_REPORT_EVT);
+//  639 #if defined ( HX_18B20_R1 )
+//  640     uint8* pTempData;
+//  641     read_data();
+//  642     pTempData = DataChange();
+//  643     data[0]=4;
+//  644     data[1]=*pTempData++;//temperature H
+//  645     data[2]=*pTempData;//temperature L
+//  646     NativeAddr = 0x19;//ÉèÖÃ18b20µÄZigBeeµØÖ·Îª19h
+//  647     FrameLen=FramePackage(Frame,NativeAddr,0x03,data,3);//´ò°ü
+//  648     SendDataRequest(Frame,FrameLen);//·¢ËÍ
+//  649     HalUARTWrite(HAL_UART_PORT_0, Frame, FrameLen);
+//  650 #endif
+//  651     
+//  652     
+//  653     return (events ^ TRANSMITAPP_START_REPORT_EVT);
         MOV     A,R6
         XRL     A,#0x10
 ??TransmitApp_ProcessEvent_12:
@@ -2432,12 +2444,22 @@ TransmitApp_ProcessEvent:
 ??TransmitApp_ProcessEvent_9:
         MOV     R3,A
         SJMP    ??TransmitApp_ProcessEvent_20
-//  641   }
-//  642   
-//  643   
-//  644 
-//  645   // Discard unknown events
-//  646   return 0;
+//  654   }
+//  655   
+//  656 #if defined GTA_WMSCB_R1
+//  657   // ´ËÊÂ¼þÓÃÓÚLEDµãÕóÉ¨ÃèÏÔÊ¾
+//  658   if(events & TRANSMITAPP_LEDS_DISPLAY_EVT){
+//  659       if(isScan == true){
+//  660         osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_LEDS_DISPLAY_EVT, 1);
+//  661         ControlLeds(u_LedsNumber);
+//  662       }
+//  663     return events ^ TRANSMITAPP_LEDS_DISPLAY_EVT;
+//  664   }
+//  665 #endif
+//  666   
+//  667 
+//  668   // Discard unknown events
+//  669   return 0;
 ??TransmitApp_ProcessEvent_16:
         MOV     R2,#0x0
         MOV     R3,#0x0
@@ -2447,28 +2469,28 @@ TransmitApp_ProcessEvent:
           CFI CFA_XSP16 add(XSP16, 16)
         LJMP    ?Subroutine1 & 0xFFFF
           CFI EndBlock cfiBlock2
-//  647 }
-//  648 
-//  649 /*********************************************************************
-//  650  * Event Generation Functions
-//  651  */
-//  652 /*********************************************************************
-//  653  * @fn      TransmitApp_ProcessZDOMsgs()
-//  654  *
-//  655  * @brief   Process response messages
-//  656  *
-//  657  * @param   none
-//  658  *
-//  659  * @return  none
-//  660  */
+//  670 }
+//  671 
+//  672 /*********************************************************************
+//  673  * Event Generation Functions
+//  674  */
+//  675 /*********************************************************************
+//  676  * @fn      TransmitApp_ProcessZDOMsgs()
+//  677  *
+//  678  * @brief   Process response messages
+//  679  *
+//  680  * @param   none
+//  681  *
+//  682  * @return  none
+//  683  */
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  661 void TransmitApp_ProcessZDOMsgs( zdoIncomingMsg_t *inMsg )
+//  684 void TransmitApp_ProcessZDOMsgs( zdoIncomingMsg_t *inMsg )
 TransmitApp_ProcessZDOMsgs:
           CFI Block cfiBlock3 Using cfiCommon0
           CFI Function TransmitApp_ProcessZDOMsgs
         CODE
-//  662 {
+//  685 {
         FUNCALL TransmitApp_ProcessZDOMsgs, HalLedSet
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -2573,7 +2595,7 @@ TransmitApp_ProcessZDOMsgs:
           CFI CFA_XSP16 add(XSP16, 10)
         ; Saved register size: 10
         ; Auto size: 0
-//  663   switch ( inMsg->clusterID )
+//  686   switch ( inMsg->clusterID )
         MOV     A,R2
         ADD     A,#0xc
         MOV     DPL,A
@@ -2649,9 +2671,9 @@ TransmitApp_ProcessZDOMsgs:
         DATA16
         DW        ??TransmitApp_ProcessZDOMsgs_3
         CODE
-//  664   {
-//  665     case End_Device_Bind_rsp:
-//  666       if ( ZDO_ParseBindRsp( inMsg ) == ZSuccess )
+//  687   {
+//  688     case End_Device_Bind_rsp:
+//  689       if ( ZDO_ParseBindRsp( inMsg ) == ZSuccess )
 ??TransmitApp_ProcessZDOMsgs_2:
         MOV     A,R2
         ADD     A,#0x13
@@ -2660,14 +2682,14 @@ TransmitApp_ProcessZDOMsgs:
         LCALL   ?Subroutine11 & 0xFFFF
 ??CrossCallReturnLabel_11:
         JNZ     ??TransmitApp_ProcessZDOMsgs_4
-//  667       {
-//  668         // Light LED
-//  669         HalLedSet( HAL_LED_4, HAL_LED_MODE_ON );
+//  690       {
+//  691         // Light LED
+//  692         HalLedSet( HAL_LED_4, HAL_LED_MODE_ON );
         ; Setup parameters for call to function HalLedSet
         MOV     R2,#0x1
         MOV     R1,#0x8
         LCALL   ??HalLedSet?relay
-//  670         osal_stop_timerEx( TransmitApp_TaskID, TRANSMITAPP_BIND_REQUEST_EVT );
+//  693         osal_stop_timerEx( TransmitApp_TaskID, TRANSMITAPP_BIND_REQUEST_EVT );
         ; Setup parameters for call to function osal_stop_timerEx
         MOV     R2,#0x8
         MOV     R3,#0x0
@@ -2676,14 +2698,14 @@ TransmitApp_ProcessZDOMsgs:
         MOV     R1,A
         LCALL   ??osal_stop_timerEx?relay
         SJMP    ??TransmitApp_ProcessZDOMsgs_3
-//  671 
-//  672       }
-//  673 #if defined(BLINK_LEDS)
-//  674       else
-//  675       {
-//  676         // Flash LED to show failure
-//  677         //HalLedSet ( HAL_LED_2, HAL_LED_MODE_FLASH );//4
-//  678         HalLedBlink(HAL_LED_2,1,50,1000);//Ö¸Ê¾°ó¶¨ÓÐÎó
+//  694 
+//  695       }
+//  696 #if defined(BLINK_LEDS)
+//  697       else
+//  698       {
+//  699         // Flash LED to show failure
+//  700         //HalLedSet ( HAL_LED_2, HAL_LED_MODE_FLASH );//4
+//  701         HalLedBlink(HAL_LED_2,1,50,1000);//Ö¸Ê¾°ó¶¨ÓÐÎó
 ??TransmitApp_ProcessZDOMsgs_4:
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#-0x18
@@ -2692,13 +2714,13 @@ TransmitApp_ProcessZDOMsgs:
         MOV     R2,#0x1
         MOV     R1,#0x2
         SJMP    ??TransmitApp_ProcessZDOMsgs_5
-//  679       }
-//  680 #endif
-//  681       break;
-//  682 
-//  683     case Match_Desc_rsp:
-//  684       {
-//  685         ZDO_ActiveEndpointRsp_t *pRsp = ZDO_ParseEPListRsp( inMsg );
+//  702       }
+//  703 #endif
+//  704       break;
+//  705 
+//  706     case Match_Desc_rsp:
+//  707       {
+//  708         ZDO_ActiveEndpointRsp_t *pRsp = ZDO_ParseEPListRsp( inMsg );
 ??TransmitApp_ProcessZDOMsgs_1:
         ; Setup parameters for call to function ZDO_ParseEPListRsp
         LCALL   ??ZDO_ParseEPListRsp?relay
@@ -2706,12 +2728,12 @@ TransmitApp_ProcessZDOMsgs:
         MOV     ?V0 + 1,R3
         MOV     R6,?V0 + 0
         MOV     R7,?V0 + 1
-//  686         if ( pRsp )
+//  709         if ( pRsp )
         MOV     A,R6
         ORL     A,R7
         JZ      ??TransmitApp_ProcessZDOMsgs_3
-//  687         {
-//  688           if ( pRsp->status == ZSuccess && pRsp->cnt )
+//  710         {
+//  711           if ( pRsp->status == ZSuccess && pRsp->cnt )
         MOV     DPL,R6
         MOV     DPH,R7
         MOVX    A,@DPTR
@@ -2721,12 +2743,12 @@ TransmitApp_ProcessZDOMsgs:
         INC     DPTR
         MOVX    A,@DPTR
         JZ      ??TransmitApp_ProcessZDOMsgs_6
-//  689           {
-//  690             TransmitApp_DstAddr.addrMode = (afAddrMode_t)Addr16Bit;
+//  712           {
+//  713             TransmitApp_DstAddr.addrMode = (afAddrMode_t)Addr16Bit;
         MOV     DPTR,#TransmitApp_DstAddr + 8
         MOV     A,#0x2
         LCALL   ?Subroutine10 & 0xFFFF
-//  691             TransmitApp_DstAddr.addr.shortAddr = pRsp->nwkAddr;
+//  714             TransmitApp_DstAddr.addr.shortAddr = pRsp->nwkAddr;
 ??CrossCallReturnLabel_8:
         MOVX    A,@DPTR
         MOV     R0,A
@@ -2739,8 +2761,8 @@ TransmitApp_ProcessZDOMsgs:
         INC     DPTR
         MOV     A,R1
         LCALL   ?Subroutine10 & 0xFFFF
-//  692             // Take the first endpoint, Can be changed to search through endpoints
-//  693             TransmitApp_DstAddr.endPoint = pRsp->epList[0];
+//  715             // Take the first endpoint, Can be changed to search through endpoints
+//  716             TransmitApp_DstAddr.endPoint = pRsp->epList[0];
 ??CrossCallReturnLabel_9:
         INC     DPTR
         INC     DPTR
@@ -2748,15 +2770,15 @@ TransmitApp_ProcessZDOMsgs:
         MOVX    A,@DPTR
         MOV     DPTR,#TransmitApp_DstAddr + 9
         MOVX    @DPTR,A
-//  694 
-//  695             // Light LED
-//  696             HalLedSet( HAL_LED_4, HAL_LED_MODE_ON );
+//  717 
+//  718             // Light LED
+//  719             HalLedSet( HAL_LED_4, HAL_LED_MODE_ON );
         ; Setup parameters for call to function HalLedSet
         MOV     R2,#0x1
         MOV     R1,#0x8
         LCALL   ??HalLedSet?relay
-//  697           }
-//  698           osal_mem_free( pRsp );
+//  720           }
+//  721           osal_mem_free( pRsp );
 ??TransmitApp_ProcessZDOMsgs_6:
         ; Setup parameters for call to function osal_mem_free
         MOV     A,R6
@@ -2765,18 +2787,18 @@ TransmitApp_ProcessZDOMsgs:
         MOV     R3,A
         LCALL   ??osal_mem_free?relay
         SJMP    ??TransmitApp_ProcessZDOMsgs_3
-//  699         }
-//  700       }
-//  701       break;
-//  702       
-//  703   case TRANSMITAPP_CLUSTERID_TESTMSG://microdjg
-//  704     {  
-//  705       //osal_set_event( TransmitApp_TaskID, AF_INCOMING_MSG_CMD );///
-//  706       TransmitApp_ProcessZDOIncomingMsgs(inMsg);
+//  722         }
+//  723       }
+//  724       break;
+//  725       
+//  726   case TRANSMITAPP_CLUSTERID_TESTMSG://microdjg
+//  727     {  
+//  728       //osal_set_event( TransmitApp_TaskID, AF_INCOMING_MSG_CMD );///
+//  729       TransmitApp_ProcessZDOIncomingMsgs(inMsg);
 ??TransmitApp_ProcessZDOMsgs_0:
         ; Setup parameters for call to function TransmitApp_ProcessZDOIncomingMsgs
         LCALL   ??TransmitApp_ProcessZDOIncomingMsgs?relay
-//  707       HalLedBlink(HAL_LED_4,1,50,500);///
+//  730       HalLedBlink(HAL_LED_4,1,50,500);///
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#-0xc
         MOV     R5,#0x1
@@ -2785,9 +2807,9 @@ TransmitApp_ProcessZDOMsgs:
         MOV     R1,#0x8
 ??TransmitApp_ProcessZDOMsgs_5:
         LCALL   ??HalLedBlink?relay
-//  708     }
-//  709   }
-//  710 }
+//  731     }
+//  732   }
+//  733 }
 ??TransmitApp_ProcessZDOMsgs_3:
         SJMP    ??Subroutine16_0
           CFI EndBlock cfiBlock3
@@ -2835,29 +2857,29 @@ TransmitApp_ProcessZDOMsgs:
         MOV     R7,#0x2
         LJMP    ?BANKED_LEAVE_XDATA
           CFI EndBlock cfiBlock5
-//  711 
-//  712 /*********************************************************************
-//  713  * @fn      TransmitApp_HandleKeys
-//  714  *
-//  715  * @brief   Handles all key events for this device.
-//  716  *
-//  717  * @param   shift - true if in shift/alt.
-//  718  * @param   keys - bit field for key events. Valid entries:
-//  719  *                 EVAL_SW4
-//  720  *                 EVAL_SW3
-//  721  *                 EVAL_SW2
-//  722  *                 EVAL_SW1
-//  723  *
-//  724  * @return  none
-//  725  */
+//  734 
+//  735 /*********************************************************************
+//  736  * @fn      TransmitApp_HandleKeys
+//  737  *
+//  738  * @brief   Handles all key events for this device.
+//  739  *
+//  740  * @param   shift - true if in shift/alt.
+//  741  * @param   keys - bit field for key events. Valid entries:
+//  742  *                 EVAL_SW4
+//  743  *                 EVAL_SW3
+//  744  *                 EVAL_SW2
+//  745  *                 EVAL_SW1
+//  746  *
+//  747  * @return  none
+//  748  */
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  726 void TransmitApp_HandleKeys( byte shift, byte keys )
+//  749 void TransmitApp_HandleKeys( byte shift, byte keys )
 TransmitApp_HandleKeys:
           CFI Block cfiBlock6 Using cfiCommon0
           CFI Function TransmitApp_HandleKeys
         CODE
-//  727 {
+//  750 {
         FUNCALL TransmitApp_HandleKeys, HalUARTWrite
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -2908,35 +2930,35 @@ TransmitApp_HandleKeys:
         ; Auto size: 0
         MOV     A,R2
         MOV     R6,A
-//  728   //zAddrType_t dstAddr;
-//  729       
-//  730     if ( keys == HAL_KEY_INT_1)
+//  751   //zAddrType_t dstAddr;
+//  752       
+//  753     if ( keys == HAL_KEY_INT_1)
         MOV     A,#-0x1f
         XRL     A,R6
         JNZ     ??TransmitApp_HandleKeys_0
-//  731     {
-//  732       #if defined(GTA_DEBUG)
-//  733       Test_Mark=0x01;
+//  754     {
+//  755       #if defined(GTA_DEBUG)
+//  756       Test_Mark=0x01;
         MOV     DPTR,#Test_Mark
         MOV     A,#0x1
         MOVX    @DPTR,A
-//  734       Test_Buf[0] = 0x99;
+//  757       Test_Buf[0] = 0x99;
         MOV     DPTR,#Test_Buf
         MOV     A,#-0x67
         MOVX    @DPTR,A
-//  735       Test_Buf[1] = 0x88;
+//  758       Test_Buf[1] = 0x88;
         INC     DPTR
         MOV     A,#-0x78
         MOVX    @DPTR,A
-//  736       Test_Buf[2] = 0x77;
+//  759       Test_Buf[2] = 0x77;
         INC     DPTR
         MOV     A,#0x77
         MOVX    @DPTR,A
-//  737       Test_Buf[3] = 0x66;
+//  760       Test_Buf[3] = 0x66;
         INC     DPTR
         MOV     A,#0x66
         MOVX    @DPTR,A
-//  738       HalUARTWrite(HAL_UART_PORT_0,Test_Buf,15);
+//  761       HalUARTWrite(HAL_UART_PORT_0,Test_Buf,15);
         ; Setup parameters for call to function HalUARTWrite
         MOV     R4,#0xf
         MOV     R5,#0x0
@@ -2944,8 +2966,8 @@ TransmitApp_HandleKeys:
         MOV     R3,#(Test_Buf >> 8) & 0xff
         MOV     R1,#0x0
         LCALL   ??HalUARTWrite?relay
-//  739       #endif
-//  740       Flag_ReportData=!Flag_ReportData;
+//  762       #endif
+//  763       Flag_ReportData=!Flag_ReportData;
         MOV     DPTR,#Flag_ReportData
         MOVX    A,@DPTR
         JNZ     ??TransmitApp_HandleKeys_1
@@ -2955,7 +2977,7 @@ TransmitApp_HandleKeys:
         CLR     A
 ??TransmitApp_HandleKeys_2:
         MOVX    @DPTR,A
-//  741       HalLedBlink (HAL_LED_1, 1, 50, 100);
+//  764       HalLedBlink (HAL_LED_1, 1, 50, 100);
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#0x64
         MOV     R5,#0x0
@@ -2963,13 +2985,13 @@ TransmitApp_HandleKeys:
         MOV     R2,#0x1
         MOV     R1,#0x1
         LCALL   ??HalLedBlink?relay
-//  742       if(Flag_ReportData)
+//  765       if(Flag_ReportData)
         MOV     DPTR,#Flag_ReportData
         MOVX    A,@DPTR
         JZ      ??TransmitApp_HandleKeys_0
-//  743       {
-//  744         //osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_START_REPORT_EVT, 2000);
-//  745         osal_set_event( TransmitApp_TaskID, TRANSMITAPP_START_REPORT_EVT );
+//  766       {
+//  767         //osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_START_REPORT_EVT, 2000);
+//  768         osal_set_event( TransmitApp_TaskID, TRANSMITAPP_START_REPORT_EVT );
         ; Setup parameters for call to function osal_set_event
         MOV     R2,#0x10
         MOV     R3,#0x0
@@ -2978,10 +3000,10 @@ TransmitApp_HandleKeys:
         MOV     R1,A
         LCALL   ??osal_set_event?relay
           CFI EndBlock cfiBlock6
-//  746       }
-//  747     }
-//  748  //}
-//  749 }
+//  769       }
+//  770     }
+//  771  //}
+//  772 }
 ??TransmitApp_HandleKeys_0:
         REQUIRE ?Subroutine2
         ; // Fall through to label ?Subroutine2
@@ -3004,57 +3026,57 @@ TransmitApp_HandleKeys:
         MOV     R7,#0x1
         LJMP    ?BANKED_LEAVE_XDATA
           CFI EndBlock cfiBlock7
-//  750 
-//  751 /*********************************************************************
-//  752  * LOCAL FUNCTIONS
-//  753  */
-//  754 
-//  755 /*********************************************************************
-//  756  * @fn      TransmitApp_MessageMSGCB
-//  757  *
-//  758  * @brief   Data message processor callback.  This function processes
-//  759  *          any incoming data - probably from other devices.  So, based
-//  760  *          on cluster ID, perform the intended action.
-//  761  *
-//  762  * @param   none
-//  763  *
-//  764  * @return  none
-//  765  */
+//  773 
+//  774 /*********************************************************************
+//  775  * LOCAL FUNCTIONS
+//  776  */
+//  777 
+//  778 /*********************************************************************
+//  779  * @fn      TransmitApp_MessageMSGCB
+//  780  *
+//  781  * @brief   Data message processor callback.  This function processes
+//  782  *          any incoming data - probably from other devices.  So, based
+//  783  *          on cluster ID, perform the intended action.
+//  784  *
+//  785  * @param   none
+//  786  *
+//  787  * @return  none
+//  788  */
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  766 void TransmitApp_MessageMSGCB( afIncomingMSGPacket_t *pkt )
+//  789 void TransmitApp_MessageMSGCB( afIncomingMSGPacket_t *pkt )
 TransmitApp_MessageMSGCB:
           CFI Block cfiBlock8 Using cfiCommon0
           CFI Function TransmitApp_MessageMSGCB
         CODE
-//  767 {
+//  790 {
         ; Saved register size: 0
         ; Auto size: 0
-//  768   uint16 i;
-//  769   uint8 error = FALSE;
-//  770 //HalLedBlink (HAL_LED_2, 1, 50, 300);
-//  771 //HalUARTWrite(HAL_UART_PORT_0,pkt->cmd.Data,pkt->cmd.DataLength);//microdjg
-//  772   switch ( pkt->clusterId )
-//  773   {
-//  774     case TRANSMITAPP_CLUSTERID_TESTMSG:
-//  775       
-//  776       //HalUARTWrite(HAL_UART_PORT_0,pkt->cmd.Data,pkt->cmd.DataLength);//microdjg
-//  777       //HalLedBlink ( HAL_LED_2, 1, 50, 300 );//Blink to indicate RX
-//  778       break;
-//  779   default:break;
-//  780   }
-//  781 }
+//  791   uint16 i;
+//  792   uint8 error = FALSE;
+//  793 //HalLedBlink (HAL_LED_2, 1, 50, 300);
+//  794 //HalUARTWrite(HAL_UART_PORT_0,pkt->cmd.Data,pkt->cmd.DataLength);//microdjg
+//  795   switch ( pkt->clusterId )
+//  796   {
+//  797     case TRANSMITAPP_CLUSTERID_TESTMSG:
+//  798       
+//  799       //HalUARTWrite(HAL_UART_PORT_0,pkt->cmd.Data,pkt->cmd.DataLength);//microdjg
+//  800       //HalLedBlink ( HAL_LED_2, 1, 50, 300 );//Blink to indicate RX
+//  801       break;
+//  802   default:break;
+//  803   }
+//  804 }
         LJMP    ?BRET
           CFI EndBlock cfiBlock8
-//  782 
+//  805 
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  783 void TransmitApp_ProcessZDOIncomingMsgs( zdoIncomingMsg_t *inMsg )
+//  806 void TransmitApp_ProcessZDOIncomingMsgs( zdoIncomingMsg_t *inMsg )
 TransmitApp_ProcessZDOIncomingMsgs:
           CFI Block cfiBlock9 Using cfiCommon0
           CFI Function TransmitApp_ProcessZDOIncomingMsgs
         CODE
-//  784 {
+//  807 {
         FUNCALL TransmitApp_ProcessZDOIncomingMsgs, HalLedBlink
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -3121,10 +3143,10 @@ TransmitApp_ProcessZDOIncomingMsgs:
         MOV     R6,A
         MOV     A,R3
         MOV     R7,A
-//  785     ModBusFrame_t RxFrame;
-//  786     uint16 temp;
-//  787     //uint8 recdatabuf[20];
-//  788     HalLedBlink (HAL_LED_2, 1, 50, 300);
+//  808     ModBusFrame_t RxFrame;
+//  809     uint16 temp;
+//  810     //uint8 recdatabuf[20];
+//  811     HalLedBlink (HAL_LED_2, 1, 50, 300);
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#0x2c
         MOV     R5,#0x1
@@ -3132,20 +3154,20 @@ TransmitApp_ProcessZDOIncomingMsgs:
         MOV     R2,#0x1
         MOV     R1,#0x2
         LCALL   ??HalLedBlink?relay
-//  789     uint8 i;
-//  790     //#if defined(GTA_DEBUG)
-//  791     //  uint8 i;
-//  792     //#endif
-//  793     
-//  794     //HalUARTWrite(HAL_UART_PORT_0,inMsg->asdu,inMsg->asduLen);//²âÊÔ
-//  795     
-//  796     if(ZG_DEVICE_COORDINATOR_TYPE)
+//  812     uint8 i;
+//  813     //#if defined(GTA_DEBUG)
+//  814     //  uint8 i;
+//  815     //#endif
+//  816     
+//  817     //HalUARTWrite(HAL_UART_PORT_0,inMsg->asdu,inMsg->asduLen);//²âÊÔ
+//  818     
+//  819     if(ZG_DEVICE_COORDINATOR_TYPE)
         MOV     DPTR,#zgDeviceLogicalType
         MOVX    A,@DPTR
         JNZ     ??TransmitApp_ProcessZDOIncomingMsgs_0
-//  797     {
-//  798       
-//  799       if(inMsg->asduLen!=0&&inMsg->asdu[0]!=0)
+//  820     {
+//  821       
+//  822       if(inMsg->asduLen!=0&&inMsg->asdu[0]!=0)
         LCALL   ?Subroutine12 & 0xFFFF
 ??CrossCallReturnLabel_13:
         JZ      ??TransmitApp_ProcessZDOIncomingMsgs_1
@@ -3156,17 +3178,17 @@ TransmitApp_ProcessZDOIncomingMsgs:
         LCALL   ?Subroutine11 & 0xFFFF
 ??CrossCallReturnLabel_12:
         JZ      ??TransmitApp_ProcessZDOIncomingMsgs_1
-//  800       {/*
-//  801         for(i=0;i<inMsg->asduLen;i++)
-//  802         {
-//  803           recdatabuf[i]=inMsg->asdu[i];
-//  804         } 
-//  805         HalUARTWrite(HAL_UART_PORT_0,recdatabuf,inMsg->asduLen);
-//  806         */
-//  807         HalUARTWrite(HAL_UART_PORT_0,inMsg->asdu,inMsg->asduLen);
+//  823       {/*
+//  824         for(i=0;i<inMsg->asduLen;i++)
+//  825         {
+//  826           recdatabuf[i]=inMsg->asdu[i];
+//  827         } 
+//  828         HalUARTWrite(HAL_UART_PORT_0,recdatabuf,inMsg->asduLen);
+//  829         */
+//  830         HalUARTWrite(HAL_UART_PORT_0,inMsg->asdu,inMsg->asduLen);
         ; Setup parameters for call to function HalUARTWrite
         LCALL   ?Subroutine12 & 0xFFFF
-//  808       }
+//  831       }
 ??CrossCallReturnLabel_14:
         MOV     R4,A
         MOV     R5,#0x0
@@ -3174,19 +3196,19 @@ TransmitApp_ProcessZDOIncomingMsgs:
 ??CrossCallReturnLabel_19:
         MOV     R1,#0x0
         LCALL   ??HalUARTWrite?relay
-//  809       
-//  810       //HalUARTWrite(HAL_UART_PORT_0,recdatabuf,inMsg->asduLen);
-//  811       #if defined(GTA_DEBUG)
-//  812       if(Test_Mark==0x01)
+//  832       
+//  833       //HalUARTWrite(HAL_UART_PORT_0,recdatabuf,inMsg->asduLen);
+//  834       #if defined(GTA_DEBUG)
+//  835       if(Test_Mark==0x01)
 ??TransmitApp_ProcessZDOIncomingMsgs_1:
         MOV     DPTR,#Test_Mark
         MOVX    A,@DPTR
         XRL     A,#0x1
         JNZ     ??TransmitApp_ProcessZDOIncomingMsgs_2
-//  813       {
-//  814         for(i=0;i<15;i++)
-//  815         {
-//  816           Test_Buf[i]=0;
+//  836       {
+//  837         for(i=0;i<15;i++)
+//  838         {
+//  839           Test_Buf[i]=0;
         CLR     A
         MOV     DPTR,#Test_Buf
         MOV     R0,#0xf
@@ -3194,17 +3216,17 @@ TransmitApp_ProcessZDOIncomingMsgs:
         MOVX    @DPTR,A
         INC     DPTR
         DJNZ    R0,??TransmitApp_ProcessZDOIncomingMsgs_3
-//  817         }
-//  818         for(i=0;i<inMsg->asduLen;i++)
+//  840         }
+//  841         for(i=0;i<inMsg->asduLen;i++)
         MOV     R3,A
         SJMP    ??TransmitApp_ProcessZDOIncomingMsgs_4
-//  819         {
-//  820           Test_Buf[i]=inMsg->asdu[i];
+//  842         {
+//  843           Test_Buf[i]=inMsg->asdu[i];
 ??TransmitApp_ProcessZDOIncomingMsgs_5:
         MOV     DPL,R3
         MOV     R0,DPL
         LCALL   ?Subroutine15 & 0xFFFF
-//  821         }
+//  844         }
 ??CrossCallReturnLabel_24:
         ADD     A,R0
         MOV     R2,A
@@ -3234,18 +3256,18 @@ TransmitApp_ProcessZDOIncomingMsgs:
         CLR     C
         SUBB    A,R0
         JC      ??TransmitApp_ProcessZDOIncomingMsgs_5
-//  822         Test_Mark=0;
+//  845         Test_Mark=0;
         MOV     DPTR,#Test_Mark
         CLR     A
         MOVX    @DPTR,A
         SJMP    ??TransmitApp_ProcessZDOIncomingMsgs_2
-//  823       }
-//  824       
-//  825       #endif
-//  826     }
-//  827     else
-//  828     {
-//  829       FrameUnPackage(inMsg->asdu,&RxFrame);//check Package
+//  846       }
+//  847       
+//  848       #endif
+//  849     }
+//  850     else
+//  851     {
+//  852       FrameUnPackage(inMsg->asdu,&RxFrame);//check Package
 ??TransmitApp_ProcessZDOIncomingMsgs_0:
         ; Setup parameters for call to function FrameUnPackage
         MOV     DPL,?XSP + 0
@@ -3255,25 +3277,25 @@ TransmitApp_ProcessZDOIncomingMsgs:
         LCALL   ?Subroutine14 & 0xFFFF
 ??CrossCallReturnLabel_20:
         LCALL   ??FrameUnPackage?relay
-//  830       if(RxFrame.COMFIRM==FRAME_CHECK_RIGHT)
+//  853       if(RxFrame.COMFIRM==FRAME_CHECK_RIGHT)
         MOV     A,#0x17
         LCALL   ?XSTACK_DISP0_8
         MOVX    A,@DPTR
         XRL     A,#0x1
         JNZ     ??TransmitApp_ProcessZDOIncomingMsgs_2
-//  831       {
-//  832         ReportData(&RxFrame);
+//  854       {
+//  855         ReportData(&RxFrame);
         ; Setup parameters for call to function ReportData
         MOV     DPL,?XSP + 0
         MOV     DPH,?XSP + 1
         MOV     R2,DPL
         MOV     R3,DPH
         LCALL   ??ReportData?relay
-//  833         
-//  834       }
-//  835     } 
-//  836     
-//  837 }
+//  856         
+//  857       }
+//  858     } 
+//  859     
+//  860 }
 ??TransmitApp_ProcessZDOIncomingMsgs_2:
         MOV     A,#0x18
         LCALL   ?DEALLOC_XSTACK8
@@ -3733,24 +3755,24 @@ TransmitApp_ProcessZDOIncomingMsgs:
           CFI EndBlock cfiCond38
           CFI EndBlock cfiCond39
           CFI EndBlock cfiPicker40
-//  838 
-//  839 /*********************************************************************
-//  840  * @fn      TransmitApp_SendTheMessage
-//  841  *
-//  842  * @brief   Send "the" message.
-//  843  *
-//  844  * @param   none
-//  845  *
-//  846  * @return  none
-//  847  */
+//  861 
+//  862 /*********************************************************************
+//  863  * @fn      TransmitApp_SendTheMessage
+//  864  *
+//  865  * @brief   Send "the" message.
+//  866  *
+//  867  * @param   none
+//  868  *
+//  869  * @return  none
+//  870  */
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  848 void TransmitApp_SendTheMessage( void )
+//  871 void TransmitApp_SendTheMessage( void )
 TransmitApp_SendTheMessage:
           CFI Block cfiBlock41 Using cfiCommon0
           CFI Function TransmitApp_SendTheMessage
         CODE
-//  849 {
+//  872 {
         FUNCALL TransmitApp_SendTheMessage, AF_DataRequest
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -3800,19 +3822,19 @@ TransmitApp_SendTheMessage:
           CFI CFA_XSP16 add(XSP16, 10)
         ; Saved register size: 10
         ; Auto size: 0
-//  850   uint16 len;
-//  851   uint8 tmp;
-//  852 
-//  853   do {
-//  854     // put the sequence number in the message
-//  855     tmp = HI_UINT8( TransmitApp_TransID );
+//  873   uint16 len;
+//  874   uint8 tmp;
+//  875 
+//  876   do {
+//  877     // put the sequence number in the message
+//  878     tmp = HI_UINT8( TransmitApp_TransID );
 ??TransmitApp_SendTheMessage_0:
         MOV     DPTR,#TransmitApp_TransID
         MOVX    A,@DPTR
         SWAP    A
         ANL     A,#0xf
         MOV     R6,A
-//  856     tmp += (tmp <= 9) ? ('0') : ('A' - 0x0A);
+//  879     tmp += (tmp <= 9) ? ('0') : ('A' - 0x0A);
         CLR     C
         SUBB    A,#0xa
         JNC     ??TransmitApp_SendTheMessage_1
@@ -3820,18 +3842,18 @@ TransmitApp_SendTheMessage:
         SJMP    ??TransmitApp_SendTheMessage_2
 ??TransmitApp_SendTheMessage_1:
         MOV     R0,#0x37
-//  857     TransmitApp_Msg[2] = tmp;
+//  880     TransmitApp_Msg[2] = tmp;
 ??TransmitApp_SendTheMessage_2:
         MOV     A,R0
         ADD     A,R6
         MOV     DPTR,#TransmitApp_Msg + 2
         MOVX    @DPTR,A
-//  858     tmp = LO_UINT8( TransmitApp_TransID );
+//  881     tmp = LO_UINT8( TransmitApp_TransID );
         MOV     DPTR,#TransmitApp_TransID
         MOVX    A,@DPTR
         ANL     A,#0xf
         MOV     R6,A
-//  859     tmp += (tmp <= 9) ? ('0') : ('A' - 0x0A);
+//  882     tmp += (tmp <= 9) ? ('0') : ('A' - 0x0A);
         CLR     C
         SUBB    A,#0xa
         JNC     ??TransmitApp_SendTheMessage_3
@@ -3839,29 +3861,29 @@ TransmitApp_SendTheMessage:
         SJMP    ??TransmitApp_SendTheMessage_4
 ??TransmitApp_SendTheMessage_3:
         MOV     R0,#0x37
-//  860     TransmitApp_Msg[3] = tmp;
+//  883     TransmitApp_Msg[3] = tmp;
 ??TransmitApp_SendTheMessage_4:
         MOV     A,R0
         ADD     A,R6
         MOV     DPTR,#TransmitApp_Msg + 3
         MOVX    @DPTR,A
-//  861 
-//  862     len = TransmitApp_MaxDataLength;
-//  863 
-//  864 #if defined ( TRANSMITAPP_RANDOM_LEN )
-//  865     len = (uint8)(osal_rand() & 0x7F);
-//  866     if( len > TransmitApp_MaxDataLength || len == 0 )
-//  867       len = TransmitApp_MaxDataLength;
-//  868     else if ( len < 4 )
-//  869       len = 4;
-//  870 #endif
-//  871 	
-//  872     tmp = AF_DataRequest( &TransmitApp_DstAddr, &TransmitApp_epDesc,
-//  873                            TRANSMITAPP_CLUSTERID_TESTMSG,
-//  874                            len, TransmitApp_Msg,
-//  875                           &TransmitApp_TransID,
-//  876                            TRANSMITAPP_TX_OPTIONS,
-//  877                            AF_DEFAULT_RADIUS );
+//  884 
+//  885     len = TransmitApp_MaxDataLength;
+//  886 
+//  887 #if defined ( TRANSMITAPP_RANDOM_LEN )
+//  888     len = (uint8)(osal_rand() & 0x7F);
+//  889     if( len > TransmitApp_MaxDataLength || len == 0 )
+//  890       len = TransmitApp_MaxDataLength;
+//  891     else if ( len < 4 )
+//  892       len = 4;
+//  893 #endif
+//  894 	
+//  895     tmp = AF_DataRequest( &TransmitApp_DstAddr, &TransmitApp_epDesc,
+//  896                            TRANSMITAPP_CLUSTERID_TESTMSG,
+//  897                            len, TransmitApp_Msg,
+//  898                           &TransmitApp_TransID,
+//  899                            TRANSMITAPP_TX_OPTIONS,
+//  900                            AF_DEFAULT_RADIUS );
         ; Setup parameters for call to function AF_DataRequest
         MOV     ?V0 + 0,#0x1e
         MOV     R0,#?V0 + 0
@@ -3896,7 +3918,7 @@ TransmitApp_SendTheMessage:
           CFI CFA_XSP16 add(XSP16, 10)
         MOV     A,R1
         MOV     R6,A
-//  878     HalLedBlink ( HAL_LED_3, 1, 50, 200 );//Blink to indicate TX  microdjg
+//  901     HalLedBlink ( HAL_LED_3, 1, 50, 200 );//Blink to indicate TX  microdjg
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#-0x38
         MOV     R5,#0x0
@@ -3904,35 +3926,35 @@ TransmitApp_SendTheMessage:
         MOV     R2,#0x1
         MOV     R1,#0x4
         LCALL   ??HalLedBlink?relay
-//  879 
-//  880 #if defined ( TRANSMITAPP_RANDOM_LEN )
-//  881     if ( tmp == afStatus_SUCCESS )
-//  882     {
-//  883       txAccum += len;
-//  884     }
-//  885 #endif
-//  886 
-//  887     if ( timesToSend )
+//  902 
+//  903 #if defined ( TRANSMITAPP_RANDOM_LEN )
+//  904     if ( tmp == afStatus_SUCCESS )
+//  905     {
+//  906       txAccum += len;
+//  907     }
+//  908 #endif
+//  909 
+//  910     if ( timesToSend )
         MOV     DPTR,#timesToSend
         MOVX    A,@DPTR
         JZ      ??TransmitApp_SendTheMessage_5
-//  888     {
-//  889       timesToSend--;
-//  890     }
-//  891   } while ( (timesToSend != 0) && (afStatus_SUCCESS == tmp) );
+//  911     {
+//  912       timesToSend--;
+//  913     }
+//  914   } while ( (timesToSend != 0) && (afStatus_SUCCESS == tmp) );
         DEC     A
         MOVX    @DPTR,A
         JZ      ??TransmitApp_SendTheMessage_5
         MOV     A,R6
         JNZ     $+5
         LJMP    ??TransmitApp_SendTheMessage_0 & 0xFFFF
-//  892 
-//  893   if ( afStatus_SUCCESS == tmp )
+//  915 
+//  916   if ( afStatus_SUCCESS == tmp )
 ??TransmitApp_SendTheMessage_5:
         MOV     A,R6
         JNZ     ??TransmitApp_SendTheMessage_6
-//  894   {
-//  895     pktCounter++;
+//  917   {
+//  918     pktCounter++;
         MOV     DPTR,#pktCounter
         MOVX    A,@DPTR
         ADD     A,#0x1
@@ -3942,11 +3964,11 @@ TransmitApp_SendTheMessage:
         ADDC    A,#0x0
         MOVX    @DPTR,A
         SJMP    ??TransmitApp_SendTheMessage_7
-//  896   }
-//  897   else
-//  898   {
-//  899     // Error, so wait (10 mSec) and try again.
-//  900     osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_SEND_ERR_EVT, 10 );
+//  919   }
+//  920   else
+//  921   {
+//  922     // Error, so wait (10 mSec) and try again.
+//  923     osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_SEND_ERR_EVT, 10 );
 ??TransmitApp_SendTheMessage_6:
         ; Setup parameters for call to function osal_start_timerEx
         MOV     R4,#0xa
@@ -3957,29 +3979,29 @@ TransmitApp_SendTheMessage:
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   ??osal_start_timerEx?relay
-//  901   }
-//  902 }
+//  924   }
+//  925 }
 ??TransmitApp_SendTheMessage_7:
         LJMP    ??Subroutine16_0 & 0xFFFF
           CFI EndBlock cfiBlock41
-//  903 
-//  904 /*********************************************************************
-//  905  * @fn      TransmitApp_ChangeState
-//  906  *
-//  907  * @brief   Toggle the Sending/Waiting state flag
-//  908  *
-//  909  * @param   none
-//  910  *
-//  911  * @return  none
-//  912  */
+//  926 
+//  927 /*********************************************************************
+//  928  * @fn      TransmitApp_ChangeState
+//  929  *
+//  930  * @brief   Toggle the Sending/Waiting state flag
+//  931  *
+//  932  * @param   none
+//  933  *
+//  934  * @return  none
+//  935  */
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  913 void TransmitApp_ChangeState( void )
+//  936 void TransmitApp_ChangeState( void )
 TransmitApp_ChangeState:
           CFI Block cfiBlock42 Using cfiCommon0
           CFI Function TransmitApp_ChangeState
         CODE
-//  914 {
+//  937 {
         FUNCALL TransmitApp_ChangeState, TransmitApp_SetSendEvt
         LOCFRAME ISTACK, 2, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -3999,32 +4021,32 @@ TransmitApp_ChangeState:
           CFI CFA_SP SP+-5
         ; Saved register size: 2
         ; Auto size: 0
-//  915   if ( TransmitApp_State == TRANSMITAPP_STATE_WAITING )
+//  938   if ( TransmitApp_State == TRANSMITAPP_STATE_WAITING )
         MOV     DPTR,#TransmitApp_State
         MOVX    A,@DPTR
         JNZ     ??TransmitApp_ChangeState_0
-//  916   {
-//  917     TransmitApp_State = TRANSMITAPP_STATE_SENDING;
+//  939   {
+//  940     TransmitApp_State = TRANSMITAPP_STATE_SENDING;
         MOV     A,#0x1
         MOVX    @DPTR,A
-//  918     TransmitApp_SetSendEvt();
+//  941     TransmitApp_SetSendEvt();
         ; Setup parameters for call to function TransmitApp_SetSendEvt
         LCALL   ??TransmitApp_SetSendEvt?relay
-//  919     timesToSend = TRANSMITAPP_INITIAL_MSG_COUNT;
+//  942     timesToSend = TRANSMITAPP_INITIAL_MSG_COUNT;
         MOV     DPTR,#timesToSend
         MOV     A,#0x2
         SJMP    ??TransmitApp_ChangeState_1
-//  920   }
-//  921   else
-//  922   {
-//  923     TransmitApp_State = TRANSMITAPP_STATE_WAITING;
+//  943   }
+//  944   else
+//  945   {
+//  946     TransmitApp_State = TRANSMITAPP_STATE_WAITING;
 ??TransmitApp_ChangeState_0:
         CLR     A
 ??TransmitApp_ChangeState_1:
         MOVX    @DPTR,A
           CFI EndBlock cfiBlock42
-//  924   }
-//  925 }
+//  947   }
+//  948 }
         REQUIRE ?Subroutine3
         ; // Fall through to label ?Subroutine3
 
@@ -4043,24 +4065,24 @@ TransmitApp_ChangeState:
           CFI DPL0 SameValue
         LJMP    ?BRET
           CFI EndBlock cfiBlock43
-//  926 
-//  927 /*********************************************************************
-//  928  * @fn      TransmitApp_SetSendEvt
-//  929  *
-//  930  * @brief   Set the event flag
-//  931  *
-//  932  * @param   none
-//  933  *
-//  934  * @return  none
-//  935  */
+//  949 
+//  950 /*********************************************************************
+//  951  * @fn      TransmitApp_SetSendEvt
+//  952  *
+//  953  * @brief   Set the event flag
+//  954  *
+//  955  * @param   none
+//  956  *
+//  957  * @return  none
+//  958  */
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  936 void TransmitApp_SetSendEvt( void )
+//  959 void TransmitApp_SetSendEvt( void )
 TransmitApp_SetSendEvt:
           CFI Block cfiBlock44 Using cfiCommon0
           CFI Function TransmitApp_SetSendEvt
         CODE
-//  937 {
+//  960 {
         FUNCALL TransmitApp_SetSendEvt, osal_start_timerEx
         LOCFRAME ISTACK, 2, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -4080,10 +4102,10 @@ TransmitApp_SetSendEvt:
           CFI CFA_SP SP+-5
         ; Saved register size: 2
         ; Auto size: 0
-//  938 #if defined( TRANSMITAPP_DELAY_SEND )
-//  939   // Adds a delay to sending the data
-//  940   osal_start_timerEx( TransmitApp_TaskID,
-//  941                     TRANSMITAPP_SEND_MSG_EVT, TRANSMITAPP_SEND_DELAY );
+//  961 #if defined( TRANSMITAPP_DELAY_SEND )
+//  962   // Adds a delay to sending the data
+//  963   osal_start_timerEx( TransmitApp_TaskID,
+//  964                     TRANSMITAPP_SEND_MSG_EVT, TRANSMITAPP_SEND_DELAY );
         ; Setup parameters for call to function osal_start_timerEx
         MOV     R4,#-0x38
         MOV     R5,#0x0
@@ -4093,31 +4115,31 @@ TransmitApp_SetSendEvt:
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   ??osal_start_timerEx?relay
-//  942 #else
-//  943   // No Delay - just send the data
-//  944   osal_set_event( TransmitApp_TaskID, TRANSMITAPP_SEND_MSG_EVT );
-//  945 #endif
-//  946 }
+//  965 #else
+//  966   // No Delay - just send the data
+//  967   osal_set_event( TransmitApp_TaskID, TRANSMITAPP_SEND_MSG_EVT );
+//  968 #endif
+//  969 }
         SJMP    ?Subroutine3
           CFI EndBlock cfiBlock44
-//  947 
-//  948 /*********************************************************************
-//  949  * @fn      TransmitApp_DisplayResults
-//  950  *
-//  951  * @brief   Display the results and clear the accumulators
-//  952  *
-//  953  * @param   none
-//  954  *
-//  955  * @return  none
-//  956  */
+//  970 
+//  971 /*********************************************************************
+//  972  * @fn      TransmitApp_DisplayResults
+//  973  *
+//  974  * @brief   Display the results and clear the accumulators
+//  975  *
+//  976  * @param   none
+//  977  *
+//  978  * @return  none
+//  979  */
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  957 void TransmitApp_DisplayResults( void )
+//  980 void TransmitApp_DisplayResults( void )
 TransmitApp_DisplayResults:
           CFI Block cfiBlock45 Using cfiCommon0
           CFI Function TransmitApp_DisplayResults
         CODE
-//  958 {
+//  981 {
         FUNCALL TransmitApp_DisplayResults, osal_GetSystemClock
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -4184,15 +4206,15 @@ TransmitApp_DisplayResults:
           CFI CFA_XSP16 add(XSP16, 16)
         ; Saved register size: 16
         ; Auto size: 0
-//  959 #ifdef LCD_SUPPORTED
-//  960   #define LCD_W  16
-//  961   uint32 rxShdw, txShdw, tmp;
-//  962   byte lcd_buf[LCD_W+1];
-//  963   byte idx;
-//  964 #endif
-//  965 
-//  966   // The OSAL timers are not real-time, so calculate the actual time expired.
-//  967   uint32 msecs = osal_GetSystemClock() - clkShdw;
+//  982 #ifdef LCD_SUPPORTED
+//  983   #define LCD_W  16
+//  984   uint32 rxShdw, txShdw, tmp;
+//  985   byte lcd_buf[LCD_W+1];
+//  986   byte idx;
+//  987 #endif
+//  988 
+//  989   // The OSAL timers are not real-time, so calculate the actual time expired.
+//  990   uint32 msecs = osal_GetSystemClock() - clkShdw;
         ; Setup parameters for call to function osal_GetSystemClock
         LCALL   ??osal_GetSystemClock?relay
         MOV     ?V0 + 4,R2
@@ -4202,74 +4224,74 @@ TransmitApp_DisplayResults:
         MOV     DPTR,#clkShdw
         MOV     R0,#?V0 + 4
         LCALL   ?L_SUB_X
-//  968   clkShdw = osal_GetSystemClock();
+//  991   clkShdw = osal_GetSystemClock();
         ; Setup parameters for call to function osal_GetSystemClock
         LCALL   ??osal_GetSystemClock?relay
         MOV     DPTR,#clkShdw
         LCALL   ?XSTORE_R2345
-//  969 
-//  970   rxTotal += rxAccum;
+//  992 
+//  993   rxTotal += rxAccum;
         MOV     DPTR,#rxAccum
         MOV     R0,#?V0 + 0
         LCALL   ?L_MOV_X
         MOV     DPTR,#rxTotal
         MOV     R0,#?V0 + 0
         LCALL   ?L_ADD_TO_X
-//  971   txTotal += txAccum;
+//  994   txTotal += txAccum;
         MOV     DPTR,#txAccum
         MOV     R0,#?V0 + 0
         LCALL   ?L_MOV_X
         MOV     DPTR,#txTotal
         MOV     R0,#?V0 + 0
         LCALL   ?L_ADD_TO_X
-//  972 
-//  973 #if defined ( LCD_SUPPORTED )
-//  974   rxShdw = (rxAccum * 1000 + msecs/2) / msecs;
-//  975   txShdw = (txAccum * 1000 + msecs/2) / msecs;
-//  976 
-//  977   osal_memset( lcd_buf, ' ', LCD_W );
-//  978   lcd_buf[LCD_W] = NULL;
-//  979 
-//  980   idx = 4;
-//  981   tmp = (rxShdw >= 100000) ? 99999 : rxShdw;
-//  982   do
-//  983   {
-//  984     lcd_buf[idx--] = (uint8) ('0' + (tmp % 10));
-//  985     tmp /= 10;
-//  986   } while ( tmp );
-//  987 
-//  988   idx = LCD_W-1;
-//  989   tmp = rxTotal;
-//  990   do
-//  991   {
-//  992     lcd_buf[idx--] = (uint8) ('0' + (tmp % 10));
-//  993     tmp /= 10;
-//  994   } while ( tmp );
 //  995 
-//  996   HalLcdWriteString( (char*)lcd_buf, HAL_LCD_LINE_1 );
-//  997   osal_memset( lcd_buf, ' ', LCD_W );
-//  998 
-//  999   idx = 4;
-// 1000   tmp = (txShdw >= 100000) ? 99999 : txShdw;
-// 1001   do
-// 1002   {
-// 1003     lcd_buf[idx--] = (uint8) ('0' + (tmp % 10));
-// 1004     tmp /= 10;
-// 1005   } while ( tmp );
-// 1006 
-// 1007   idx = LCD_W-1;
-// 1008   tmp = txTotal;
-// 1009   do
-// 1010   {
-// 1011     lcd_buf[idx--] = (uint8) ('0' + (tmp % 10));
-// 1012     tmp /= 10;
-// 1013   } while ( tmp );
-// 1014 
-// 1015   HalLcdWriteString( (char*)lcd_buf, HAL_LCD_LINE_2 );
-// 1016 
-// 1017 #elif defined( MT_TASK )
-// 1018   DEBUG_INFO( COMPID_APP, SEVERITY_INFORMATION, 3,
-// 1019               rxAccum, (uint16)msecs, (uint16)rxTotal );
+//  996 #if defined ( LCD_SUPPORTED )
+//  997   rxShdw = (rxAccum * 1000 + msecs/2) / msecs;
+//  998   txShdw = (txAccum * 1000 + msecs/2) / msecs;
+//  999 
+// 1000   osal_memset( lcd_buf, ' ', LCD_W );
+// 1001   lcd_buf[LCD_W] = NULL;
+// 1002 
+// 1003   idx = 4;
+// 1004   tmp = (rxShdw >= 100000) ? 99999 : rxShdw;
+// 1005   do
+// 1006   {
+// 1007     lcd_buf[idx--] = (uint8) ('0' + (tmp % 10));
+// 1008     tmp /= 10;
+// 1009   } while ( tmp );
+// 1010 
+// 1011   idx = LCD_W-1;
+// 1012   tmp = rxTotal;
+// 1013   do
+// 1014   {
+// 1015     lcd_buf[idx--] = (uint8) ('0' + (tmp % 10));
+// 1016     tmp /= 10;
+// 1017   } while ( tmp );
+// 1018 
+// 1019   HalLcdWriteString( (char*)lcd_buf, HAL_LCD_LINE_1 );
+// 1020   osal_memset( lcd_buf, ' ', LCD_W );
+// 1021 
+// 1022   idx = 4;
+// 1023   tmp = (txShdw >= 100000) ? 99999 : txShdw;
+// 1024   do
+// 1025   {
+// 1026     lcd_buf[idx--] = (uint8) ('0' + (tmp % 10));
+// 1027     tmp /= 10;
+// 1028   } while ( tmp );
+// 1029 
+// 1030   idx = LCD_W-1;
+// 1031   tmp = txTotal;
+// 1032   do
+// 1033   {
+// 1034     lcd_buf[idx--] = (uint8) ('0' + (tmp % 10));
+// 1035     tmp /= 10;
+// 1036   } while ( tmp );
+// 1037 
+// 1038   HalLcdWriteString( (char*)lcd_buf, HAL_LCD_LINE_2 );
+// 1039 
+// 1040 #elif defined( MT_TASK )
+// 1041   DEBUG_INFO( COMPID_APP, SEVERITY_INFORMATION, 3,
+// 1042               rxAccum, (uint16)msecs, (uint16)rxTotal );
         ; Setup parameters for call to function debug_msg
         MOV     DPTR,#rxTotal
         MOV     R0,#?V0 + 0
@@ -4292,11 +4314,11 @@ TransmitApp_DisplayResults:
         MOV     A,#0x4
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 16)
-// 1020 #else
-// 1021   (void)msecs;  // Not used when no output
-// 1022 #endif
-// 1023 
-// 1024   if ( (rxAccum == 0) && (txAccum == 0) )
+// 1043 #else
+// 1044   (void)msecs;  // Not used when no output
+// 1045 #endif
+// 1046 
+// 1047   if ( (rxAccum == 0) && (txAccum == 0) )
         MOV     DPTR,#rxAccum
         MOV     R0,#?V0 + 0
         LCALL   ?L_MOV_X
@@ -4313,8 +4335,8 @@ TransmitApp_DisplayResults:
         ORL     A,?V0 + 2
         ORL     A,?V0 + 3
         JNZ     ??TransmitApp_DisplayResults_0
-// 1025   {
-// 1026     osal_stop_timerEx( TransmitApp_TaskID, TRANSMITAPP_RCVTIMER_EVT );
+// 1048   {
+// 1049     osal_stop_timerEx( TransmitApp_TaskID, TRANSMITAPP_RCVTIMER_EVT );
         ; Setup parameters for call to function osal_stop_timerEx
         MOV     R2,#0x2
         MOV     R3,#0x0
@@ -4322,13 +4344,13 @@ TransmitApp_DisplayResults:
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   ??osal_stop_timerEx?relay
-// 1027     timerOn = FALSE;
+// 1050     timerOn = FALSE;
         MOV     DPTR,#timerOn
         CLR     A
         MOVX    @DPTR,A
-// 1028   }
-// 1029 
-// 1030   rxAccum = txAccum = 0;
+// 1051   }
+// 1052 
+// 1053   rxAccum = txAccum = 0;
 ??TransmitApp_DisplayResults_0:
         MOV     DPTR,#txAccum
         CLR     A
@@ -4347,19 +4369,19 @@ TransmitApp_DisplayResults:
         MOVX    @DPTR,A
         INC     DPTR
         MOVX    @DPTR,A
-// 1031 }
+// 1054 }
         LJMP    ?Subroutine1 & 0xFFFF
           CFI EndBlock cfiBlock45
-// 1032 
-// 1033 
+// 1055 
+// 1056 
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1034 void initUart(halUARTCBack_t pf)
+// 1057 void initUart(halUARTCBack_t pf)
 initUart:
           CFI Block cfiBlock46 Using cfiCommon0
           CFI Function initUart
         CODE
-// 1035 {
+// 1058 {
         FUNCALL initUart, HalUARTOpen
         LOCFRAME ISTACK, 2, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -4382,50 +4404,50 @@ initUart:
         MOV     A,#-0x1d
         LCALL   ?ALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 29)
-// 1036   halUARTCfg_t uartConfig;
-// 1037   
-// 1038   uartConfig.configured           = TRUE;              
+// 1059   halUARTCfg_t uartConfig;
+// 1060   
+// 1061   uartConfig.configured           = TRUE;              
         MOV     DPL,?XSP + 0
         MOV     DPH,?XSP + 1
         MOV     A,#0x1
         MOVX    @DPTR,A
-// 1039   uartConfig.baudRate             = HAL_UART_BR_9600;//HAL_UART_BR_38400;  //HAL_UART_BR_19200;
+// 1062   uartConfig.baudRate             = HAL_UART_BR_9600;//HAL_UART_BR_38400;  //HAL_UART_BR_19200;
         LCALL   ?XSTACK_DISP0_8
         CLR     A
         MOVX    @DPTR,A
-// 1040   uartConfig.flowControl          = FALSE;              
+// 1063   uartConfig.flowControl          = FALSE;              
         MOV     A,#0x2
         LCALL   ?XSTACK_DISP0_8
         CLR     A
         MOVX    @DPTR,A
-// 1041   uartConfig.flowControlThreshold = 48;
+// 1064   uartConfig.flowControlThreshold = 48;
         MOV     A,#0x3
         LCALL   ?XSTACK_DISP0_8
         MOV     A,#0x30
         LCALL   ??Subroutine19_0 & 0xFFFF
-// 1042   uartConfig.rx.maxBufSize        = RX_BUF_LEN;
+// 1065   uartConfig.rx.maxBufSize        = RX_BUF_LEN;
 ??CrossCallReturnLabel_30:
         MOV     A,#0xa
         LCALL   ?XSTACK_DISP0_8
         LCALL   ?Subroutine8 & 0xFFFF
-// 1043   uartConfig.tx.maxBufSize        = 128;
+// 1066   uartConfig.tx.maxBufSize        = 128;
 ??CrossCallReturnLabel_31:
         MOV     A,#0x12
         LCALL   ?XSTACK_DISP0_8
         LCALL   ?Subroutine8 & 0xFFFF
-// 1044   
-// 1045   uartConfig.idleTimeout          = 6;   
+// 1067   
+// 1068   uartConfig.idleTimeout          = 6;   
 ??CrossCallReturnLabel_32:
         MOV     A,#0x5
         LCALL   ?XSTACK_DISP0_8
         MOV     A,#0x6
         MOVX    @DPTR,A
-// 1046   uartConfig.intEnable            = TRUE;              
+// 1069   uartConfig.intEnable            = TRUE;              
         MOV     A,#0x16
         LCALL   ?XSTACK_DISP0_8
         MOV     A,#0x1
         MOVX    @DPTR,A
-// 1047   uartConfig.callBackFunc         = pf;
+// 1070   uartConfig.callBackFunc         = pf;
         MOV     A,#0x1b
         LCALL   ?XSTACK_DISP0_8
         MOV     A,R2
@@ -4433,12 +4455,12 @@ initUart:
         INC     DPTR
         MOV     A,R3
         LCALL   ?Subroutine5 & 0xFFFF
-// 1048   
-// 1049   HalUARTOpen (HAL_UART_PORT_0, &uartConfig);
+// 1071   
+// 1072   HalUARTOpen (HAL_UART_PORT_0, &uartConfig);
 ??CrossCallReturnLabel_1:
         MOV     R1,#0x0
         LCALL   ??HalUARTOpen?relay
-// 1050 }
+// 1073 }
         MOV     A,#0x1d
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 XSP16+0
@@ -4483,16 +4505,16 @@ initUart:
           CFI EndBlock cfiCond47
           CFI EndBlock cfiCond48
           CFI EndBlock cfiPicker49
-// 1051 
-// 1052 
+// 1074 
+// 1075 
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1053 void uartRxCB( uint8 port, uint8 event )
+// 1076 void uartRxCB( uint8 port, uint8 event )
 uartRxCB:
           CFI Block cfiBlock50 Using cfiCommon0
           CFI Function uartRxCB
         CODE
-// 1054 {
+// 1077 {
         FUNCALL uartRxCB, HalUARTRead
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -4569,20 +4591,20 @@ uartRxCB:
         MOV     A,#-0x80
         LCALL   ?ALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 140)
-// 1055   uint8 pBuf[RX_BUF_LEN];
-// 1056   uint16 len;
-// 1057   static uint16 destAddr;
-// 1058   ModBusFrame_t *pRxFrame;
-// 1059   zAddrType_t dstAddr;
-// 1060   #if defined (GTA_WHFRFID_R1) 
-// 1061   RC623Frame_t *pRC623Frame;
-// 1062   uint8 Frame[15];//ÁÙÊ±Éè¶¨µÄ´óÐ¡  
-// 1063   uint8 data[10];//
-// 1064   uint16 FrameLen;
-// 1065   uint8 i;
-// 1066   #endif
-// 1067  
-// 1068     len = HalUARTRead( HAL_UART_PORT_0, pBuf, RX_BUF_LEN );
+// 1078   uint8 pBuf[RX_BUF_LEN];
+// 1079   uint16 len;
+// 1080   static uint16 destAddr;
+// 1081   ModBusFrame_t *pRxFrame;
+// 1082   zAddrType_t dstAddr;
+// 1083   #if defined (GTA_WHFRFID_R1) 
+// 1084   RC623Frame_t *pRC623Frame;
+// 1085   uint8 Frame[15];//ÁÙÊ±Éè¶¨µÄ´óÐ¡  
+// 1086   uint8 data[10];//
+// 1087   uint16 FrameLen;
+// 1088   uint8 i;
+// 1089   #endif
+// 1090  
+// 1091     len = HalUARTRead( HAL_UART_PORT_0, pBuf, RX_BUF_LEN );
         ; Setup parameters for call to function HalUARTRead
         MOV     R4,#-0x80
         MOV     R5,#0x0
@@ -4594,117 +4616,118 @@ uartRxCB:
         LCALL   ??HalUARTRead?relay
         MOV     ?V0 + 0,R2
         MOV     ?V0 + 1,R3
-// 1069     if ( len>0 ) 
+// 1092     if ( len>0 ) 
         MOV     A,R2
         ORL     A,?V0 + 1
         JZ      ??uartRxCB_0
-// 1070     {
-// 1071       //SentDataInBind(pBuf,len);
-// 1072       if(!ZG_DEVICE_COORDINATOR_TYPE)//·ÇÐ­µ÷Æ÷
+// 1093     {
+// 1094        // HalUARTWrite(HAL_UART_PORT_0, pBuf, len);
+// 1095       //SentDataInBind(pBuf,len);
+// 1096       if(!ZG_DEVICE_COORDINATOR_TYPE)//·ÇÐ­µ÷Æ÷
         MOV     DPTR,#zgDeviceLogicalType
         MOVX    A,@DPTR
         MOV     DPTR,#TestDirectSent_DstAddr + 8
         JZ      ??uartRxCB_1
-// 1073       {
-// 1074         #if defined (GTA_WHFRFID_R1) 
-// 1075         UnPackRC623Data(pBuf,pRC623Frame);
-// 1076         if(pRC623Frame->Comfirm==FRAME_CHECK_RIGHT)
-// 1077         {
-// 1078           switch(pRC623Frame->Cmd)
-// 1079           {
-// 1080               case RFID_CMD_SET_ISOTYPE:
-// 1081 
-// 1082                 break;
-// 1083               case RFID_CMD_SELECT_CARD:
-// 1084 
-// 1085                 break;
-// 1086               case RFID_CMD_GET_CARD_ID:
-// 1087                 data[0]=7;
-// 1088                 data[1]=MODBUS_RFID_CMD_GET_CARD_ID&0x00FF;
-// 1089                 data[2]=(MODBUS_RFID_CMD_GET_CARD_ID>>8)&0x00FF;
-// 1090                 data[3]=pRC623Frame->Data[1];
-// 1091                 data[4]=pRC623Frame->Data[2];
-// 1092                 data[5]=pRC623Frame->Data[3];
-// 1093                 data[6]=pRC623Frame->Data[4];
-// 1094                 //data[4]=pRC623Frame->Data[3];
-// 1095                 FrameLen=FramePackage(Frame,NativeAddr,0x03,data,7);//´ò°ü
-// 1096                 SendDataRequest(Frame,FrameLen);//·¢ËÍ
-// 1097                 break;
-// 1098               case RFID_CMD_FIND_ISO14443_CARD:
-// 1099                 //for(i=0;i<RC623Frame.DataLen;i++)
-// 1100                 //{
-// 1101                 //  RC623Frame.Data
-// 1102                 //}
-// 1103                 data[0]=5;//2+1+2
-// 1104                 data[1]=MODBUS_RFID_CMD_FIND_ISO14443_CARD&0x00FF;
-// 1105                 data[2]=(MODBUS_RFID_CMD_FIND_ISO14443_CARD>>8)&0x00FF;
-// 1106                 data[3]=pRC623Frame->Data[0];
-// 1107                 data[4]=pRC623Frame->Data[1];
-// 1108                 data[5]=pRC623Frame->Data[2];
-// 1109                 data[6]=pRC623Frame->Data[3];
-// 1110                 FrameLen=FramePackage(Frame,NativeAddr,0x03,data,6);//´ò°ü
-// 1111                 SendDataRequest(Frame,FrameLen);//·¢ËÍ
-// 1112 
-// 1113                 break;
-// 1114               case RFID_CMD_CONFIG_KEY:
-// 1115 
-// 1116                 break;
-// 1117               case RFID_CMD_READ_VAL:
-// 1118 
-// 1119                 break;
-// 1120               default:
+// 1097       {
+// 1098         #if defined (GTA_WHFRFID_R1) 
+// 1099         UnPackRC623Data(pBuf,pRC623Frame);
+// 1100         if(pRC623Frame->Comfirm==FRAME_CHECK_RIGHT)
+// 1101         {
+// 1102           switch(pRC623Frame->Cmd)
+// 1103           {
+// 1104               case RFID_CMD_SET_ISOTYPE:
+// 1105 
+// 1106                 break;
+// 1107               case RFID_CMD_SELECT_CARD:
+// 1108 
+// 1109                 break;
+// 1110               case RFID_CMD_GET_CARD_ID:
+// 1111                 data[0]=7;
+// 1112                 data[1]=MODBUS_RFID_CMD_GET_CARD_ID&0x00FF;
+// 1113                 data[2]=(MODBUS_RFID_CMD_GET_CARD_ID>>8)&0x00FF;
+// 1114                 data[3]=pRC623Frame->Data[1];
+// 1115                 data[4]=pRC623Frame->Data[2];
+// 1116                 data[5]=pRC623Frame->Data[3];
+// 1117                 data[6]=pRC623Frame->Data[4];
+// 1118                 //data[4]=pRC623Frame->Data[3];
+// 1119                 FrameLen=FramePackage(Frame,NativeAddr,0x03,data,7);//´ò°ü
+// 1120                 SendDataRequest(Frame,FrameLen);//·¢ËÍ
 // 1121                 break;
-// 1122           }
-// 1123         }
-// 1124         #else
-// 1125         TestDirectSent_DstAddr.addrMode=(afAddrMode_t)Addr16Bit;//µØÖ·´«ËÍ
+// 1122               case RFID_CMD_FIND_ISO14443_CARD:
+// 1123                 //for(i=0;i<RC623Frame.DataLen;i++)
+// 1124                 //{
+// 1125                 //  RC623Frame.Data
+// 1126                 //}
+// 1127                 data[0]=5;//2+1+2
+// 1128                 data[1]=MODBUS_RFID_CMD_FIND_ISO14443_CARD&0x00FF;
+// 1129                 data[2]=(MODBUS_RFID_CMD_FIND_ISO14443_CARD>>8)&0x00FF;
+// 1130                 data[3]=pRC623Frame->Data[0];
+// 1131                 data[4]=pRC623Frame->Data[1];
+// 1132                 data[5]=pRC623Frame->Data[2];
+// 1133                 data[6]=pRC623Frame->Data[3];
+// 1134                 FrameLen=FramePackage(Frame,NativeAddr,0x03,data,6);//´ò°ü
+// 1135                 SendDataRequest(Frame,FrameLen);//·¢ËÍ
+// 1136 
+// 1137                 break;
+// 1138               case RFID_CMD_CONFIG_KEY:
+// 1139 
+// 1140                 break;
+// 1141               case RFID_CMD_READ_VAL:
+// 1142 
+// 1143                 break;
+// 1144               default:
+// 1145                 break;
+// 1146           }
+// 1147         }
+// 1148         #else
+// 1149         TestDirectSent_DstAddr.addrMode=(afAddrMode_t)Addr16Bit;//µØÖ·´«ËÍ
         MOV     A,#0x2
         LCALL   ??Subroutine19_0 & 0xFFFF
-// 1126         TestDirectSent_DstAddr.endPoint = 0;
-// 1127         TestDirectSent_DstAddr.addr.shortAddr = 0x0000;
+// 1150         TestDirectSent_DstAddr.endPoint = 0;
+// 1151         TestDirectSent_DstAddr.addr.shortAddr = 0x0000;
 ??CrossCallReturnLabel_27:
         MOV     DPTR,#TestDirectSent_DstAddr
         SJMP    ??CrossCallReturnLabel_4
-// 1128     
-// 1129         AF_DataRequest( 
-// 1130                       &TestDirectSent_DstAddr,               //µØÖ·
-// 1131                       &TransmitApp_epDesc,                //ÃèÊö
-// 1132                       TRANSMITAPP_CLUSTERID_TESTMSG,      //×å
-// 1133                         len,                                  //len
-// 1134                         pBuf,//TransmitApp_Msg,             //DATA
-// 1135                       &TransmitApp_TransID,               //
-// 1136                       TRANSMITAPP_TX_OPTIONS,
-// 1137                       AF_DEFAULT_RADIUS 
-// 1138                       );
-// 1139         HalLedBlink (HAL_LED_3, 1, 50, 200);
-// 1140         #endif
-// 1141       }
-// 1142       else
-// 1143       {
-// 1144         //destAddr=BUILD_UINT16(pBuf[1],pBuf[0]);
-// 1145         if(ZG_DEVICE_COORDINATOR_TYPE)
-// 1146         {
-// 1147           TestDirectSent_DstAddr.addrMode=(afAddrMode_t)AddrBroadcast;//Addr16Bit;//µØÖ·´«ËÍ
+// 1152     
+// 1153         AF_DataRequest( 
+// 1154                       &TestDirectSent_DstAddr,               //µØÖ·
+// 1155                       &TransmitApp_epDesc,                //ÃèÊö
+// 1156                       TRANSMITAPP_CLUSTERID_TESTMSG,      //×å
+// 1157                         len,                                  //len
+// 1158                         pBuf,//TransmitApp_Msg,             //DATA
+// 1159                       &TransmitApp_TransID,               //
+// 1160                       TRANSMITAPP_TX_OPTIONS,
+// 1161                       AF_DEFAULT_RADIUS 
+// 1162                       );
+// 1163         HalLedBlink (HAL_LED_3, 1, 50, 200);
+// 1164         #endif
+// 1165       }
+// 1166       else
+// 1167       {
+// 1168         //destAddr=BUILD_UINT16(pBuf[1],pBuf[0]);
+// 1169         if(ZG_DEVICE_COORDINATOR_TYPE)
+// 1170         {
+// 1171           TestDirectSent_DstAddr.addrMode=(afAddrMode_t)AddrBroadcast;//Addr16Bit;//µØÖ·´«ËÍ
 ??uartRxCB_1:
         LCALL   ?Subroutine7 & 0xFFFF
-// 1148           TestDirectSent_DstAddr.endPoint = 0;
-// 1149           TestDirectSent_DstAddr.addr.shortAddr = 0xffff;//destAddr;
+// 1172           TestDirectSent_DstAddr.endPoint = 0;
+// 1173           TestDirectSent_DstAddr.addr.shortAddr = 0xffff;//destAddr;
 ??CrossCallReturnLabel_4:
         MOVX    @DPTR,A
         INC     DPTR
         MOVX    @DPTR,A
-// 1150           //TestDirectSent_DstAddr.addr.extAddr
-// 1151           
-// 1152           AF_DataRequest( 
-// 1153                       &TestDirectSent_DstAddr,               //µØÖ·
-// 1154                       &TransmitApp_epDesc,                //ÃèÊö
-// 1155                       TRANSMITAPP_CLUSTERID_TESTMSG,      //×å
-// 1156                         len,                                  //len
-// 1157                         pBuf,//TransmitApp_Msg,             //DATA
-// 1158                       &TransmitApp_TransID,               //
-// 1159                       TRANSMITAPP_TX_OPTIONS,
-// 1160                       AF_DEFAULT_RADIUS 
-// 1161                       );
+// 1174           //TestDirectSent_DstAddr.addr.extAddr
+// 1175           
+// 1176           AF_DataRequest( 
+// 1177                       &TestDirectSent_DstAddr,               //µØÖ·
+// 1178                       &TransmitApp_epDesc,                //ÃèÊö
+// 1179                       TRANSMITAPP_CLUSTERID_TESTMSG,      //×å
+// 1180                         len,                                  //len
+// 1181                         pBuf,//TransmitApp_Msg,             //DATA
+// 1182                       &TransmitApp_TransID,               //
+// 1183                       TRANSMITAPP_TX_OPTIONS,
+// 1184                       AF_DEFAULT_RADIUS 
+// 1185                       );
         ; Setup parameters for call to function AF_DataRequest
         MOV     ?V0 + 2,#0x1e
         MOV     R0,#?V0 + 2
@@ -4739,7 +4762,7 @@ uartRxCB:
         MOV     A,#0x9
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 140)
-// 1162           HalLedBlink (HAL_LED_3, 1, 50, 200);
+// 1186           HalLedBlink (HAL_LED_3, 1, 50, 200);
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#-0x38
         MOV     R5,#0x0
@@ -4747,11 +4770,11 @@ uartRxCB:
         MOV     R2,#0x1
         MOV     R1,#0x4
         LCALL   ??HalLedBlink?relay
-// 1163         }
-// 1164       }
-// 1165     }
-// 1166 
-// 1167 }
+// 1187         }
+// 1188       }
+// 1189     }
+// 1190 
+// 1191 }
 ??uartRxCB_0:
         MOV     A,#-0x80
         LCALL   ?DEALLOC_XSTACK8
@@ -4887,20 +4910,20 @@ uartRxCB:
           CFI EndBlock cfiCond59
           CFI EndBlock cfiCond60
           CFI EndBlock cfiPicker61
-// 1168 /*********************************************************************
-// 1169 *********************************************************************/
-// 1170 
-// 1171 
-// 1172 
-// 1173 
+// 1192 /*********************************************************************
+// 1193 *********************************************************************/
+// 1194 
+// 1195 
+// 1196 
+// 1197 
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1174 void FrameUnPackage(uint8 *pBuf,ModBusFrame_t *pFrame)
+// 1198 void FrameUnPackage(uint8 *pBuf,ModBusFrame_t *pFrame)
 FrameUnPackage:
           CFI Block cfiBlock62 Using cfiCommon0
           CFI Function FrameUnPackage
         CODE
-// 1175 {
+// 1199 {
         FUNCALL FrameUnPackage, Crc16Code
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -4940,25 +4963,25 @@ FrameUnPackage:
         MOV     R6,A
         MOV     A,R5
         MOV     R7,A
-// 1176    uint16 crc;
-// 1177    uint8 datalen;
-// 1178    uint8 cmd;
-// 1179    uint8 i;
-// 1180    
-// 1181    if(pBuf[0]==FRAME_HEAD)
+// 1200    uint16 crc;
+// 1201    uint8 datalen;
+// 1202    uint8 cmd;
+// 1203    uint8 i;
+// 1204    
+// 1205    if(pBuf[0]==FRAME_HEAD)
         MOV     DPL,R2
         MOV     DPH,R3
         MOVX    A,@DPTR
         XRL     A,#0x7e
         JZ      $+5
         LJMP    ??FrameUnPackage_0 & 0xFFFF
-// 1182    {
-// 1183    	cmd=pBuf[2];
+// 1206    {
+// 1207    	cmd=pBuf[2];
         INC     DPTR
         INC     DPTR
         MOVX    A,@DPTR
         MOV     ?V0 + 5,A
-// 1184 	switch(cmd)
+// 1208 	switch(cmd)
         DEC     A
         JZ      ??FrameUnPackage_1
         ADD     A,#-0x2
@@ -4979,33 +5002,33 @@ FrameUnPackage:
         JNZ     $+5
         LJMP    ??FrameUnPackage_5 & 0xFFFF
         LJMP    ??FrameUnPackage_6 & 0xFFFF
-// 1185 		{
-// 1186 		case FUN_CODE_READ_COIL_STATE:		
-// 1187 		case FUN_CODE_READ_HOLDING_REGISTERS:
-// 1188 			datalen =4;
-// 1189 			break;
-// 1190 		case 0x05:	
-// 1191 		case 0x06:
-// 1192 			datalen =4;
+// 1209 		{
+// 1210 		case FUN_CODE_READ_COIL_STATE:		
+// 1211 		case FUN_CODE_READ_HOLDING_REGISTERS:
+// 1212 			datalen =4;
+// 1213 			break;
+// 1214 		case 0x05:	
+// 1215 		case 0x06:
+// 1216 			datalen =4;
 ??FrameUnPackage_1:
         MOV     ?V0 + 4,#0x4
-// 1193 			break;
-// 1194 		case 0x0F:
-// 1195 			datalen =5+((BUILD_UINT16(pBuf[6],pBuf[5])+7)/8);//2+2+1+(N+7)/8
-// 1196 			break;
-// 1197 		case 0x10:
-// 1198 			datalen=5+((BUILD_UINT16(pBuf[6],pBuf[5])*2));//2+2+1+2N
-// 1199 			break;
-// 1200 		case 0x11:
-// 1201                         datalen = 0;
-// 1202                         break;
-// 1203 		case 0x12:
-// 1204 			datalen = 1;	//1+ 6;
-// 1205 			break;
-// 1206 		default:pFrame->COMFIRM=FRAME_CHECK_CMD_WRONG;
-// 1207 			return ;
-// 1208 		}
-// 1209    	crc=BUILD_UINT16(pBuf[3+datalen],pBuf[3+datalen+1]);
+// 1217 			break;
+// 1218 		case 0x0F:
+// 1219 			datalen =5+((BUILD_UINT16(pBuf[6],pBuf[5])+7)/8);//2+2+1+(N+7)/8
+// 1220 			break;
+// 1221 		case 0x10:
+// 1222 			datalen=5+((BUILD_UINT16(pBuf[6],pBuf[5])*2));//2+2+1+2N
+// 1223 			break;
+// 1224 		case 0x11:
+// 1225                         datalen = 0;
+// 1226                         break;
+// 1227 		case 0x12:
+// 1228 			datalen = 1;	//1+ 6;
+// 1229 			break;
+// 1230 		default:pFrame->COMFIRM=FRAME_CHECK_CMD_WRONG;
+// 1231 			return ;
+// 1232 		}
+// 1233    	crc=BUILD_UINT16(pBuf[3+datalen],pBuf[3+datalen+1]);
 ??FrameUnPackage_7:
         MOV     ?V0 + 2,?V0 + 4
         MOV     A,?V0 + 0
@@ -5035,7 +5058,7 @@ FrameUnPackage:
         CLR     A
         ADDC    A,R1
         MOV     ?V0 + 3,A
-// 1210      if(crc==Crc16Code(pBuf+1,datalen+2))//pBuf+1  ²»¼ÆHEAD  ³¤¶ÈÊÇ1+1+1-1
+// 1234      if(crc==Crc16Code(pBuf+1,datalen+2))//pBuf+1  ²»¼ÆHEAD  ³¤¶ÈÊÇ1+1+1-1
         ; Setup parameters for call to function Crc16Code
         MOV     A,#0x2
         ADD     A,?V0 + 4
@@ -5054,19 +5077,19 @@ FrameUnPackage:
 ??FrameUnPackage_8:
         JZ      $+5
         LJMP    ??FrameUnPackage_9 & 0xFFFF
-// 1211      	{
-// 1212      		pFrame->CMD=cmd;
+// 1235      	{
+// 1236      		pFrame->CMD=cmd;
         MOV     DPL,R6
         MOV     DPH,R7
         INC     DPTR
         MOV     A,?V0 + 5
         LCALL   ?Subroutine10 & 0xFFFF
-// 1213 		pFrame->DATALEN=datalen;
+// 1237 		pFrame->DATALEN=datalen;
 ??CrossCallReturnLabel_10:
         INC     DPTR
         MOV     A,?V0 + 4
         MOVX    @DPTR,A
-// 1214 		pFrame->ADDR=pBuf[1];
+// 1238 		pFrame->ADDR=pBuf[1];
         MOV     DPL,?V0 + 0
         MOV     DPH,?V0 + 1
         INC     DPTR
@@ -5074,7 +5097,7 @@ FrameUnPackage:
         MOV     DPL,R6
         MOV     DPH,R7
         MOVX    @DPTR,A
-// 1215 		for(i=0;i<datalen;i++)
+// 1239 		for(i=0;i<datalen;i++)
         MOV     R2,#0x0
         SJMP    ??FrameUnPackage_10
 ??FrameUnPackage_2:
@@ -5135,8 +5158,8 @@ FrameUnPackage:
 ??CrossCallReturnLabel_16:
         MOV     A,#0x3
         SJMP    ??FrameUnPackage_12
-// 1216                     {
-// 1217                     pFrame->pData[i]=pBuf[3+i];
+// 1240                     {
+// 1241                     pFrame->pData[i]=pBuf[3+i];
 ??FrameUnPackage_13:
         MOV     DPL,R2
         MOV     R0,DPL
@@ -5164,25 +5187,25 @@ FrameUnPackage:
         POP     A
           CFI CFA_SP SP+0
         MOVX    @DPTR,A
-// 1218                     }
+// 1242                     }
         INC     R2
 ??FrameUnPackage_10:
         MOV     A,R2
         CLR     C
         SUBB    A,?V0 + 4
         JC      ??FrameUnPackage_13
-// 1219                 pFrame->COMFIRM=FRAME_CHECK_RIGHT;
+// 1243                 pFrame->COMFIRM=FRAME_CHECK_RIGHT;
         LCALL   ?Subroutine13 & 0xFFFF
-// 1220                 return ;//ÍêÈ«ÕýÈ· ²¢°Ñ°ü·µ»Ø
-// 1221      	}
-// 1222 	 	
-// 1223    }
+// 1244                 return ;//ÍêÈ«ÕýÈ· ²¢°Ñ°ü·µ»Ø
+// 1245      	}
+// 1246 	 	
+// 1247    }
 ??CrossCallReturnLabel_17:
         MOV     A,#0x1
         SJMP    ??FrameUnPackage_12
-// 1224    else
-// 1225    {
-// 1226    	 pFrame->COMFIRM=FRAME_CHECK_HEAD_WRONG;
+// 1248    else
+// 1249    {
+// 1250    	 pFrame->COMFIRM=FRAME_CHECK_HEAD_WRONG;
 ??FrameUnPackage_0:
         LCALL   ?Subroutine13 & 0xFFFF
 ??CrossCallReturnLabel_18:
@@ -5190,13 +5213,13 @@ FrameUnPackage:
 ??FrameUnPackage_12:
         MOVX    @DPTR,A
           CFI EndBlock cfiBlock62
-// 1227 	 return ;
-// 1228    }
+// 1251 	 return ;
+// 1252    }
 ??FrameUnPackage_9:
         REQUIRE ?Subroutine1
         ; // Fall through to label ?Subroutine1
-// 1229      
-// 1230 }
+// 1253      
+// 1254 }
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
 ?Subroutine1:
@@ -5369,17 +5392,17 @@ FrameUnPackage:
           CFI EndBlock cfiCond69
           CFI EndBlock cfiCond70
           CFI EndBlock cfiPicker71
-// 1231 
-// 1232 
-// 1233 
+// 1255 
+// 1256 
+// 1257 
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1234 uint16 Crc16Code(uint8 *str, uint8 len)//Modbus Ckeck Code.//LO First
+// 1258 uint16 Crc16Code(uint8 *str, uint8 len)//Modbus Ckeck Code.//LO First
 Crc16Code:
           CFI Block cfiBlock72 Using cfiCommon0
           CFI Function Crc16Code
         CODE
-// 1235 {
+// 1259 {
         MOV     A,#-0xa
         LCALL   ?BANKED_ENTER_XDATA
           CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
@@ -5400,36 +5423,36 @@ Crc16Code:
         MOV     DPH,R3
         MOV     A,R1
         MOV     R4,A
-// 1236     uint16 code = 0xFFFF;
+// 1260     uint16 code = 0xFFFF;
         MOV     R2,#-0x1
         MOV     R3,#-0x1
-// 1237     uint16 Poly = 0xA001;
-// 1238 // Dnp is 0x3D65 or A6BC
-// 1239 
-// 1240     int flag = 0;
+// 1261     uint16 Poly = 0xA001;
+// 1262 // Dnp is 0x3D65 or A6BC
+// 1263 
+// 1264     int flag = 0;
         MOV     R6,#0x0
-// 1241     int j = 0;
+// 1265     int j = 0;
         MOV     R0,#0x0
         MOV     R1,#0x0
-// 1242 
-// 1243     for(j=0; j<len; j++)
+// 1266 
+// 1267     for(j=0; j<len; j++)
         SJMP    ??Crc16Code_0
-// 1244     {
-// 1245 		code ^= (uint16) (*str);
+// 1268     {
+// 1269 		code ^= (uint16) (*str);
 ??Crc16Code_1:
         MOVX    A,@DPTR
         XRL     A,R2
         MOV     R2,A
-// 1246 		for(int i=0; i<8;i++)
+// 1270 		for(int i=0; i<8;i++)
         MOV     R5,#0x8
-// 1247 		{
-// 1248 			if ( code & 0x0001 ) flag = 1;
+// 1271 		{
+// 1272 			if ( code & 0x0001 ) flag = 1;
 ??Crc16Code_2:
         MOV     A,R2
         MOV     C,0xE0 /* A   */.0
         JNC     ??Crc16Code_3
         MOV     R6,#0x1
-// 1249 			code = code>>1;
+// 1273 			code = code>>1;
 ??Crc16Code_3:
         MOV     A,R3
         CLR     C
@@ -5438,28 +5461,28 @@ Crc16Code:
         MOV     A,R2
         RRC     A
         MOV     R2,A
-// 1250 			if ( flag )
+// 1274 			if ( flag )
         MOV     A,R6
         JZ      ??Crc16Code_4
-// 1251 			{
-// 1252 				code ^= Poly;
+// 1275 			{
+// 1276 				code ^= Poly;
         MOV     A,#0x1
         XRL     A,R2
         MOV     R2,A
         MOV     A,#-0x60
         XRL     A,R3
         MOV     R3,A
-// 1253 				flag = 0;
+// 1277 				flag = 0;
         MOV     R6,#0x0
-// 1254 			}
-// 1255 		}
+// 1278 			}
+// 1279 		}
 ??Crc16Code_4:
         DEC     R5
         MOV     A,R5
         JNZ     ??Crc16Code_2
-// 1256 		str ++;
+// 1280 		str ++;
         INC     DPTR
-// 1257     }
+// 1281     }
         MOV     A,R0
         ADD     A,#0x1
         INC     R0
@@ -5477,19 +5500,19 @@ Crc16Code:
         XRL     A,PSW
         RLC     A
         JC      ??Crc16Code_1
-// 1258     return code;
+// 1282     return code;
         LJMP    ??Subroutine16_0 & 0xFFFF
           CFI EndBlock cfiBlock72
-// 1259 }
-// 1260 
+// 1283 }
+// 1284 
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1261 void SentDataInBind(uint8 *pdata,uint16 len)
+// 1285 void SentDataInBind(uint8 *pdata,uint16 len)
 SentDataInBind:
           CFI Block cfiBlock73 Using cfiCommon0
           CFI Function SentDataInBind
         CODE
-// 1262 {
+// 1286 {
         FUNCALL SentDataInBind, AF_DataRequest
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -5528,17 +5551,17 @@ SentDataInBind:
           CFI CFA_XSP16 add(XSP16, 10)
         ; Saved register size: 10
         ; Auto size: 0
-// 1263   //uint8 data[]="hello";
-// 1264      AF_DataRequest( 
-// 1265                     &TransmitApp_DstAddr,               //µØÖ·
-// 1266                     &TransmitApp_epDesc,                //ÃèÊö
-// 1267                     TRANSMITAPP_CLUSTERID_TESTMSG,      //×å
-// 1268                     len,                                  //len
-// 1269                     pdata,//TransmitApp_Msg,             //DATA
-// 1270                     &TransmitApp_TransID,               //
-// 1271                     TRANSMITAPP_TX_OPTIONS,
-// 1272                     AF_DEFAULT_RADIUS 
-// 1273                     );
+// 1287   //uint8 data[]="hello";
+// 1288      AF_DataRequest( 
+// 1289                     &TransmitApp_DstAddr,               //µØÖ·
+// 1290                     &TransmitApp_epDesc,                //ÃèÊö
+// 1291                     TRANSMITAPP_CLUSTERID_TESTMSG,      //×å
+// 1292                     len,                                  //len
+// 1293                     pdata,//TransmitApp_Msg,             //DATA
+// 1294                     &TransmitApp_TransID,               //
+// 1295                     TRANSMITAPP_TX_OPTIONS,
+// 1296                     AF_DEFAULT_RADIUS 
+// 1297                     );
         ; Setup parameters for call to function AF_DataRequest
         MOV     ?V0 + 0,#0x1e
         MOV     R0,#?V0 + 0
@@ -5573,22 +5596,22 @@ SentDataInBind:
         MOV     A,#0x9
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 10)
-// 1274      HalLedBlink (HAL_LED_3, 1, 50, 300);
+// 1298      HalLedBlink (HAL_LED_3, 1, 50, 300);
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#0x2c
         MOV     R5,#0x1
         LJMP    ?Subroutine0 & 0xFFFF
           CFI EndBlock cfiBlock73
-// 1275 }
-// 1276 
+// 1299 }
+// 1300 
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1277 void SendBindRequest(void)
+// 1301 void SendBindRequest(void)
 SendBindRequest:
           CFI Block cfiBlock74 Using cfiCommon0
           CFI Function SendBindRequest
         CODE
-// 1278 {
+// 1302 {
         FUNCALL SendBindRequest, NLME_GetShortAddr
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -5642,25 +5665,25 @@ SendBindRequest:
         MOV     A,#-0x9
         LCALL   ?ALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 20)
-// 1279     zAddrType_t dstAddr;
-// 1280     dstAddr.addrMode = Addr16Bit;
+// 1303     zAddrType_t dstAddr;
+// 1304     dstAddr.addrMode = Addr16Bit;
         MOV     A,#0x8
         LCALL   ?XSTACK_DISP0_8
         MOV     A,#0x2
         MOVX    @DPTR,A
-// 1281     dstAddr.addr.shortAddr = 0x0000; // Coordinator
+// 1305     dstAddr.addr.shortAddr = 0x0000; // Coordinator
         MOV     DPL,?XSP + 0
         MOV     DPH,?XSP + 1
         CLR     A
         MOVX    @DPTR,A
         INC     DPTR
         MOVX    @DPTR,A
-// 1282     ZDP_EndDeviceBindReq( &dstAddr, NLME_GetShortAddr(),
-// 1283                   TransmitApp_epDesc.endPoint,
-// 1284                   TRANSMITAPP_PROFID,
-// 1285                   TRANSMITAPP_MAX_CLUSTERS, (cId_t *)TransmitApp_ClusterList,
-// 1286                   TRANSMITAPP_MAX_CLUSTERS, (cId_t *)TransmitApp_ClusterList,
-// 1287                   FALSE );
+// 1306     ZDP_EndDeviceBindReq( &dstAddr, NLME_GetShortAddr(),
+// 1307                   TransmitApp_epDesc.endPoint,
+// 1308                   TRANSMITAPP_PROFID,
+// 1309                   TRANSMITAPP_MAX_CLUSTERS, (cId_t *)TransmitApp_ClusterList,
+// 1310                   TRANSMITAPP_MAX_CLUSTERS, (cId_t *)TransmitApp_ClusterList,
+// 1311                   FALSE );
         ; Setup parameters for call to function NLME_GetShortAddr
         LCALL   ??NLME_GetShortAddr?relay
         MOV     ?V0 + 0,R2
@@ -5704,7 +5727,7 @@ SendBindRequest:
         MOV     A,#0x9
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 20)
-// 1288     HalLedBlink (HAL_LED_1, 1, 50, 300);
+// 1312     HalLedBlink (HAL_LED_1, 1, 50, 300);
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#0x2c
         MOV     R5,#0x1
@@ -5712,23 +5735,23 @@ SendBindRequest:
         MOV     R2,#0x1
         MOV     R1,#0x1
         LCALL   ??HalLedBlink?relay
-// 1289 }
+// 1313 }
         MOV     A,#0x9
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 11)
         MOV     R7,#0x3
         LJMP    ?BANKED_LEAVE_XDATA
           CFI EndBlock cfiBlock74
-// 1290 
-// 1291 
+// 1314 
+// 1315 
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1292 void ReportData(ModBusFrame_t *pRxFrame)
+// 1316 void ReportData(ModBusFrame_t *pRxFrame)
 ReportData:
           CFI Block cfiBlock75 Using cfiCommon0
           CFI Function ReportData
         CODE
-// 1293 {
+// 1317 {
         FUNCALL ReportData, ReadADC
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -5851,31 +5874,31 @@ ReportData:
         MOV     R6,A
         MOV     A,R3
         MOV     R7,A
-// 1294  /* 
-// 1295   #if defined ( GTA_WWSB_R1 ) //ÓêµÎ´«¸ÐÆ÷   
-// 1296   uint8 Frame[10];//ÁÙÊ±Éè¶¨µÄ´óÐ¡
-// 1297   uint8 data[3];//GTA_WWSB_R1 Êý¾ÝÎª3
-// 1298   #endif
-// 1299   #if defined ( GTA_WTHSB_R1 ) //ÎÂÊª¶È´«¸ÐÆ÷   
-// 1300   uint8 Frame[10];//ÁÙÊ±Éè¶¨µÄ´óÐ¡
-// 1301   uint8 data[5];//GTA_WWSB_R1 Êý¾ÝÎª3
-// 1302   #endif
-// 1303 */
-// 1304 
-// 1305   #if defined (GTA_WHFRFID_R1)
-// 1306   RC623Frame_t pframe;
-// 1307   uint16 cmd;
-// 1308   #endif
-// 1309 
-// 1310   uint8 Frame[20];//ÁÙÊ±Éè¶¨µÄ´óÐ¡
-// 1311   uint8 data[10];//
-// 1312   uint16 i=0,j=0;
-// 1313   uint8 led=0;
-// 1314 
-// 1315   
-// 1316   uint16 temp;
-// 1317   uint16 FrameLen;
-// 1318   switch(pRxFrame->CMD)
+// 1318  /* 
+// 1319   #if defined ( GTA_WWSB_R1 ) //ÓêµÎ´«¸ÐÆ÷   
+// 1320   uint8 Frame[10];//ÁÙÊ±Éè¶¨µÄ´óÐ¡
+// 1321   uint8 data[3];//GTA_WWSB_R1 Êý¾ÝÎª3
+// 1322   #endif
+// 1323   #if defined ( GTA_WTHSB_R1 ) //ÎÂÊª¶È´«¸ÐÆ÷   
+// 1324   uint8 Frame[10];//ÁÙÊ±Éè¶¨µÄ´óÐ¡
+// 1325   uint8 data[5];//GTA_WWSB_R1 Êý¾ÝÎª3
+// 1326   #endif
+// 1327 */
+// 1328 
+// 1329   #if defined (GTA_WHFRFID_R1)
+// 1330   RC623Frame_t pframe;
+// 1331   uint16 cmd;
+// 1332   #endif
+// 1333 
+// 1334   uint8 Frame[20];//ÁÙÊ±Éè¶¨µÄ´óÐ¡
+// 1335   uint8 data[10];//
+// 1336   uint16 i=0,j=0;
+// 1337   uint8 led=0;
+// 1338 
+// 1339   
+// 1340   uint16 temp;
+// 1341   uint16 FrameLen;
+// 1342   switch(pRxFrame->CMD)
         MOV     DPL,R6
         MOV     DPH,R7
         INC     DPTR
@@ -5888,12 +5911,12 @@ ReportData:
         DEC     A
         JZ      ??ReportData_2
         LJMP    ??ReportData_3 & 0xFFFF
-// 1319       {
-// 1320       case FUN_CODE_READ_HOLDING_REGISTERS://¶Á¼Ä´æÆ÷Êý¾Ý
-// 1321         {
-// 1322           //temp=BUILD_UINT16(pRxFrame->pData[1],pRxFrame->pData[0]);
-// 1323           //if(temp==NativeAddr)//1 2×Ö½ÚÊÇµØÖ·£¬ÊÇ·ñ±¾»úµØÖ·
-// 1324           if(pRxFrame->ADDR==NativeAddr)//ÊÇ·ñ±¾»úµØÖ·
+// 1343       {
+// 1344       case FUN_CODE_READ_HOLDING_REGISTERS://¶Á¼Ä´æÆ÷Êý¾Ý
+// 1345         {
+// 1346           //temp=BUILD_UINT16(pRxFrame->pData[1],pRxFrame->pData[0]);
+// 1347           //if(temp==NativeAddr)//1 2×Ö½ÚÊÇµØÖ·£¬ÊÇ·ñ±¾»úµØÖ·
+// 1348           if(pRxFrame->ADDR==NativeAddr)//ÊÇ·ñ±¾»úµØÖ·
 ??ReportData_0:
         MOV     DPL,R6
         MOV     DPH,R7
@@ -5904,154 +5927,148 @@ ReportData:
         XRL     A,R0
         JZ      $+5
         LJMP    ??ReportData_3 & 0xFFFF
-// 1325           {
-// 1326               #if defined ( GTA_WWSB_R1 )||(GTA_WFSB_R1) //´«¸ÐÆ÷   
-// 1327               temp=ReadADC(4);//¶ÁÓêµÎµçÑ¹Öµ,»ðÑæ´«¸ÐÆ÷
-// 1328               data[0]=1;
-// 1329               if(temp>3000)
-// 1330                 data[1]=0x01;
-// 1331               else
-// 1332                 data[1]=0x00;
-// 1333               //data[1]=LO_UINT16(temp);
-// 1334               //data[2]=HI_UINT16(temp);
-// 1335               FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
-// 1336               SendDataRequest(Frame,FrameLen);//·¢ËÍ
-// 1337               #endif
-// 1338               
-// 1339               #if defined ( GTA_WUSB_R1 )
-// 1340               IO_DIR_PORT_PIN(0, 6, IO_IN);
-// 1341               data[0]=1;
-// 1342               if(IO_SENSOR)
-// 1343                 data[1]=0x01;
-// 1344               else
-// 1345                 data[1]=0x00;
-// 1346               FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
-// 1347               SendDataRequest(Frame,FrameLen);//·¢ËÍ
-// 1348               #endif
-// 1349 
-// 1350               #if defined(GTA_WRCB_R1)
-// 1351               IO_DIR_PORT_PIN(0, 6, IO_OUT);
-// 1352               IO_DIR_PORT_PIN(0, 0, IO_OUT);
-// 1353               if(pRxFrame->pData[0]==0x01)
-// 1354                 {
-// 1355                   if(pRxFrame->pData[1]==0x00)
-// 1356                     IO_RELAY1=0;
-// 1357                   if(pRxFrame->pData[1]==0x01)
-// 1358                     IO_RELAY1=1;
-// 1359                 }
-// 1360               if(pRxFrame->pData[0]==0x02)
-// 1361                 {
-// 1362                   if(pRxFrame->pData[1]==0x00)
-// 1363                     IO_RELAY2=0;
-// 1364                   if(pRxFrame->pData[1]==0x01)
-// 1365                     IO_RELAY2=1;
-// 1366                 }
-// 1367               #endif
-// 1368               
-// 1369               
-// 1370               #if defined (GTA_WVSB_R1)||(GTA_WIRSB_R1)
-// 1371               temp=ReadADC(4);//ºìÍâ´«¸ÐÆ÷
+// 1349           {
+// 1350               #if defined ( GTA_WWSB_R1 )||(GTA_WFSB_R1) //´«¸ÐÆ÷   
+// 1351               temp=ReadADC(4);//¶ÁÓêµÎµçÑ¹Öµ,»ðÑæ´«¸ÐÆ÷
+// 1352               data[0]=1;
+// 1353               if(temp>3000)
+// 1354                 data[1]=0x01;
+// 1355               else
+// 1356                 data[1]=0x00;
+// 1357               //data[1]=LO_UINT16(temp);
+// 1358               //data[2]=HI_UINT16(temp);
+// 1359               FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
+// 1360               SendDataRequest(Frame,FrameLen);//·¢ËÍ
+// 1361               #endif
+// 1362               
+// 1363               #if defined ( GTA_WUSB_R1 )
+// 1364               IO_DIR_PORT_PIN(0, 6, IO_IN);
+// 1365               data[0]=1;
+// 1366               if(IO_SENSOR)
+// 1367                 data[1]=0x01;
+// 1368               else
+// 1369                 data[1]=0x00;
+// 1370               FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
+// 1371               SendDataRequest(Frame,FrameLen);//·¢ËÍ
+// 1372               #endif
+// 1373 
+// 1374               #if defined(GTA_WRCB_R1)
+// 1375               IO_DIR_PORT_PIN(0, 6, IO_OUT);
+// 1376               IO_DIR_PORT_PIN(0, 0, IO_OUT);
+// 1377               if(pRxFrame->pData[0]==0x01)
+// 1378                 {
+// 1379                   if(pRxFrame->pData[1]==0x00)
+// 1380                     IO_RELAY1=0;
+// 1381                   if(pRxFrame->pData[1]==0x01)
+// 1382                     IO_RELAY1=1;
+// 1383                 }
+// 1384               if(pRxFrame->pData[0]==0x02)
+// 1385                 {
+// 1386                   if(pRxFrame->pData[1]==0x00)
+// 1387                     IO_RELAY2=0;
+// 1388                   if(pRxFrame->pData[1]==0x01)
+// 1389                     IO_RELAY2=1;
+// 1390                 }
+// 1391               #endif
+// 1392               
+// 1393               
+// 1394               #if defined (GTA_WVSB_R1)||(GTA_WIRSB_R1)
+// 1395               temp=ReadADC(4);//ºìÍâ´«¸ÐÆ÷
         ; Setup parameters for call to function ReadADC
         MOV     R1,#0x4
         LCALL   ??ReadADC?relay
-// 1372               data[0]=1;
+// 1396               data[0]=1;
         LCALL   ?Subroutine6 & 0xFFFF
-// 1373               if(temp>3000)
+// 1397               if(temp>3000)
 ??CrossCallReturnLabel_3:
         JC      ??ReportData_4
-// 1374                 data[1]=0x00;
+// 1398                 data[1]=0x00;
         LCALL   ?XSTACK_DISP0_8
         CLR     A
         SJMP    ??ReportData_5
-// 1375               else
-// 1376                 data[1]=0x01;
+// 1399               else
+// 1400                 data[1]=0x01;
 ??ReportData_4:
         LCALL   ?XSTACK_DISP0_8
         MOV     A,#0x1
-// 1377               FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
-// 1378               SendDataRequest(Frame,FrameLen);//·¢ËÍ
-// 1379               #endif
-// 1380               
-// 1381               #if defined (GTA_WISB_R1)
-// 1382               temp=ReadADC(4);//
-// 1383               data[0]=2;
-// 1384               data[1]=LO_UINT16(temp);
-// 1385               data[2]=HI_UINT16(temp);
-// 1386               FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,data,3);//´ò°ü
-// 1387               SendDataRequest(Frame,FrameLen);//·¢ËÍ
-// 1388               #endif
-// 1389               
-// 1390               
-// 1391               #if defined ( GTA_WTHSB_R1 ) //ÎÂÊª¶È´«¸ÐÆ÷  
-// 1392               osal_int_disable( INTS_ALL );
-// 1393               readTempHumi();
-// 1394               osal_int_enable( INTS_ALL );
-// 1395               data[0]=4;
-// 1396               data[1]=humi_val[0];//L
-// 1397               data[2]=humi_val[1];//H
-// 1398               data[3]=temp_val[0];
-// 1399               data[4]=temp_val[1];
-// 1400               FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,data,5);//´ò°ü
-// 1401               SendDataRequest(Frame,FrameLen);//·¢ËÍ
-// 1402               #endif
-// 1403               
-// 1404               #if defined (GTA_WHFRFID_R1)
-// 1405               cmd=BUILD_UINT16(pRxFrame->pData[0],pRxFrame->pData[1]);
-// 1406                 switch(cmd)
-// 1407                 {
-// 1408                 case MODBUS_RFID_CMD_FIND_ISO14443_CARD://7E xx 03 01 0A 00 00 xx
-// 1409                   FrameLen=PackUpRC623Data(RFID_CMD_FIND_ISO14443_CARD,&(pRxFrame->pData[2]),Frame);//´ò°ü
-// 1410                    HalUARTWrite(HAL_UART_PORT_0,Frame,FrameLen);
-// 1411                   //SendDataRequest(Frame,FrameLen);
-// 1412                   break;
-// 1413                 case MODBUS_RFID_CMD_GET_CARD_ID:
-// 1414                   FrameLen=PackUpRC623Data(RFID_CMD_GET_CARD_ID,&(pRxFrame->pData[2]),Frame);//´ò°ü
-// 1415                    HalUARTWrite(HAL_UART_PORT_0,Frame,FrameLen);
-// 1416                   break;
-// 1417                 case MODBUS_RFID_CMD_READ_VAL:
-// 1418                   
-// 1419                   break;
-// 1420                 default:
-// 1421                   break;
-// 1422                 }
-// 1423               
-// 1424               #endif
-// 1425                 
-// 1426               #if defined(GTA_WMSCB_R1)
-// 1427                /*
-// 1428               ctrl_GTA_WMSCB('M',0x80);
-// 1429               for(j=0;j<1000;j++)
-// 1430               {
-// 1431                
-// 1432                ctrl_GTA_WMSCB('A',led);
-// 1433                ctrl_GTA_WMSCB('B',led++);
-// 1434               StepMotorRun(1,4096);
-// 1435               StepMotorRun(0,4096);
-// 1436               }
-// 1437                 */
-// 1438                 init_GTA_WMSCB();
-// 1439                 ctrl_GTA_WMSCB('M',0x80);
-// 1440                 if(pRxFrame->pData[0]==0x00)
-// 1441                 {
-// 1442                   //ctrl_GTA_WMSCB('M',0x80);
-// 1443                   osal_int_disable( INTS_ALL );
-// 1444                   StepMotorRun(pRxFrame->pData[1],BUILD_UINT16(pRxFrame->pData[2],pRxFrame->pData[3]));
-// 1445                   osal_int_enable( INTS_ALL );
+// 1401               FrameLen=FramePackage(Frame,NativeAddr,0x03,data,2);//´ò°ü
+// 1402               SendDataRequest(Frame,FrameLen);//·¢ËÍ
+// 1403               #endif
+// 1404               
+// 1405               #if defined (GTA_WISB_R1)
+// 1406               temp=ReadADC(4);//
+// 1407               data[0]=2;
+// 1408               data[1]=LO_UINT16(temp);
+// 1409               data[2]=HI_UINT16(temp);
+// 1410               FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,data,3);//´ò°ü
+// 1411               SendDataRequest(Frame,FrameLen);//·¢ËÍ
+// 1412               #endif
+// 1413               
+// 1414               
+// 1415               #if defined ( GTA_WTHSB_R1 ) //ÎÂÊª¶È´«¸ÐÆ÷  
+// 1416               osal_int_disable( INTS_ALL );
+// 1417               readTempHumi();
+// 1418               osal_int_enable( INTS_ALL );
+// 1419               data[0]=4;
+// 1420               data[1]=humi_val[0];//L
+// 1421               data[2]=humi_val[1];//H
+// 1422               data[3]=temp_val[0];
+// 1423               data[4]=temp_val[1];
+// 1424               FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,data,5);//´ò°ü
+// 1425               SendDataRequest(Frame,FrameLen);//·¢ËÍ
+// 1426               #endif
+// 1427               
+// 1428               #if defined (GTA_WHFRFID_R1)
+// 1429               cmd=BUILD_UINT16(pRxFrame->pData[0],pRxFrame->pData[1]);
+// 1430                 switch(cmd)
+// 1431                 {
+// 1432                 case MODBUS_RFID_CMD_FIND_ISO14443_CARD://7E xx 03 01 0A 00 00 xx
+// 1433                   FrameLen=PackUpRC623Data(RFID_CMD_FIND_ISO14443_CARD,&(pRxFrame->pData[2]),Frame);//´ò°ü
+// 1434                    HalUARTWrite(HAL_UART_PORT_0,Frame,FrameLen);
+// 1435                   //SendDataRequest(Frame,FrameLen);
+// 1436                   break;
+// 1437                 case MODBUS_RFID_CMD_GET_CARD_ID:
+// 1438                   FrameLen=PackUpRC623Data(RFID_CMD_GET_CARD_ID,&(pRxFrame->pData[2]),Frame);//´ò°ü
+// 1439                    HalUARTWrite(HAL_UART_PORT_0,Frame,FrameLen);
+// 1440                   break;
+// 1441                 case MODBUS_RFID_CMD_READ_VAL:
+// 1442                   
+// 1443                   break;
+// 1444                 default:
+// 1445                   break;
 // 1446                 }
-// 1447                 if(pRxFrame->pData[0]==0x01)
-// 1448                 {
-// 1449                   //ctrl_GTA_WMSCB('M',0x80);
-// 1450                   ctrl_GTA_WMSCB('A',pRxFrame->pData[1]);
-// 1451                 }
-// 1452                 if(pRxFrame->pData[0]==0x02)
-// 1453                 {
-// 1454 
-// 1455                   SegDisplay(pRxFrame->pData[1]);
-// 1456                 }
-// 1457               #endif
-// 1458               
-// 1459           }
-// 1460         }
+// 1447               
+// 1448               #endif
+// 1449                 
+// 1450               #if defined(GTA_WMSCB_R1)
+// 1451                 if(pRxFrame->pData[0] == 0x04){//ÅÐ¶ÏÊÇ·ñÊÇLEDµãÕó
+// 1452                     //startTimer3();  //LEDµãÕóÐèÒª¿ªÆô¶¨Ê±Æ÷½øÐÐÉ¨Ãè
+// 1453                     isScan = true;
+// 1454                     u_LedsNumber = pRxFrame->pData[1];
+// 1455                 } else {
+// 1456                     //stopTimer3();  //Èç¹û²Ù×÷µÄ²»ÊÇLEDµãÕó£¬Ò»¶¨Òª¹Ø±Õ¶¨Ê±Æ÷
+// 1457                     isScan = false;
+// 1458                     /*if(isScan == false){
+// 1459                         osal_stop_timerEx(TransmitApp_TaskID, TRANSMITAPP_LEDS_DISPLAY_EVT);
+// 1460                     }   */         
+// 1461                     if(pRxFrame->pData[0] == 0x00){  //ÅÐ¶ÏÊÇµç»úµÄ¿ØÖÆÊý¾Ý
+// 1462                         ControlStepMotor(pRxFrame->pData[1]);
+// 1463                     } else if(pRxFrame->pData[0] == 0x02){//ÅÐ¶ÏÊÇÊýÂë¹ÜµÄ¿ØÖÆÊý¾Ý
+// 1464                         DisplaySmg(pRxFrame->pData[1]);
+// 1465                     } else if(pRxFrame->pData[0] == 0x01){//ÅÐ¶ÏÊÇ·äÃùÆ÷
+// 1466                         ControlBeep(pRxFrame->pData[1]);
+// 1467                     } else if(pRxFrame->pData[0] == 0x03){//ÅÐ¶ÏÊÇ¼ÌµçÆ÷
+// 1468                         ControlRelay(pRxFrame->pData[1]);
+// 1469                     } 
+// 1470                 }
+// 1471                 if(isScan == true){
+// 1472                     osal_start_timerEx( TransmitApp_TaskID, TRANSMITAPP_LEDS_DISPLAY_EVT, 1);            
+// 1473                 }
+// 1474                 
+// 1475               #endif
+// 1476               
+// 1477           }
+// 1478         }
 ??ReportData_5:
         LCALL   ?Subroutine9 & 0xFFFF
 ??CrossCallReturnLabel_7:
@@ -6068,10 +6085,10 @@ ReportData:
         MOV     DPTR,#NativeAddr
         LJMP    ??ReportData_6 & 0xFFFF
           CFI CFA_XSP16 add(XSP16, 40)
-// 1461         break;
-// 1462       case FUN_CODE_SET_ADDR://ÉèµØÖ·
-// 1463         {
-// 1464           if(pRxFrame->ADDR==NativeAddr)//ÊÇ·ñ±¾»úµØÖ·
+// 1479         break;
+// 1480       case FUN_CODE_SET_ADDR://ÉèµØÖ·
+// 1481         {
+// 1482           if(pRxFrame->ADDR==NativeAddr)//ÊÇ·ñ±¾»úµØÖ·
 ??ReportData_2:
         MOV     DPL,R6
         MOV     DPH,R7
@@ -6082,8 +6099,8 @@ ReportData:
         XRL     A,R0
         JZ      $+5
         LJMP    ??ReportData_3 & 0xFFFF
-// 1465           {
-// 1466           NativeAddr=pRxFrame->pData[0];
+// 1483           {
+// 1484           NativeAddr=pRxFrame->pData[0];
         MOV     DPL,R6
         MOV     DPH,R7
         INC     DPTR
@@ -6092,7 +6109,7 @@ ReportData:
         MOVX    A,@DPTR
         MOV     DPTR,#NativeAddr
         MOVX    @DPTR,A
-// 1467           osal_nv_item_init(ZCD_NV_NATIVE_ADDRESS,sizeof(NativeAddr),NULL);
+// 1485           osal_nv_item_init(ZCD_NV_NATIVE_ADDRESS,sizeof(NativeAddr),NULL);
         ; Setup parameters for call to function osal_nv_item_init
         CLR     A
         MOV     ?V0 + 0,A
@@ -6108,7 +6125,7 @@ ReportData:
         MOV     A,#0x2
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 40)
-// 1468           osal_nv_write(ZCD_NV_NATIVE_ADDRESS,0,sizeof(NativeAddr),&NativeAddr);
+// 1486           osal_nv_write(ZCD_NV_NATIVE_ADDRESS,0,sizeof(NativeAddr),&NativeAddr);
         ; Setup parameters for call to function osal_nv_write
         MOV     ?V0 + 0,#NativeAddr & 0xff
         MOV     ?V0 + 1,#(NativeAddr >> 8) & 0xff
@@ -6128,8 +6145,8 @@ ReportData:
         MOV     A,#0x4
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 40)
-// 1469           FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,pRxFrame->pData,1);//´ò°ü
-// 1470           SendDataRequest(Frame,FrameLen);//·¢ËÍ
+// 1487           FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,pRxFrame->pData,1);//´ò°ü
+// 1488           SendDataRequest(Frame,FrameLen);//·¢ËÍ
         ; Setup parameters for call to function SendDataRequest
         ; Setup parameters for call to function FramePackage
         MOV     R0,#?V0 + 0
@@ -6151,13 +6168,13 @@ ReportData:
         MOV     R4,A
         SJMP    ??ReportData_7
           CFI CFA_XSP16 add(XSP16, 40)
-// 1471           }
-// 1472         }
-// 1473         break;
-// 1474       case FUN_CODE_READ_ADDR://¶ÁµØÖ·
-// 1475         {
-// 1476           FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,&NativeAddr,1);//´ò°ü
-// 1477           SendDataRequest(Frame,FrameLen);//·¢ËÍ
+// 1489           }
+// 1490         }
+// 1491         break;
+// 1492       case FUN_CODE_READ_ADDR://¶ÁµØÖ·
+// 1493         {
+// 1494           FrameLen=FramePackage(Frame,pRxFrame->ADDR,pRxFrame->CMD,&NativeAddr,1);//´ò°ü
+// 1495           SendDataRequest(Frame,FrameLen);//·¢ËÍ
 ??ReportData_1:
         ; Setup parameters for call to function SendDataRequest
         ; Setup parameters for call to function FramePackage
@@ -6195,14 +6212,14 @@ ReportData:
         MOV     R2,DPL
         MOV     R3,DPH
         LCALL   ??SendDataRequest?relay
-// 1478           
-// 1479         }
-// 1480         break;
-// 1481       }
-// 1482   
-// 1483   
-// 1484 
-// 1485 }
+// 1496           
+// 1497         }
+// 1498         break;
+// 1499       }
+// 1500   
+// 1501   
+// 1502 
+// 1503 }
 ??ReportData_3:
         MOV     A,#0x1e
         LJMP    ?Subroutine4 & 0xFFFF
@@ -6317,53 +6334,53 @@ ReportData:
           CFI EndBlock cfiCond79
           CFI EndBlock cfiCond80
           CFI EndBlock cfiPicker81
-// 1486 #if defined(GTA_WMSCB_R1)
-// 1487 void StepMotorRun(uint8 Dir,uint16 StepNum)
-// 1488 {
-// 1489   uint8 ForwardStep[4]={0x03,0x09,0x0C,0x06};
-// 1490   uint8 BackStep[4]={0x03,0x06,0x0C,0x09};
-// 1491   uint16 i=0,j=0,k=0;
-// 1492   uint8 index=0,l=0;
-// 1493   for(i=0;i<StepNum;i++)
-// 1494   {
-// 1495     if(Dir)
-// 1496       ctrl_GTA_WMSCB('C',ForwardStep[index]);
-// 1497     else
-// 1498       ctrl_GTA_WMSCB('C',BackStep[index]);
-// 1499     if(i==(k*255-1)||i==0)
-// 1500     {
-// 1501       SegDisplay(l);
-// 1502       if(l++>8)l=0;
-// 1503       k++;
-// 1504     }
-// 1505     ctrl_GTA_WMSCB('A',i);
-// 1506     
-// 1507     if(++index>=4)index=0;
-// 1508     
-// 1509     for(j=0;j<3000;j++)
-// 1510     {
-// 1511       asm("nop");            
-// 1512     }
-// 1513     //ctrl_GTA_WMSCB('A',StepNum);
-// 1514   }
-// 1515 }
-// 1516 
-// 1517 void SegDisplay(uint8 num)
-// 1518 {
-// 1519   uint8 DispNum[10]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
-// 1520   //ctrl_GTA_WMSCB('M',0x80);
-// 1521   if(num<0x10)
-// 1522     ctrl_GTA_WMSCB('B',DispNum[num]);
-// 1523 }
-// 1524 #endif
+// 1504 #if defined(GTA_WMSCB_R1)
+// 1505 void StepMotorRun(uint8 Dir,uint16 StepNum)
+// 1506 {
+// 1507   uint8 ForwardStep[4]={0x03,0x09,0x0C,0x06};
+// 1508   uint8 BackStep[4]={0x03,0x06,0x0C,0x09};
+// 1509   uint16 i=0,j=0,k=0;
+// 1510   uint8 index=0,l=0;
+// 1511   for(i=0;i<StepNum;i++)
+// 1512   {
+// 1513     if(Dir)
+// 1514       ctrl_GTA_WMSCB('C',ForwardStep[index]);
+// 1515     else
+// 1516       ctrl_GTA_WMSCB('C',BackStep[index]);
+// 1517     if(i==(k*255-1)||i==0)
+// 1518     {
+// 1519       SegDisplay(l);
+// 1520       if(l++>8)l=0;
+// 1521       k++;
+// 1522     }
+// 1523     ctrl_GTA_WMSCB('A',i);
+// 1524     
+// 1525     if(++index>=4)index=0;
+// 1526     
+// 1527     for(j=0;j<3000;j++)
+// 1528     {
+// 1529       asm("nop");            
+// 1530     }
+// 1531     //ctrl_GTA_WMSCB('A',StepNum);
+// 1532   }
+// 1533 }
+// 1534 
+// 1535 void SegDisplay(uint8 num)
+// 1536 {
+// 1537   uint8 DispNum[10]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
+// 1538   //ctrl_GTA_WMSCB('M',0x80);
+// 1539   if(num<0x10)
+// 1540     ctrl_GTA_WMSCB('B',DispNum[num]);
+// 1541 }
+// 1542 #endif
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1525 uint16 FramePackage(uint8 *pFrame,uint8 addr,uint8 cmd,uint8 *data,uint16 datalen)
+// 1543 uint16 FramePackage(uint8 *pFrame,uint8 addr,uint8 cmd,uint8 *data,uint16 datalen)
 FramePackage:
           CFI Block cfiBlock82 Using cfiCommon0
           CFI Function FramePackage
         CODE
-// 1526 {
+// 1544 {
         FUNCALL FramePackage, Crc16Code
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -6395,34 +6412,34 @@ FramePackage:
           CFI CFA_XSP16 add(XSP16, 14)
         ; Saved register size: 14
         ; Auto size: 0
-// 1527   uint16 i;
-// 1528   uint16 crc;
-// 1529   uint8 *p;
-// 1530     p=pFrame;
+// 1545   uint16 i;
+// 1546   uint16 crc;
+// 1547   uint8 *p;
+// 1548     p=pFrame;
         MOV     A,R2
         MOV     R6,A
         MOV     A,R3
         MOV     R7,A
-// 1531   *p++=FRAME_HEAD;//²»Ã÷bug ÔÙ¼ÓÒ»¸ö×Ö½Ú
+// 1549   *p++=FRAME_HEAD;//²»Ã÷bug ÔÙ¼ÓÒ»¸ö×Ö½Ú
         MOV     DPL,R6
         MOV     DPH,R7
         MOV     A,#0x7e
         MOVX    @DPTR,A
         INC     DPTR
-// 1532   *p++=FRAME_HEAD;
+// 1550   *p++=FRAME_HEAD;
         MOVX    @DPTR,A
         INC     DPTR
-// 1533   *p++=addr;
+// 1551   *p++=addr;
         MOV     A,R1
         MOVX    @DPTR,A
         INC     DPTR
-// 1534   *p++=cmd;
+// 1552   *p++=cmd;
         MOV     A,R4
         MOVX    @DPTR,A
         INC     DPTR
         MOV     R6,DPL
         MOV     R7,DPH
-// 1535   for(i=0;i<datalen;i++)
+// 1553   for(i=0;i<datalen;i++)
         MOV     R4,#0x0
         MOV     R5,#0x0
         MOV     A,#0xe
@@ -6440,8 +6457,8 @@ FramePackage:
         MOVX    A,@DPTR
         MOV     ?V0 + 1,A
         SJMP    ??FramePackage_0
-// 1536   {
-// 1537     *p++=*data++;
+// 1554   {
+// 1555     *p++=*data++;
 ??FramePackage_1:
         MOV     DPL,R0
         MOV     DPH,R1
@@ -6459,7 +6476,7 @@ FramePackage:
         INC     DPTR
         MOV     R6,DPL
         MOV     R7,DPH
-// 1538   }
+// 1556   }
         MOV     A,R4
         ADD     A,#0x1
         INC     R4
@@ -6473,8 +6490,8 @@ FramePackage:
         MOV     A,R5
         SUBB    A,?V0 + 1
         JC      ??FramePackage_1
-// 1539   //crc=Crc16Code(pFrame+1,datalen+2);//FRAME_HEAD²»¼Æ
-// 1540    crc=Crc16Code(pFrame+2,datalen+2);//FRAME_HEAD²»¼Æ
+// 1557   //crc=Crc16Code(pFrame+1,datalen+2);//FRAME_HEAD²»¼Æ
+// 1558    crc=Crc16Code(pFrame+2,datalen+2);//FRAME_HEAD²»¼Æ
         ; Setup parameters for call to function Crc16Code
         MOV     A,?V0 + 0
         ADD     A,#0x2
@@ -6486,17 +6503,17 @@ FramePackage:
         ADDC    A,#0x0
         MOV     R3,A
         LCALL   ??Crc16Code?relay
-// 1541   *p++=LO_UINT16(crc);
+// 1559   *p++=LO_UINT16(crc);
         MOV     A,R2
         MOV     DPL,R6
         MOV     DPH,R7
         MOVX    @DPTR,A
         INC     DPTR
-// 1542   *p=HI_UINT16(crc);
+// 1560   *p=HI_UINT16(crc);
         MOV     A,R3
         MOVX    @DPTR,A
-// 1543   //return datalen+5;
-// 1544   return datalen+6;//¶à¼ÓÒ»¸öFRAME_HEAD
+// 1561   //return datalen+5;
+// 1562   return datalen+6;//¶à¼ÓÒ»¸öFRAME_HEAD
         MOV     A,?V0 + 0
         ADD     A,#0x6
         MOV     R2,A
@@ -6506,23 +6523,23 @@ FramePackage:
         MOV     R7,#0x6
         LJMP    ?BANKED_LEAVE_XDATA
           CFI EndBlock cfiBlock82
-// 1545 }
-// 1546 
-// 1547   /*********************************************************************
-// 1548  * º¯ÊýÃû³Æ£ºReadADC
-// 1549  * ¹¦    ÄÜ£º¶ÁÈ¡ADCÖµ
-// 1550  * Èë¿Ú²ÎÊý£ºÍ¨µÀ
-// 1551  * ³ö¿Ú²ÎÊý£ºÎÞ
-// 1552  * ·µ »Ø Öµ£ºADÊý¾Ý()
-// 1553  ********************************************************************/
+// 1563 }
+// 1564 
+// 1565   /*********************************************************************
+// 1566  * º¯ÊýÃû³Æ£ºReadADC
+// 1567  * ¹¦    ÄÜ£º¶ÁÈ¡ADCÖµ
+// 1568  * Èë¿Ú²ÎÊý£ºÍ¨µÀ
+// 1569  * ³ö¿Ú²ÎÊý£ºÎÞ
+// 1570  * ·µ »Ø Öµ£ºADÊý¾Ý()
+// 1571  ********************************************************************/
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1554 uint16 ReadADC( uint8 channel )
+// 1572 uint16 ReadADC( uint8 channel )
 ReadADC:
           CFI Block cfiBlock83 Using cfiCommon0
           CFI Function ReadADC
         CODE
-// 1555 {
+// 1573 {
         MOV     A,#-0x10
         LCALL   ?BANKED_ENTER_XDATA
           CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
@@ -6547,39 +6564,39 @@ ReadADC:
         ; Auto size: 0
         MOV     A,R1
         MOV     R4,A
-// 1556   volatile unsigned char tmp,n;
-// 1557   signed short adcvalue;
-// 1558   float voltagevalue_X;
-// 1559 
-// 1560   /* XÖá¼ÓËÙ¶È²É¼¯ */
-// 1561   /* ÉèÖÃ»ù×¼µçÑ¹¡¢³éÈ¡ÂÊºÍµ¥¶ËÊäÈëÍ¨µÀ */
-// 1562   ADCCON3 = ((0x02 << 6) |  // ²ÉÓÃAVDD5Òý½ÅÉÏµÄµçÑ¹Îª»ù×¼µçÑ¹
-// 1563              (0x03 << 4) |  // ³éÈ¡ÂÊÎª512£¬ÏàÓ¦µÄÓÐÐ§Î»Îª12Î»(×î¸ßÎ»Îª·ûºÅÎ»)
-// 1564              channel);
+// 1574   volatile unsigned char tmp,n;
+// 1575   signed short adcvalue;
+// 1576   float voltagevalue_X;
+// 1577 
+// 1578   /* XÖá¼ÓËÙ¶È²É¼¯ */
+// 1579   /* ÉèÖÃ»ù×¼µçÑ¹¡¢³éÈ¡ÂÊºÍµ¥¶ËÊäÈëÍ¨µÀ */
+// 1580   ADCCON3 = ((0x02 << 6) |  // ²ÉÓÃAVDD5Òý½ÅÉÏµÄµçÑ¹Îª»ù×¼µçÑ¹
+// 1581              (0x03 << 4) |  // ³éÈ¡ÂÊÎª512£¬ÏàÓ¦µÄÓÐÐ§Î»Îª12Î»(×î¸ßÎ»Îª·ûºÅÎ»)
+// 1582              channel);
         MOV     A,#-0x50
         ORL     A,R4
         MOV     0xb6,A
-// 1565 
-// 1566   /* µÈ´ýÍ¨µÀ×ª»»Íê³É */
-// 1567   while ((ADCCON1 & 0x80) != 0x80);
+// 1583 
+// 1584   /* µÈ´ýÍ¨µÀ×ª»»Íê³É */
+// 1585   while ((ADCCON1 & 0x80) != 0x80);
 ??ReadADC_0:
         MOV     A,0xb4
         MOV     C,0xE0 /* A   */.7
         JNC     ??ReadADC_0
-// 1568 
-// 1569   /* ´ÓADCL£¬ADCH¶ÁÈ¡×ª»»Öµ£¬´Ë²Ù×÷»¹ÇåÁãADCCON1.EOC */
-// 1570   adcvalue = (signed short)ADCL;
+// 1586 
+// 1587   /* ´ÓADCL£¬ADCH¶ÁÈ¡×ª»»Öµ£¬´Ë²Ù×÷»¹ÇåÁãADCCON1.EOC */
+// 1588   adcvalue = (signed short)ADCL;
         MOV     A,0xba
         MOV     ?V0 + 0,A
-// 1571   adcvalue |= (signed short)(ADCH << 8); 
+// 1589   adcvalue |= (signed short)(ADCH << 8); 
         MOV     A,0xbb
         MOV     R0,A
         CLR     A
         XCH     A,R0
         MOV     ?V0 + 1,A
-// 1572 
-// 1573   /* ÈôadcvalueÐ¡ÓÚ0£¬¾ÍÈÏÎªËüÎª0 */
-// 1574   if(adcvalue < 0) adcvalue = 0;
+// 1590 
+// 1591   /* ÈôadcvalueÐ¡ÓÚ0£¬¾ÍÈÏÎªËüÎª0 */
+// 1592   if(adcvalue < 0) adcvalue = 0;
         CLR     C
         SUBB    A,#0x0
         MOV     C,0xD0 /* PSW */.2
@@ -6588,15 +6605,15 @@ ReadADC:
         JNC     ??ReadADC_1
         MOV     ?V0 + 0,R0
         MOV     ?V0 + 1,R0
-// 1575     
-// 1576   adcvalue >>= 4;  // È¡³ö12Î»ÓÐÐ§Î»
-// 1577     
-// 1578   /* ½«×ª»»Öµ»»ËãÎªÊµ¼ÊµçÑ¹Öµ */
-// 1579   voltagevalue_X = (adcvalue * 3.3) / 2047;  // 2047ÊÇÄ£ÄâÊäÈë´ïµ½VREFÊ±µÄÂúÁ¿³ÌÖµ
-// 1580                                              // ÓÉÓÚÓÐÐ§Î»ÊÇ12Î»(×î¸ßÎ»Îª·ûºÅÎ»)£¬
-// 1581                                              // ËùÒÔÕýµÄÂúÁ¿³ÌÖµÎª2047
-// 1582                                              // ´Ë´¦£¬VREF = 3.3V
-// 1583   return ((uint16)(voltagevalue_X * 1000));  // µçÑ¹·Å´ó100±¶±ãÓÚ´«Êä¼°ÉÏÎ»»ú´¦Àí
+// 1593     
+// 1594   adcvalue >>= 4;  // È¡³ö12Î»ÓÐÐ§Î»
+// 1595     
+// 1596   /* ½«×ª»»Öµ»»ËãÎªÊµ¼ÊµçÑ¹Öµ */
+// 1597   voltagevalue_X = (adcvalue * 3.3) / 2047;  // 2047ÊÇÄ£ÄâÊäÈë´ïµ½VREFÊ±µÄÂúÁ¿³ÌÖµ
+// 1598                                              // ÓÉÓÚÓÐÐ§Î»ÊÇ12Î»(×î¸ßÎ»Îª·ûºÅÎ»)£¬
+// 1599                                              // ËùÒÔÕýµÄÂúÁ¿³ÌÖµÎª2047
+// 1600                                              // ´Ë´¦£¬VREF = 3.3V
+// 1601   return ((uint16)(voltagevalue_X * 1000));  // µçÑ¹·Å´ó100±¶±ãÓÚ´«Êä¼°ÉÏÎ»»ú´¦Àí
 ??ReadADC_1:
         MOV     A,#0x4
         MOV     R0,#?V0 + 0
@@ -6636,15 +6653,15 @@ ReadADC:
         REQUIRE ADCCON1
         REQUIRE ADCL
         REQUIRE ADCH
-// 1584 }
+// 1602 }
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-// 1585 void SendDataRequest(uint8 *pBuf,uint16 len)
+// 1603 void SendDataRequest(uint8 *pBuf,uint16 len)
 SendDataRequest:
           CFI Block cfiBlock84 Using cfiCommon0
           CFI Function SendDataRequest
         CODE
-// 1586 {
+// 1604 {
         FUNCALL SendDataRequest, AF_DataRequest
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -6683,47 +6700,47 @@ SendDataRequest:
           CFI CFA_XSP16 add(XSP16, 10)
         ; Saved register size: 10
         ; Auto size: 0
-// 1587     if(!ZG_DEVICE_COORDINATOR_TYPE)//·ÇÐ­µ÷Æ÷
+// 1605     if(!ZG_DEVICE_COORDINATOR_TYPE)//·ÇÐ­µ÷Æ÷
         MOV     DPTR,#zgDeviceLogicalType
         MOVX    A,@DPTR
         MOV     DPTR,#TestDirectSent_DstAddr + 8
         JZ      ??SendDataRequest_0
-// 1588       {
-// 1589         TestDirectSent_DstAddr.addrMode=(afAddrMode_t)Addr16Bit;//µØÖ·´«ËÍ
+// 1606       {
+// 1607         TestDirectSent_DstAddr.addrMode=(afAddrMode_t)Addr16Bit;//µØÖ·´«ËÍ
         MOV     A,#0x2
         LCALL   ??Subroutine19_0 & 0xFFFF
-// 1590         TestDirectSent_DstAddr.endPoint = 0;
-// 1591         TestDirectSent_DstAddr.addr.shortAddr = 0x0000;
+// 1608         TestDirectSent_DstAddr.endPoint = 0;
+// 1609         TestDirectSent_DstAddr.addr.shortAddr = 0x0000;
 ??CrossCallReturnLabel_28:
         MOV     DPTR,#TestDirectSent_DstAddr
         SJMP    ??CrossCallReturnLabel_5
-// 1592       }
-// 1593       else
-// 1594       {
-// 1595         if(ZG_DEVICE_COORDINATOR_TYPE)
-// 1596         {
-// 1597           TestDirectSent_DstAddr.addrMode=(afAddrMode_t)AddrBroadcast;//Addr16Bit;//µØÖ·´«ËÍ
+// 1610       }
+// 1611       else
+// 1612       {
+// 1613         if(ZG_DEVICE_COORDINATOR_TYPE)
+// 1614         {
+// 1615           TestDirectSent_DstAddr.addrMode=(afAddrMode_t)AddrBroadcast;//Addr16Bit;//µØÖ·´«ËÍ
 ??SendDataRequest_0:
         LCALL   ?Subroutine7 & 0xFFFF
-// 1598           TestDirectSent_DstAddr.endPoint = 0;
-// 1599           TestDirectSent_DstAddr.addr.shortAddr = 0xffff;//destAddr;
-// 1600           //TestDirectSent_DstAddr.addr.extAddr
-// 1601         }
-// 1602       }
+// 1616           TestDirectSent_DstAddr.endPoint = 0;
+// 1617           TestDirectSent_DstAddr.addr.shortAddr = 0xffff;//destAddr;
+// 1618           //TestDirectSent_DstAddr.addr.extAddr
+// 1619         }
+// 1620       }
 ??CrossCallReturnLabel_5:
         MOVX    @DPTR,A
         INC     DPTR
         MOVX    @DPTR,A
-// 1603      AF_DataRequest(    
-// 1604               &TestDirectSent_DstAddr,               //µØÖ·
-// 1605               &TransmitApp_epDesc,                //ÃèÊö
-// 1606               TRANSMITAPP_CLUSTERID_TESTMSG,      //×å
-// 1607                 len,                                  //len
-// 1608                 pBuf,//TransmitApp_Msg,             //DATA
-// 1609               &TransmitApp_TransID,               //
-// 1610               TRANSMITAPP_TX_OPTIONS,
-// 1611               AF_DEFAULT_RADIUS 
-// 1612               );
+// 1621      AF_DataRequest(    
+// 1622               &TestDirectSent_DstAddr,               //µØÖ·
+// 1623               &TransmitApp_epDesc,                //ÃèÊö
+// 1624               TRANSMITAPP_CLUSTERID_TESTMSG,      //×å
+// 1625                 len,                                  //len
+// 1626                 pBuf,//TransmitApp_Msg,             //DATA
+// 1627               &TransmitApp_TransID,               //
+// 1628               TRANSMITAPP_TX_OPTIONS,
+// 1629               AF_DEFAULT_RADIUS 
+// 1630               );
         ; Setup parameters for call to function AF_DataRequest
         MOV     ?V0 + 0,#0x1e
         MOV     R0,#?V0 + 0
@@ -6758,13 +6775,13 @@ SendDataRequest:
         MOV     A,#0x9
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 10)
-// 1613      HalLedBlink (HAL_LED_3, 1, 50, 200);
+// 1631      HalLedBlink (HAL_LED_3, 1, 50, 200);
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#-0x38
         MOV     R5,#0x0
         LJMP    ?Subroutine0 & 0xFFFF
           CFI EndBlock cfiBlock84
-// 1614 }
+// 1632 }
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
 ?Subroutine7:
@@ -6981,139 +6998,60 @@ __Constant_447a0000:
         DD 447A0000H
 
         END
-// 1615 
-// 1616 #if defined(GTA_WTHSB_R1)
-// 1617 uint8 readTempHumi(void)
-// 1618 {
-// 1619  float f_humi=0,f_temp=0; 
-// 1620  
-// 1621   uint8 checksum;
-// 1622  
-// 1623   /* ¿ØÖÆSHT11½øÐÐÎÂÊª¶È²âÁ¿ */
-// 1624   
-// 1625   
-// 1626   s_measure(temp_val,&checksum,TEMP); // ²âÁ¿ÎÂ¶È
-// 1627   s_measure(humi_val,&checksum,HUMI); // ²âÁ¿Ïà¶ÔÊª¶È
-// 1628   f_humi=BUILD_UINT16(humi_val[0],humi_val[1]);
-// 1629   f_temp=BUILD_UINT16(temp_val[0],temp_val[1]);
-// 1630   calc_sth11(&f_humi,&f_temp);
-// 1631   humi_val[0]=f_humi;//&(uint8)f_humi;
-// 1632   humi_val[1]=(f_humi-humi_val[0])*100;  
-// 1633   temp_val[0]=f_temp; 
-// 1634   temp_val[1]=(f_temp-temp_val[0])*100;  
-// 1635   return TRUE;
-// 1636 }
-// 1637 #endif
-// 1638 
-// 1639 #if defined(GTA_WMSCB_R1)
-// 1640 void init_GTA_WMSCB(void)
-// 1641 {
-// 1642   P0SEL=P0SEL&0x8C;//10001100
-// 1643   P1SEL=P1SEL&0xF0;
-// 1644   P2SEL=P2SEL&0xFA;
-// 1645   //HAL_CONFIG_IO_OUTPUT(0, HAL_LCD_CS_PIN, 1);
-// 1646   IO_DIR_PORT_PIN(0, 0, IO_OUT);
-// 1647   IO_DIR_PORT_PIN(0, 1, IO_OUT);
-// 1648   IO_DIR_PORT_PIN(0, 4, IO_OUT);
-// 1649   IO_DIR_PORT_PIN(0, 5, IO_OUT);
-// 1650   IO_DIR_PORT_PIN(0, 6, IO_OUT);
-// 1651   IO_DIR_PORT_PIN(1, 0, IO_OUT);
-// 1652   IO_DIR_PORT_PIN(1, 1, IO_OUT);
-// 1653   IO_DIR_PORT_PIN(1, 2, IO_OUT);
-// 1654   IO_DIR_PORT_PIN(1, 3, IO_OUT);
-// 1655   IO_DIR_PORT_PIN(2, 0, IO_OUT);
-// 1656   IO_DIR_PORT_PIN(2, 2, IO_OUT);
-// 1657 }
-// 1658 
-// 1659 void ctrl_GTA_WMSCB(uint8 port,uint8 data)
-// 1660 {
-// 1661   //uint8 i=0;
-// 1662   //init_GTA_WMSCB();
-// 1663   asm("nop"); 
-// 1664   asm("nop"); 
-// 1665 
-// 1666   T82C55A_WR=1;
-// 1667   asm("nop"); 
-// 1668   asm("nop"); 
+// 1633 
+// 1634 #if defined(GTA_WTHSB_R1)
+// 1635 uint8 readTempHumi(void)
+// 1636 {
+// 1637  float f_humi=0,f_temp=0; 
+// 1638  
+// 1639   uint8 checksum;
+// 1640  
+// 1641   /* ¿ØÖÆSHT11½øÐÐÎÂÊª¶È²âÁ¿ */
+// 1642   
+// 1643   
+// 1644   s_measure(temp_val,&checksum,TEMP); // ²âÁ¿ÎÂ¶È
+// 1645   s_measure(humi_val,&checksum,HUMI); // ²âÁ¿Ïà¶ÔÊª¶È
+// 1646   f_humi=BUILD_UINT16(humi_val[0],humi_val[1]);
+// 1647   f_temp=BUILD_UINT16(temp_val[0],temp_val[1]);
+// 1648   calc_sth11(&f_humi,&f_temp);
+// 1649   humi_val[0]=f_humi;//&(uint8)f_humi;
+// 1650   humi_val[1]=(f_humi-humi_val[0])*100;  
+// 1651   temp_val[0]=f_temp; 
+// 1652   temp_val[1]=(f_temp-temp_val[0])*100;  
+// 1653   return TRUE;
+// 1654 }
+// 1655 #endif
+// 1656 
+// 1657 #if defined(GTA_WMSCB_R1)
+// 1658 /**
+// 1659 * ³õÊ¼»¯¶¨Ê±Æ÷3µÄÏà¹Ø¼Ä´æÆ÷
+// 1660 */
+// 1661 void initTimer3(void){
+// 1662     T3CTL |= 0x08 ;   //¿ªÒç³öÖÐ¶Ï
+// 1663 //    T3IE = 1;   //¿ª×ÜÖÐ¶ÏºÍ T3ÖÐ¶Ï
+// 1664     T3CTL|=0XE0;   //128 ·ÖÆµ,128/16000000*N=0.5S,N=65200
+// 1665     T3CTL &= ~0X03;   //×Ô¶¯ÖØ×° 00£­>0xff  65200/256=254(´Î)
+// 1666     T3CTL |=0X10;   //Æô¶¯
+// 1667 //    EA = 0;    //¿ª×ÜÖÐ¶Ï
+// 1668 }
 // 1669 
-// 1670   switch(port)
-// 1671   {
-// 1672   case        'A':
-// 1673     T82C55A_ADDR0=0;
-// 1674     T82C55A_ADDR1=0;
-// 1675     break;
-// 1676   case        'B':
-// 1677     T82C55A_ADDR0=1;
-// 1678     T82C55A_ADDR1=0;
-// 1679     break;  
-// 1680   case        'C':
-// 1681     T82C55A_ADDR0=0;
-// 1682     T82C55A_ADDR1=1;
-// 1683     break;
-// 1684   case        'M':
-// 1685     T82C55A_ADDR0=1;
-// 1686     T82C55A_ADDR1=1;
-// 1687     break;
-// 1688   default:break;
-// 1689   }
-// 1690   asm("nop"); 
-// 1691   asm("nop"); 
-// 1692 
-// 1693   T82C55A_WR=0;
-// 1694   asm("nop"); 
-// 1695   asm("nop"); 
-// 1696 
-// 1697   if(data&0x01)
-// 1698     T82C55A_D0=1;
-// 1699   else
-// 1700     T82C55A_D0=0;
-// 1701   
-// 1702   if(data&0x02)
-// 1703     T82C55A_D1=1;
-// 1704   else
-// 1705     T82C55A_D1=0;
-// 1706   
-// 1707   if(data&0x04)
-// 1708     T82C55A_D2=1;
-// 1709   else
-// 1710     T82C55A_D2=0;
-// 1711   
-// 1712   if(data&0x08)
-// 1713     T82C55A_D3=1;
-// 1714   else
-// 1715     T82C55A_D3=0;
-// 1716   
-// 1717   if(data&0x10)
-// 1718     T82C55A_D4=1;
-// 1719   else
-// 1720     T82C55A_D4=0;
-// 1721   
-// 1722   if(data&0x20)
-// 1723     T82C55A_D5=1;
-// 1724   else
-// 1725     T82C55A_D5=0;
-// 1726   
-// 1727   if(data&0x40)
-// 1728     T82C55A_D6=1;
-// 1729   else
-// 1730     T82C55A_D6=0;
-// 1731   
-// 1732   if(data&0x80)
-// 1733     T82C55A_D7=1;
-// 1734   else
-// 1735     T82C55A_D7=0;
-// 1736   asm("nop"); 
-// 1737   asm("nop"); 
-// 1738 
-// 1739   T82C55A_WR=1;
-// 1740   asm("nop"); 
-// 1741   asm("nop"); 
-// 1742 
-// 1743   T82C55A_WR=0;
-// 1744   
-// 1745 }
-// 1746 
-// 1747 #endif
+// 1670 void startTimer3(void){
+// 1671     T3IE = 1;
+// 1672 }
+// 1673 void stopTimer3(void){
+// 1674     T3IE = 0;
+// 1675 }
+// 1676 
+// 1677 /************************************
+// 1678 ¶¨Ê±Æ÷3ÖÐ¶Ïº¯Êý
+// 1679 ************************************/
+// 1680 #pragma vector = T3_VECTOR    //¶¨Ê±Æ÷ T3
+// 1681 __interrupt void T3_ISR(void)
+// 1682 {
+// 1683     IRCON = 0x00;   //ÇåÖÐ¶Ï±êÖ¾,Ò²¿ÉÓÉÓ²¼þ×Ô¶¯Íê³É
+// 1684     ControlLeds(u_LedsNumber);
+// 1685 }
+// 1686 #endif
 // 
 // 3 258 bytes in segment BANKED_CODE
 //   120 bytes in segment BANK_RELAYS
