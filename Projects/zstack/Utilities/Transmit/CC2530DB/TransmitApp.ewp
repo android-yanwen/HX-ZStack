@@ -18278,26 +18278,18 @@
       <name>$PROJ_DIR$\..\Source\ControlModule.c</name>
       <excluded>
         <configuration>CoordinatorEB</configuration>
-<<<<<<< HEAD
-        <configuration>GTA-WIRSB-R1</configuration>
-=======
         <configuration>GTA-WTHSB-R1</configuration>
         <configuration>GTA-WIRSB-R1</configuration>
         <configuration>HX-18B20-R1</configuration>
->>>>>>> 9bdda41db292089b4aaa92d73aaad0c816a78236
       </excluded>
     </file>
     <file>
       <name>$PROJ_DIR$\..\Source\ControlModule.h</name>
       <excluded>
         <configuration>CoordinatorEB</configuration>
-<<<<<<< HEAD
-        <configuration>GTA-WIRSB-R1</configuration>
-=======
         <configuration>GTA-WTHSB-R1</configuration>
         <configuration>GTA-WIRSB-R1</configuration>
         <configuration>HX-18B20-R1</configuration>
->>>>>>> 9bdda41db292089b4aaa92d73aaad0c816a78236
       </excluded>
     </file>
     <file>
